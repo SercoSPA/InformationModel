@@ -1,0 +1,1645 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1#"
+     xml:base="http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1">
+        <rdfs:comment xml:lang="en">This is the Ontology (V2.1) that describes the Data Access Services Information Model</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval -->
+
+
+    <rdfs:Datatype rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval">
+        <rdfs:comment>interval of integers</rdfs:comment>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">The Archiving view is the result of a select query on the Product_Storing view, where service_component=”archiver”.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”deletion” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”download” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”ingestion” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”requesting” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”restoring” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”retrieving” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”storing” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">Only the Product_event table’s rows with event_type=”view_processing” are displayed in this view.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Bandwidth, available only for retrieving, storing, restoring and download, and calculated as the size value divided for the duration value (in seconds, so divided for 1000)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product checksum, encoded with MD5 algorithm</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the container in the OVH storage, not available for retrieving</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record creation date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time step of availability in data source</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Free text describing service components details and speifics</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Free text describing events details and specifics</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Free text describing event details</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval"/>
+        <rdfs:comment xml:lang="en">Event duration (if exists) in seconds</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval"/>
+        <rdfs:comment xml:lang="en">Event duration (if it exists) in ms</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval"/>
+        <rdfs:comment xml:lang="en">Duration of the event</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event End Date</rdfs:comment>
+        <rdfs:comment xml:lang="en">Event end date (always available)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event end date (not always available)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event start date (always available)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Type of the event</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Type of event:
+• Product retrieving (from data source)
+• Product storing (into OVH containers)
+• Product ingestion (into Solr catalogue and Cassandra DB)
+• Product deletion (from the full system)
+• Product requesting (by the users, in Cloud Archive context)
+• Product restoring (from the Cloud Archive)
+• Product view processing
+• Product download (by the users)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Geographical area related to the product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Gepgraphical area related to the product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Geographical area related to the product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Product event identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Product identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">Service component identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">User identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Product event identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment xml:lang="en">DIAS download identifier</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Sensing product instument</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Further product metadata (only if needed)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Mission of provenience of the product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Sensing product mode</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the software component</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Product ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Internal integrity check</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">User registration date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">&quot;True&quot; if it is a reprocessed product</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Platform name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Sensing start time step</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Sensing start time step</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Sensing stop time step</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Sensing stop time step</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Service Component ID. In case of retrieving, it is the Service Component.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Identifier of Service Component affected by the event.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Service Component ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Product size related to the event (bytes)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Product size in Bytes</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event Start Date</rdfs:comment>
+        <rdfs:comment xml:lang="en">Event start date (not always available)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Status of completeness of the data flow step</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product timeliness</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product timeliness</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Time when the measurement has been recorded</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product type or dataset</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product type</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Service component macro-area (e.g., “Download Manager” for ENS Writer and DM_&lt;mission&gt;)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Type of Event:
+• Service downtime
+• TTO
+• Infrastructure maintenance
+• Infrastructure downtime
+Please note that this parameter can include also other event categories.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+        <rdfs:comment xml:lang="en">Event record last edit date</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">User ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Username of the user who perform a download or a request to the Cloud Archive</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Username</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">String that identifies the product (not always available)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Product uuid</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total volume of downloads from OVH storage, starting from the last recorded measurement</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total number of users currently registered in ONDA web portal</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total number of products currently present in ONDA catalogue</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total volume of products currently present in OVH storage</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total number of cores used in OVH storage system</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total number of instances used in OVH storage system</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+        <rdfs:comment xml:lang="en">Total number of RAM used in OVH storage system</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users">
+        <rdfs:comment xml:lang="en">The dashboard_active_users table in the DWH contains the measurements of the total number of users currently registered in the ONDA web portal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download">
+        <rdfs:comment xml:lang="en">The DIAS_Download table in the DWH contains the measurements of the total number of bytes downloaded from the OVH storage in a specified range of time.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event">
+        <rdfs:comment xml:lang="en">The Event table contains the basic information that characterize each event, regardless of the entities involved (Product, User, Service Component)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product">
+        <rdfs:comment xml:lang="en">The Product table in the DWH contains the list of relevant information for each product.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:comment xml:lang="en">The Product_event table in the DWH contains the description of all download, publication, deletion and retrieving events. Not all the fields are available for all the events.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number">
+        <rdfs:comment xml:lang="en">The products_number table in the DWH contains the measurements of the total number of products currently present in the ONDA catalogue.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product"/>
+        <rdfs:comment xml:lang="en">The Sentinel Product table is a &quot;child&quot; of the product table, inheriting its attributes and properties. In contains the specific information proper of each Copernicus Sentinel product</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component">
+        <rdfs:comment xml:lang="en">The Service_component Table contains information about system components affected by all the tracked events, as well as the software components that perform the events.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume">
+        <rdfs:comment xml:lang="en">The storage_volume table in the DWH contains the measurements of the total volume (in bytes) of products present in the OVH storage.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:comment xml:lang="en">The System_event table in the DWH contains the list of parameters that describe a system event (downtimes, TTOs, infrastructure, maintenance, etc).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores">
+        <rdfs:comment xml:lang="en">The used_Cores table in the DWH contains the measurements of the total number of cores used in the OVH storage system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances">
+        <rdfs:comment xml:lang="en">The used_Instances table in the DWH contains the measurements of the total number of instances used in the OVH storage system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram">
+        <rdfs:comment xml:lang="en">The used_Ram table in the DWH contains the measurements of the total number of RAM used in the OVH storage system.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user">
+        <rdfs:comment xml:lang="en">The User table contains the list of parameters corresponding to the users&apos; info</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event"/>
+        <rdfs:comment xml:lang="en">The User Event table is a &quot;child&quot; of the Event table, inheriting its attributes and properties. It contains the specific information about all the events that involve the users&apos; activities (download, orders, notifications...)</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+

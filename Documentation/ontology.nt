@@ -1,0 +1,902 @@
+<http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the Ontology (V2.1) that describes the Data Access Services Information Model"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> <http://www.w3.org/2000/01/rdf-schema#comment> "interval of integers" .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "0"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10000"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> <http://www.w3.org/2000/01/rdf-schema#comment> "The Archiving view is the result of a select query on the Product_Storing view, where service_component=”archiver”."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> .
+_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”deletion” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> .
+_:genid12 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”download” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> .
+_:genid17 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”ingestion” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> .
+_:genid19 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> <http://www.w3.org/2000/01/rdf-schema#range> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”requesting” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid22 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> .
+_:genid22 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> <http://www.w3.org/2000/01/rdf-schema#range> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> .
+_:genid23 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”restoring” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> .
+_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> .
+_:genid25 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> <http://www.w3.org/2000/01/rdf-schema#range> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> .
+_:genid26 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”retrieving” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> .
+_:genid27 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> <http://www.w3.org/2000/01/rdf-schema#range> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> .
+_:genid29 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”storing” are displayed in this view."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> .
+_:genid31 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> <http://www.w3.org/2000/01/rdf-schema#range> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> <http://www.w3.org/2000/01/rdf-schema#range> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid34 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> .
+_:genid34 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> <http://www.w3.org/2000/01/rdf-schema#range> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> <http://www.w3.org/2000/01/rdf-schema#comment> "Only the Product_event table’s rows with event_type=”view_processing” are displayed in this view."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth> <http://www.w3.org/2000/01/rdf-schema#comment> "Bandwidth, available only for retrieving, storing, restoring and download, and calculated as the size value divided for the duration value (in seconds, so divided for 1000)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum> <http://www.w3.org/2000/01/rdf-schema#comment> "Product checksum, encoded with MD5 algorithm"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the container in the OVH storage, not available for retrieving"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record creation date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Time step of availability in data source"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Free text describing service components details and speifics"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system> <http://www.w3.org/2000/01/rdf-schema#comment> "Free text describing events details and specifics"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Free text describing event details"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event> <http://www.w3.org/2000/01/rdf-schema#comment> "Event duration (if exists) in seconds"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Event duration (if it exists) in ms"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system> <http://www.w3.org/2000/01/rdf-schema#comment> "Duration of the event"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Event End Date"@en .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Event end date (always available)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Event end date (not always available)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Event start date (always available)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of the event"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of event:\n• Product retrieving (from data source)\n• Product storing (into OVH containers)\n• Product ingestion (into Solr catalogue and Cassandra DB)\n• Product deletion (from the full system)\n• Product requesting (by the users, in Cloud Archive context)\n• Product restoring (from the Cloud Archive)\n• Product view processing\n• Product download (by the users)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical area related to the product"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Gepgraphical area related to the product"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical area related to the product"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Product event identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Product identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Service component identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User> <http://www.w3.org/2000/01/rdf-schema#comment> "User identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event> <http://www.w3.org/2000/01/rdf-schema#comment> "Product event identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam> <http://www.w3.org/2000/01/rdf-schema#comment> "DIAS download identifier"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing product instument"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata> <http://www.w3.org/2000/01/rdf-schema#comment> "Further product metadata (only if needed)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Mission of provenience of the product"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing product mode"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Product name"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the software component"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id> <http://www.w3.org/2000/01/rdf-schema#comment> "Product ID"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal integrity check"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date> <http://www.w3.org/2000/01/rdf-schema#comment> "User registration date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed> <http://www.w3.org/2000/01/rdf-schema#comment> "\"True\" if it is a reprocessed product"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite> <http://www.w3.org/2000/01/rdf-schema#comment> "Platform name"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing start time step"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing start time step"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing stop time step"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Sensing stop time step"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Service Component ID. In case of retrieving, it is the Service Component."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of Service Component affected by the event."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Service Component ID"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Product size related to the event (bytes)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Product size in Bytes"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Event Start Date"@en .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> <http://www.w3.org/2000/01/rdf-schema#comment> "Event start date (not always available)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status> <http://www.w3.org/2000/01/rdf-schema#comment> "Status of completeness of the data flow step"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Product timeliness"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Product timeliness"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam> <http://www.w3.org/2000/01/rdf-schema#comment> "Time when the measurement has been recorded"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Product type or dataset"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Product type"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Service component macro-area (e.g., “Download Manager” for ENS Writer and DM_<mission>)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of Event:\n• Service downtime\n• TTO\n• Infrastructure maintenance\n• Infrastructure downtime\nPlease note that this parameter can include also other event categories."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam> <http://www.w3.org/2000/01/rdf-schema#comment> "Event record last edit date"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id> <http://www.w3.org/2000/01/rdf-schema#comment> "User ID"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Username of the user who perform a download or a request to the Cloud Archive"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user> <http://www.w3.org/2000/01/rdf-schema#comment> "Username"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "String that identifies the product (not always available)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel> <http://www.w3.org/2000/01/rdf-schema#comment> "Product uuid"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias> <http://www.w3.org/2000/01/rdf-schema#comment> "Total volume of downloads from OVH storage, starting from the last recorded measurement"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of users currently registered in ONDA web portal"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of products currently present in ONDA catalogue"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage> <http://www.w3.org/2000/01/rdf-schema#comment> "Total volume of products currently present in OVH storage"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of cores used in OVH storage system"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of instances used in OVH storage system"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam> <http://www.w3.org/2000/01/rdf-schema#comment> "Total number of RAM used in OVH storage system"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> <http://www.w3.org/2000/01/rdf-schema#comment> "The dashboard_active_users table in the DWH contains the measurements of the total number of users currently registered in the ONDA web portal."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> <http://www.w3.org/2000/01/rdf-schema#comment> "The DIAS_Download table in the DWH contains the measurements of the total number of bytes downloaded from the OVH storage in a specified range of time."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> <http://www.w3.org/2000/01/rdf-schema#comment> "The Event table contains the basic information that characterize each event, regardless of the entities involved (Product, User, Service Component)"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> <http://www.w3.org/2000/01/rdf-schema#comment> "The Product table in the DWH contains the list of relevant information for each product."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> <http://www.w3.org/2000/01/rdf-schema#comment> "The Product_event table in the DWH contains the description of all download, publication, deletion and retrieving events. Not all the fields are available for all the events."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> <http://www.w3.org/2000/01/rdf-schema#comment> "The products_number table in the DWH contains the measurements of the total number of products currently present in the ONDA catalogue."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> <http://www.w3.org/2000/01/rdf-schema#comment> "The Sentinel Product table is a \"child\" of the product table, inheriting its attributes and properties. In contains the specific information proper of each Copernicus Sentinel product"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> <http://www.w3.org/2000/01/rdf-schema#comment> "The Service_component Table contains information about system components affected by all the tracked events, as well as the software components that perform the events."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> <http://www.w3.org/2000/01/rdf-schema#comment> "The storage_volume table in the DWH contains the measurements of the total volume (in bytes) of products present in the OVH storage."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> <http://www.w3.org/2000/01/rdf-schema#comment> "The System_event table in the DWH contains the list of parameters that describe a system event (downtimes, TTOs, infrastructure, maintenance, etc)."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> <http://www.w3.org/2000/01/rdf-schema#comment> "The used_Cores table in the DWH contains the measurements of the total number of cores used in the OVH storage system."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> <http://www.w3.org/2000/01/rdf-schema#comment> "The used_Instances table in the DWH contains the measurements of the total number of instances used in the OVH storage system."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> <http://www.w3.org/2000/01/rdf-schema#comment> "The used_Ram table in the DWH contains the measurements of the total number of RAM used in the OVH storage system."@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> <http://www.w3.org/2000/01/rdf-schema#comment> "The User table contains the list of parameters corresponding to the users' info"@en .
+# 
+# http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> .
+<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> <http://www.w3.org/2000/01/rdf-schema#comment> "The User Event table is a \"child\" of the Event table, inheriting its attributes and properties. It contains the specific information about all the events that involve the users' activities (download, orders, notifications...)"@en .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
