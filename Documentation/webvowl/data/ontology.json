@@ -1,0 +1,3150 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1",
+    "comments" : {
+      "en" : "This is the Ontology (V2.1) that describes the Data Access Services Information Model"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "149",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "147",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "216",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "212",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "30" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "29"
+  }, {
+    "instances" : 0,
+    "union" : [ "9", "30" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "31"
+  }, {
+    "instances" : 0,
+    "union" : [ "30", "9" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "used_Instances"
+    },
+    "comment" : {
+      "en" : "The used_Instances table in the DWH contains the measurements of the total number of instances used in the OVH storage system."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "event"
+    },
+    "subClasses" : [ "15", "35", "9" ],
+    "comment" : {
+      "en" : "The Event table contains the basic information that characterize each event, regardless of the entities involved (Product, User, Service Component)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "dashboard_active_users"
+    },
+    "comment" : {
+      "en" : "The dashboard_active_users table in the DWH contains the measurements of the total number of users currently registered in the ONDA web portal."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "sentinel_product"
+    },
+    "comment" : {
+      "en" : "The Sentinel Product table is a \"child\" of the product table, inheriting its attributes and properties. In contains the specific information proper of each Copernicus Sentinel product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "used_Cores"
+    },
+    "comment" : {
+      "en" : "The used_Cores table in the DWH contains the measurements of the total number of cores used in the OVH storage system."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "106",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "interval"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "interval"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "157",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "interval"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "user"
+    },
+    "comment" : {
+      "en" : "The User table contains the list of parameters corresponding to the users' info"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "product"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "The Product table in the DWH contains the list of relevant information for each product."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "164",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "166",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "168",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "products_number"
+    },
+    "comment" : {
+      "en" : "The products_number table in the DWH contains the measurements of the total number of products currently present in the ONDA catalogue."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "172",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "149",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "174",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "service_component"
+    },
+    "comment" : {
+      "en" : "The Service_component Table contains information about system components affected by all the tracked events, as well as the software components that perform the events."
+    },
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "product_event"
+    },
+    "comment" : {
+      "en" : "The Product_event table in the DWH contains the description of all download, publication, deletion and retrieving events. Not all the fields are available for all the events."
+    },
+    "attributes" : [ "external" ],
+    "id" : "15",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "147",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "system_event"
+    },
+    "comment" : {
+      "en" : "The System_event table in the DWH contains the list of parameters that describe a system event (downtimes, TTOs, infrastructure, maintenance, etc)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "131",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "141",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "159",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "191",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "178",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "used_Ram"
+    },
+    "comment" : {
+      "en" : "The used_Ram table in the DWH contains the measurements of the total number of RAM used in the OVH storage system."
+    },
+    "attributes" : [ "external" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "dias_download"
+    },
+    "comment" : {
+      "en" : "The DIAS_Download table in the DWH contains the measurements of the total number of bytes downloaded from the OVH storage in a specified range of time."
+    },
+    "attributes" : [ "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "198",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "213",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "200",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "181",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "215",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "216",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "194",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "210",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "120",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "220",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "202",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "184",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "storage_volume"
+    },
+    "comment" : {
+      "en" : "The storage_volume table in the DWH contains the measurements of the total volume (in bytes) of products present in the OVH storage."
+    },
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#long",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "204",
+    "label" : {
+      "IRI-based" : "long"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "139",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "189",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "229",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "208",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "196",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "user_event"
+    },
+    "comment" : {
+      "en" : "The User Event table is a \"child\" of the Event table, inheriting its attributes and properties. It contains the specific information about all the events that involve the users' activities (download, orders, notifications...)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "212",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "226",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "206",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "107",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "186",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "192",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "193",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "195",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "199",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "201",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "205",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "209",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "211",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "218",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "219",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "224",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "225",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "227",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "228",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "230",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "235",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "236",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "237",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "238",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "id_usedInstances"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "footprint_sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Gepgraphical area related to the product"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "view_processing"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”view_processing” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "description_system"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Free text describing events details and specifics"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "created_at_productsNumber"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "size_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Product size related to the event (bytes)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "id_Service"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Service component identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "container_name"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Name of the container in the OVH storage, not available for retrieving"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "created_at_dashboard"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "22"
+  }, {
+    "range" : "26",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "30",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "30",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "id_productsNumber"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "36"
+  }, {
+    "range" : "30",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "updated_at_Dias"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "checksum"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Product checksum, encoded with MD5 algorithm"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "timestamp_usedCores"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "recovery_action"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "Internal integrity check"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "created_at_system"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "value_dashboard"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Total number of users currently registered in ONDA web portal"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "id_dashboard"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "requesting"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”requesting” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "instrument"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Sensing product instument"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "updated_at_storage"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "created_at_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "type_Service"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Service component macro-area (e.g., “Download Manager” for ENS Writer and DM_<mission>)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "created_at_Service"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "updated_at_productsNumber"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "user_id"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "User ID"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "footprint_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Geographical area related to the product"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "event_start_date"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Event start date (always available)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "updated_at_User"
+    },
+    "domain" : "79",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "retrieving"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”retrieving” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "created_at_usedRam"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "timeliness_sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Product timeliness"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "timestamp_productsNumber"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "metadata"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Further product metadata (only if needed)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "username_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Username of the user who perform a download or a request to the Cloud Archive"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "updated_at_usedRam"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "service_component_id_userEvent"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Service Component ID"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "sensing_stop_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Sensing stop time step"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "updated_at_dashboard"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "timestamp_storage"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "104",
+    "label" : {
+      "IRI-based" : "id_User"
+    },
+    "domain" : "79",
+    "comment" : {
+      "en" : "User identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "106",
+    "label" : {
+      "IRI-based" : "event_end_date"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Event end date (not always available)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "product_id"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Product ID"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "107"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "duration_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Event duration (if it exists) in ms"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "description_systemEvent"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Free text describing event details"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "event_type_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Type of event:\n• Product retrieving (from data source)\n• Product storing (into OVH containers)\n• Product ingestion (into Solr catalogue and Cassandra DB)\n• Product deletion (from the full system)\n• Product requesting (by the users, in Cloud Archive context)\n• Product restoring (from the Cloud Archive)\n• Product view processing\n• Product download (by the users)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "created_at_storage"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "id_storage"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "created_at_Dias"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "service_component_id_systemEvent"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Identifier of Service Component affected by the event."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "124",
+    "label" : {
+      "IRI-based" : "id_usedRam"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "value_productsNumber"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "Total number of products currently present in ONDA catalogue"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "127",
+    "label" : {
+      "IRI-based" : "status"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Status of completeness of the data flow step"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "username_user"
+    },
+    "domain" : "79",
+    "comment" : {
+      "en" : "Username"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "131",
+    "label" : {
+      "IRI-based" : "id_Dias"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "deletion"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”deletion” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "updated_at_usedCores"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "duration_system"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Duration of the event"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "139",
+    "label" : {
+      "IRI-based" : "updated_at_system"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "141",
+    "label" : {
+      "IRI-based" : "id_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Product identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "timeliness_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Product timeliness"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "timestamp_dashboard"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "147",
+    "label" : {
+      "IRI-based" : "id_product_event"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Product event identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "149",
+    "label" : {
+      "IRI-based" : "mode"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Sensing product mode"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "id_usedCores"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "DIAS download identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "154",
+    "label" : {
+      "IRI-based" : "timstamp_usedRam"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "152",
+    "label" : {
+      "IRI-based" : "event_type_event"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Type of the event"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "156"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "159",
+    "label" : {
+      "IRI-based" : "timestamp_usedInstances"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "sensing_start_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Sensing start time step"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "160"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "137",
+    "label" : {
+      "IRI-based" : "footprint_wkt"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Geographical area related to the product"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "end_date"
+    },
+    "domain" : "31",
+    "comment" : {
+      "en" : "Event End Date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "size_sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Product size in Bytes"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "storing"
+    },
+    "domain" : "7",
+    "subproperty" : [ "176" ],
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”storing” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "178",
+    "label" : {
+      "IRI-based" : "timestamp_Dias"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Time when the measurement has been recorded"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "177"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "duration_event"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Event duration (if exists) in seconds"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "179"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "181",
+    "label" : {
+      "IRI-based" : "satellite"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Platform name"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "180"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "registration_date"
+    },
+    "domain" : "79",
+    "comment" : {
+      "en" : "User registration date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "182"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "184",
+    "label" : {
+      "IRI-based" : "created_at_User"
+    },
+    "domain" : "79",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "created_at_usedCores"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "185"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "166",
+    "label" : {
+      "IRI-based" : "creation_date"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Time step of availability in data source"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "186"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "189",
+    "label" : {
+      "IRI-based" : "updated_at_usedInstances"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "188"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "name_Service"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Name of the software component"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "190"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "system_events"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "192"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "194",
+    "label" : {
+      "IRI-based" : "value_Dias"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Total volume of downloads from OVH storage, starting from the last recorded measurement"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "193"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "196",
+    "label" : {
+      "IRI-based" : "updated_at_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "195"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "168",
+    "label" : {
+      "IRI-based" : "reprocessed"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "\"True\" if it is a reprocessed product"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "197"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "200",
+    "label" : {
+      "IRI-based" : "sensing_stop_sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Sensing stop time step"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "199"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "202",
+    "label" : {
+      "IRI-based" : "created_at_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "204",
+    "label" : {
+      "IRI-based" : "bandwidth"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Bandwidth, available only for retrieving, storing, restoring and download, and calculated as the size value divided for the duration value (in seconds, so divided for 1000)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "203"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "206",
+    "label" : {
+      "IRI-based" : "type_system"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Type of Event:\n• Service downtime\n• TTO\n• Infrastructure maintenance\n• Infrastructure downtime\nPlease note that this parameter can include also other event categories."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "205"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "208",
+    "label" : {
+      "IRI-based" : "updated_at_Service"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Event record edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "207"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "210",
+    "label" : {
+      "IRI-based" : "uuid_sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Product uuid"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "209"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "212",
+    "label" : {
+      "IRI-based" : "updated_at_Event"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "211"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "164",
+    "label" : {
+      "IRI-based" : "created_at_usedInstances"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "value_usedCores"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Total number of cores used in OVH storage system"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "191",
+    "label" : {
+      "IRI-based" : "type_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Product type or dataset"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "start_date"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Event Start Date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "219"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "ingestion"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”ingestion” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "value_usedRam"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "Total number of RAM used in OVH storage system"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "222"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "213",
+    "label" : {
+      "IRI-based" : "service_component_id_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Service Component ID. In case of retrieving, it is the Service Component."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "223"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "216",
+    "label" : {
+      "IRI-based" : "uuid_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "String that identifies the product (not always available)"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "224"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "226",
+    "label" : {
+      "IRI-based" : "type_Sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Product type"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "225"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "restoring"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”restoring” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "227"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "174",
+    "label" : {
+      "IRI-based" : "mission_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Mission of provenience of the product"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "228"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "description_Service"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Free text describing service components details and speifics"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "230"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "187",
+    "label" : {
+      "IRI-based" : "id_Event"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Product event identifier"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "value_usedInstances"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Total number of instances used in OVH storage system"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "232"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "229",
+    "label" : {
+      "IRI-based" : "updated_at_productEvent"
+    },
+    "domain" : "15",
+    "comment" : {
+      "en" : "Event record last edit date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "233"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "215",
+    "label" : {
+      "IRI-based" : "sensing_start_sentinel"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Sensing start time step"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "234"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "220",
+    "label" : {
+      "IRI-based" : "created_at_Event"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Event record creation date"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "235"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "archiving"
+    },
+    "superproperty" : [ "175" ],
+    "domain" : "7",
+    "comment" : {
+      "en" : "The Archiving view is the result of a select query on the Product_Storing view, where service_component=”archiver”."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "176"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "download"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Only the Product_event table’s rows with event_type=”download” are displayed in this view."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "236"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "172",
+    "label" : {
+      "IRI-based" : "name_Product"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Product name"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "237"
+  }, {
+    "iri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage",
+    "baseIri" : "http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "value_storage"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Total volume of products currently present in OVH storage"
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "238"
+  } ]
+}
