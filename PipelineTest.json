@@ -1,0 +1,106 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en" ],
+    "baseIris" : [ "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "PipelineTest" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl#",
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl#",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "owl2xml" : "http://www.w3.org/2006/12/owl2-xml#",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl",
+    "labels" : {
+      "en" : "Pipeline Test Ontology"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl#Teacher",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Teacher"
+    },
+    "comment" : {
+      "en" : "Teacher Class"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl#Student",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Student"
+    },
+    "comment" : {
+      "en" : "Student Class"
+    },
+    "id" : "4"
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl#id_Teacher",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "id_Teacher"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "Teacher ID"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl#id_Student",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/0/PipelineTest.owl",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "id_Student"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Student ID"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  } ]
+}
