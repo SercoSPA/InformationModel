@@ -2,7 +2,7 @@
 This project is aimed at generating an Information Model for the Data Access Services (DASIM) managed by Serco.<br>
 
 ## Contents
-* **Documentation** folder contains all the related contents to the documentation package, published on [DASIM webpage](http://webontology.onda-dias.eu/WebOntology/Documentation/index-en.html)
+* **Documentation** folder contains all the related contents to the documentation package, published on [DASIM webpage](https://imms.onda-dias.eu/InformationModel/Documentation/index-en.html)
 * `.owl` file that is the Ontology file generated with Protégé that will be used from Widoco tool to generate the Documentation (see the manual for more information)
 * `.json` file that is the Ontology file converted with the owl2vowl converter, ready to be used by WEBVowl (see the manual for more information)
 * `config.properties` which collects the properties that will be used from Widoco tool to generate the Documentation (see the manual for more information)
