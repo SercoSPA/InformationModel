@@ -16,3 +16,4 @@ This project is aimed at generating an Information Model for the Data Access Ser
 | Manual | 3/12/21  | 2.0 |
 | Manual | 21/12/21  | 3.0 |
 | Manual | 22/12/21  | 4.0 |
+| Manual | 24/01/22  | 4.5 |
