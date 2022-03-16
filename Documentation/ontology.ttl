@@ -1,1027 +1,1527 @@
-@prefix : <http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1#> .
+@prefix : <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1> .
+@base <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl> .
 
-<http://www.semanticweb.org/utente/ontologies/2021/9/DASIM2.1> rdf:type owl:Ontology ;
-                                                                rdfs:comment "This is the Ontology (V2.1) that describes the Data Access Services Information Model"@en .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl> rdf:type owl:Ontology .
 
 #################################################################
-#    Datatypes
+#    Annotation properties
 #################################################################
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> rdf:type rdfs:Datatype ;
-                                                                        rdfs:comment "interval of integers" ;
-                                                                        owl:equivalentClass [ rdf:type rdfs:Datatype ;
-                                                                                              owl:onDatatype xsd:integer ;
-                                                                                              owl:withRestrictions ( [ xsd:minInclusive 0
-                                                                                                                     ]
-                                                                                                                     [ xsd:maxInclusive 10000
-                                                                                                                     ]
-                                                                                                                   )
-                                                                                            ] .
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:subPropertyOf <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                     ] ;
-                                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                    ] ,
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                    ] ;
-                                                                         rdfs:comment "The Archiving view is the result of a select query on the Product_Storing view, where service_component=”archiver”."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#action_refinement
+:action_refinement rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Action ;
+                   rdfs:range :Abstract_Constraint ;
+                   rdfs:comment "Constraint used to refine the semantics of an Action."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> rdf:type owl:ObjectProperty ;
-                                                                        rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                    ] ;
-                                                                        rdfs:range [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> ;
-                                                                                     owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                   ] ,
-                                                                                   [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#deletion> ;
-                                                                                     owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                   ] ;
-                                                                        rdfs:comment "Only the Product_event table’s rows with event_type=”deletion” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#assignee
+:assignee rdf:type owl:ObjectProperty ;
+          rdfs:domain :Rule ;
+          rdfs:range :Participant ;
+          rdfs:comment "indicates the Party that is the recipient the of Rule. For example, the Party being granted a Permission or required to fulfil an agreed Duty."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> rdf:type owl:ObjectProperty ;
-                                                                        rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                    ] ;
-                                                                        rdfs:range [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> ;
-                                                                                     owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                   ] ,
-                                                                                   [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#download> ;
-                                                                                     owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                   ] ;
-                                                                        rdfs:comment "Only the Product_event table’s rows with event_type=”download” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#assigneeOf
+:assigneeOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Participant ;
+            rdfs:range :Contract ;
+            rdfs:comment "Identifies the Contract for which the identified Particpant undertakes the assignee functional role."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                     ] ;
-                                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                    ] ,
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#ingestion> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                    ] ;
-                                                                         rdfs:comment "Only the Product_event table’s rows with event_type=”ingestion” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#assigner
+:assigner rdf:type owl:ObjectProperty ;
+          rdfs:domain :Rule ;
+          rdfs:range :Participant ;
+          rdfs:comment "indicates the Party that is issuing the Rule. For example, the Party granting a Permission or requiring an agreed Duty to be fulfilled."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> rdf:type owl:ObjectProperty ;
-                                                                          rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> ;
-                                                                                        owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                      ] ;
-                                                                          rdfs:range [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                     ] ,
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#requesting> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                     ] ;
-                                                                          rdfs:comment "Only the Product_event table’s rows with event_type=”requesting” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#assignerOf
+:assignerOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Participant ;
+            rdfs:range :Contract ;
+            rdfs:comment "Identifies the Contract for which the identified Participant undertakes the assigner functional role."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> rdf:type owl:ObjectProperty ;
-                                                                         rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                     ] ;
-                                                                         rdfs:range [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                    ] ,
-                                                                                    [ rdf:type owl:Restriction ;
-                                                                                      owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#restoring> ;
-                                                                                      owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                    ] ;
-                                                                         rdfs:comment "Only the Product_event table’s rows with event_type=”restoring” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#connector_reference
+:connector_reference rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Broker ;
+                     rdfs:range :Connector ;
+                     rdfs:comment "Reference to Connectors, which are listed in the Broker."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> rdf:type owl:ObjectProperty ;
-                                                                          rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                        owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> ;
-                                                                                        owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                      ] ;
-                                                                          rdfs:range [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                     ] ,
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#retrieving> ;
-                                                                                       owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                     ] ;
-                                                                          rdfs:comment "Only the Product_event table’s rows with event_type=”retrieving” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#consequence
+:consequence rdf:type owl:ObjectProperty ;
+             rdfs:domain :Duty ;
+             rdfs:range :Duty ;
+             rdfs:comment "Relates a Duty to another Duty, the latter being a consequence of not fulfilling the former."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> rdf:type owl:ObjectProperty ;
-                                                                       rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                     owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> ;
-                                                                                     owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                   ] ;
-                                                                       rdfs:range [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> ;
-                                                                                    owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                  ] ,
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storing> ;
-                                                                                    owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                  ] ;
-                                                                       owl:propertyChainAxiom ( <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#archiving>
-                                                                                              ) ;
-                                                                       rdfs:comment "Only the Product_event table’s rows with event_type=”storing” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#consumer
+:consumer rdf:type owl:ObjectProperty ;
+          rdfs:domain :Contract ;
+          rdfs:range :Participant ;
+          rdfs:comment "Consumer of a Resource or Service that is the subject matter of the Contract. This party may differ from the Assignee specified by the Contract rules."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> rdf:type owl:ObjectProperty ;
-                                                                             rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                           owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> ;
-                                                                                           owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event>
-                                                                                         ] ;
-                                                                             rdfs:range [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_events> ;
-                                                                                          owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                        ] .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#contract_offer
+:contract_offer rdf:type owl:ObjectProperty ;
+                rdfs:domain :Resource ;
+                rdfs:range :Participant ;
+                rdfs:comment "Reference to a Contract Offer defining the authorized use of the Resource"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> rdf:type owl:ObjectProperty ;
-                                                                               rdfs:domain [ rdf:type owl:Restriction ;
-                                                                                             owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> ;
-                                                                                             owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event>
-                                                                                           ] ;
-                                                                               rdfs:range [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> ;
-                                                                                            owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product>
-                                                                                          ] ,
-                                                                                          [ rdf:type owl:Restriction ;
-                                                                                            owl:onProperty <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#view_processing> ;
-                                                                                            owl:someValuesFrom <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component>
-                                                                                          ] ;
-                                                                               rdfs:comment "Only the Product_event table’s rows with event_type=”view_processing” are displayed in this view."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator
+:creator rdf:type owl:ObjectProperty ;
+         rdfs:domain :Participant ;
+         rdfs:range :Resource ;
+         rdfs:comment "The entity responsible for producing the resource."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#curator
+:curator rdf:type owl:ObjectProperty ;
+         rdfs:domain :Ecosystem_Component ;
+         rdfs:range :Participant ;
+         rdfs:comment "Participant responsible for the correctness of the content offered by the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#deployed
+:deployed rdf:type owl:ObjectProperty ;
+          rdfs:domain :Data_App ;
+          rdfs:range :DataApp_Endpoint ;
+          rdfs:comment "Data App deployed inside a Connector"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#exposes
+:exposes rdf:type owl:ObjectProperty ;
+         rdfs:domain :Data_Service ;
+         rdfs:range :DataApp_Endpoint ;
+         rdfs:comment "Data App Endpoints are exposed by a Data Service to reach the relevant Data Apps."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_action
+:has_action rdf:type owl:ObjectProperty ;
+            rdfs:domain :Rule ;
+            rdfs:range :Action ;
+            rdfs:comment "The operation relating to the Asset for which the Rule is being subjected."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_connector_default_endpoint
+:has_connector_default_endpoint rdf:type owl:ObjectProperty ;
+                                rdfs:domain :Connector ;
+                                rdfs:range :Connector_Endpoint ;
+                                rdfs:comment "Indicates the default endpoint that should be used for basic infrastructure interactions, e.g., providing the self description."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_constraint
+:has_constraint rdf:type owl:ObjectProperty ;
+                rdfs:domain :Rule ;
+                rdfs:range :Abstract_Constraint ;
+                rdfs:comment "Constraints applied to a Rule"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_dataapp_default_endpoint
+:has_dataapp_default_endpoint rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Data_App ;
+                              rdfs:range :DataApp_Endpoint ;
+                              rdfs:comment "Indicates the default endpoint that should be used for basic infrastructure interactions, e.g., providing the self description."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_duty
+:has_duty rdf:type owl:ObjectProperty ;
+          rdfs:domain :Permission ;
+          rdfs:range :Duty ;
+          rdfs:comment """Relates an individual Duty to a Permission.
+Note: A Duty is a pre-condition which must be fulfilled in order to receive the Permission."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_participant_certification
+:has_participant_certification rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Participant ;
+                               rdfs:range :Participant_Certification ;
+                               rdfs:comment "Certification issued for the given Participant."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_participant_link
+:has_participant_link rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Service_Catalogue ;
+                      rdfs:range :Participant ;
+                      rdfs:comment "A Participant that is listed in the Catalogue"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_resource_endpoint
+:has_resource_endpoint rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Connector_Endpoint ;
+                       rdfs:range :Resource ;
+                       rdfs:comment "Reference to the Endpoints serving the resource's content"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_service_link
+:has_service_link rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Service_Catalogue ;
+                  rdfs:range :Data_Service ;
+                  rdfs:comment "A service that is listed in the Catalogue"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_user
+:has_user rdf:type owl:ObjectProperty ;
+          rdfs:domain :Resource ;
+          rdfs:range :Participant ;
+          rdfs:comment "The participant intending to use the dataThe participant intending to use the data"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_wallet
+:has_wallet rdf:type owl:ObjectProperty ;
+            rdfs:domain :Wallet ;
+            rdfs:range :Participant ;
+            rdfs:comment "Participant associated to a wallet which records his/her transaction and his/her wallet amount."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#implies
+:implies rdf:type owl:ObjectProperty ;
+         rdfs:domain :Action ;
+         rdfs:range :Action ;
+         rdfs:comment "Constraint used to refine the semantics of an Action."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#includedIn
+:includedIn rdf:type owl:ObjectProperty ;
+            rdfs:domain :Action ;
+            rdfs:range :Action ;
+            rdfs:comment "An Action asserts that another Action is not prohibited to enable its operational semantics."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#index
+:index rdf:type owl:ObjectProperty ;
+       rdfs:domain :Broker ;
+       rdfs:range :Data_Asset ;
+       rdfs:comment "Metadata indexing from data sources"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#integrates_application
+:integrates_application rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Data_Service ;
+                        rdfs:range :Data_App ;
+                        rdfs:comment "Function implemented by the Data Service by means of a Data App"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#maintainer
+:maintainer rdf:type owl:ObjectProperty ;
+            rdfs:domain :Ecosystem_Component ;
+            rdfs:range :Participant ;
+            rdfs:comment "Participant responsible for technical maintenance of the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#memberPerson
+:memberPerson rdf:type owl:ObjectProperty ;
+              rdfs:domain :Participant ;
+              rdfs:range :Person ;
+              rdfs:comment "A person member of Participant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#obligation
+:obligation rdf:type owl:ObjectProperty ;
+            rdfs:domain :Contract ;
+            rdfs:range :Duty ;
+            rdfs:comment "Relates an individual Duty to a Contract"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#operates
+:operates rdf:type owl:ObjectProperty ;
+          rdfs:domain :Data_Service ;
+          rdfs:range :Data_Asset ;
+          rdfs:comment "Processing, distribution, and operations of a Data Asset performed by a Data Service"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#participant_refinement
+:participant_refinement rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Participant ;
+                        rdfs:range :Abstract_Constraint ;
+                        rdfs:comment "Conditions which needs to be satisfied that a single Participant can be seen as a member of the subject Participant. For instance, all Participants with their headquarter in Europe might be a potential consumer of GDPR-releated data."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#permission
+:permission rdf:type owl:ObjectProperty ;
+            rdfs:domain :Contract ;
+            rdfs:range :Permission ;
+            rdfs:comment "Relates an individual Permission to a Contract"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#prohibition
+:prohibition rdf:type owl:ObjectProperty ;
+             rdfs:domain :Contract ;
+             rdfs:range :Prohibition ;
+             rdfs:comment "Relates an individual Prohibition to a Contract."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#provider
+:provider rdf:type owl:ObjectProperty ;
+          rdfs:domain :Contract ;
+          rdfs:range :Participant ;
+          rdfs:comment "Provider of a Resource or Service that is the subject matter of the contract. This party may differ from the Assigner specified by the Contract rules."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher
+:publisher rdf:type owl:ObjectProperty ;
+           rdfs:domain :Participant ;
+           rdfs:range :Resource ;
+           rdfs:comment "The entity responsible for making the resource available (which may differ from the sovereign)."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#reads
+:reads rdf:type owl:ObjectProperty ;
+       rdfs:domain :Clearing_House ;
+       rdfs:range :Transaction_Data ;
+       rdfs:comment "Clearing House reads information relevant to a transaction (action, service, participant, price) from the Data Service producing the transaction."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#records
+:records rdf:type owl:ObjectProperty ;
+         rdfs:domain :Wallet ;
+         rdfs:range :Transaction_Data ;
+         rdfs:comment "the Wallet Service records the transaction, calculating the cost consumed by the Participant on the basis of the action and its pricing strategy"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#refinement
+:refinement rdf:type owl:ObjectProperty ;
+            rdfs:domain :Resource ;
+            rdfs:range :Abstract_Constraint ;
+            rdfs:comment "Constraint used to refine the semantics of Resource."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#remedy
+:remedy rdf:type owl:ObjectProperty ;
+        rdfs:domain :Prohibition ;
+        rdfs:range :Duty ;
+        rdfs:comment "Relates an individual remedy Duty to a Prohibition"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign
+:sovereign rdf:type owl:ObjectProperty ;
+           rdfs:domain :Participant ;
+           rdfs:range :Resource ;
+           rdfs:comment "The 'owner', i.e. sovereign of the data."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#stores
+:stores rdf:type owl:ObjectProperty ;
+        rdfs:domain :Clearing_House ;
+        rdfs:range :Transaction_Data ;
+        rdfs:comment "Information relevant to a transaction (action, service, participant, price) are stored into the Clearing House"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#target
+:target rdf:type owl:ObjectProperty ;
+        rdfs:domain :Rule ;
+        rdfs:range :Resource ;
+        rdfs:comment """The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.
+Example: the assigner Participant offers to <action> the target Resource"""@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#bandwidth> rdf:type owl:DatatypeProperty ;
-                                                                         rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                         rdfs:range xsd:long ;
-                                                                         rdfs:comment "Bandwidth, available only for retrieving, storing, restoring and download, and calculated as the size value divided for the duration value (in seconds, so divided for 1000)"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#AccessRights
+:AccessRights rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Resource ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Descriptive information about who can access the item or an indication of its security status"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#checksum> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                        rdfs:range xsd:string ;
-                                                                        rdfs:comment "Product checksum, encoded with MD5 algorithm"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL
+:Access_URL rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Endpoint ;
+            rdfs:range xsd:anyURI ;
+            rdfs:comment "Access URL of an endpoint."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#container_name> rdf:type owl:DatatypeProperty ;
-                                                                              rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                              rdfs:range xsd:string ;
-                                                                              rdfs:comment "Name of the container in the OVH storage, not available for retrieving"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Agreement_assignee
+:Agreement_assignee rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Contract_agreement ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Descriptive information on the assignee Participant. Mandatory"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Dias> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> ;
-                                                                               rdfs:range xsd:dateTimeStamp ;
-                                                                               rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Agreement_assigner
+:Agreement_assigner rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Contract_agreement ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "Descriptive information on the assigner Participant. Mandatory"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Event> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                                rdfs:range xsd:dateTimeStamp ;
-                                                                                rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#BirthDate
+:BirthDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Date of birth"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Product> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#BirthPlace
+:BirthPlace rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:comment "The place where the person was born"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_Service> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Broker_Content_Provenance
+:Broker_Content_Provenance rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Broker ;
+                           rdfs:range xsd:string ;
+                           rdfs:comment "Origin of the Content"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_User> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> ;
-                                                                               rdfs:range xsd:dateTimeStamp ;
-                                                                               rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Broker_Partecipant_Provenance
+:Broker_Partecipant_Provenance rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Broker ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "Participants that are responsible of trace the Content Provenance"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_dashboard> rdf:type owl:DatatypeProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> ;
-                                                                                    rdfs:range xsd:dateTimeStamp ;
-                                                                                    rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Byte_size
+:Byte_size rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Data_Asset ;
+           rdfs:range xsd:integer ;
+           rdfs:comment "Size of the data asset"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                       rdfs:range xsd:dateTimeStamp ;
-                                                                                       rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Category
+:Category rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Data_Service ;
+          rdfs:comment """Category is a tag reporting if the Service is free of charge or not, as defined in the SOW [AD-1].
+It can be:
+Free / Advanced"""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_productsNumber> rdf:type owl:DatatypeProperty ;
-                                                                                         rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> ;
-                                                                                         rdfs:range xsd:dateTimeStamp ;
-                                                                                         rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Checksum
+:Checksum rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Data_Asset ;
+          rdfs:comment "Checksum of the data asset"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_storage> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ClearingHouse_curator
+:ClearingHouse_curator rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Clearing_House ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Participant responsible for technical maintenance of the Ecosystem Component."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_system> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                                 rdfs:range xsd:dateTimeStamp ;
-                                                                                 rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ClearingHouse_maintainer
+:ClearingHouse_maintainer rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Clearing_House ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Participant responsible for the correctness of the content offered by the Ecosystem Component."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedCores> rdf:type owl:DatatypeProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> ;
-                                                                                    rdfs:range xsd:dateTimeStamp ;
-                                                                                    rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Component_Certification_Level
+:Component_Certification_Level rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Component_Certification ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "Certification issued for the given Infrastructure Component"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedInstances> rdf:type owl:DatatypeProperty ;
-                                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> ;
-                                                                                        rdfs:range xsd:dateTimeStamp ;
-                                                                                        rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Configuration_model_log_level
+:Configuration_model_log_level rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :Connector ;
+                               rdfs:range xsd:string ;
+                               rdfs:comment "Debug, minimal logging, no logging"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#created_at_usedRam> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record creation date"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ConformsTo
+:ConformsTo rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Resource ;
+            rdfs:range xsd:string ;
+            rdfs:comment "An established standard to which the described item conforms."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#creation_date> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                             rdfs:range xsd:dateTimeStamp ;
-                                                                             rdfs:comment "Time step of availability in data source"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Deploy_Mode
+:Connector_Deploy_Mode rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Connector ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment """Deploy mode of a Connector.
+Production or test."""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_Service> rdf:type owl:DatatypeProperty ;
-                                                                                   rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> ;
-                                                                                   rdfs:range xsd:string ;
-                                                                                   rdfs:comment "Free text describing service components details and speifics"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID
+:Connector_ID rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Connector ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Identifier of the Connector"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_system> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                                  rdfs:range xsd:string ;
-                                                                                  rdfs:comment "Free text describing events details and specifics"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Status
+:Connector_Status rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Connector ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Offline, online, badly configured"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#description_systemEvent> rdf:type owl:DatatypeProperty ;
-                                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                                       rdfs:range xsd:string ;
-                                                                                       rdfs:comment "Free text describing event details"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_curator
+:Connector_curator rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Connector ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Descriptive information on the Participant responsible for technical maintenance of the Ecosystem Component."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_event> rdf:type owl:DatatypeProperty ;
-                                                                              rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                              rdfs:range <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> ;
-                                                                              rdfs:comment "Event duration (if exists) in seconds"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_description
+:Connector_description rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Connector ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "References to Connector which is deployed / maintained in the Configuration model"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                     rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                     rdfs:range <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> ;
-                                                                                     rdfs:comment "Event duration (if it exists) in ms"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_maintainer
+:Connector_maintainer rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Connector ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Descriptive information on the Participant responsible for the correctness of the content offered by the Ecosystem Component."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#duration_system> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                               rdfs:range <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#interval> ;
-                                                                               rdfs:comment "Duration of the event"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraint_identifier
+:Constraint_identifier rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Constraint ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Identifier of the Constraints"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#end_date> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ,
-                                                                                    <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                        rdfs:range xsd:dateTimeStamp ;
-                                                                        rdfs:comment "Event End Date"@en ,
-                                                                                     "Event end date (always available)"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraints
+:Constraints rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Transaction_Data ;
+             rdfs:comment "Descriptive information on the (potential) constraints associated to the access interface"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_end_date> rdf:type owl:DatatypeProperty ;
-                                                                              rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                              rdfs:range xsd:dateTimeStamp ;
-                                                                              rdfs:comment "Event end date (not always available)"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ContactPoint
+:ContactPoint rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Service_Catalogue ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Relevant contact information for the cataloged item"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_start_date> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                rdfs:range xsd:dateTimeStamp ;
-                                                                                rdfs:comment "Event start date (always available)"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Content_standard
+:Content_standard rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Digital_Content ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:comment "IRI containing document, which defines the standard for the given Digital Content. The content is assumed to conform to that Standard."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_event> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                                rdfs:range xsd:string ;
-                                                                                rdfs:comment "Type of the event"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Context
+:Context rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Participant ;
+         rdfs:range xsd:string ;
+         rdfs:comment """Legal,
+Commercial,
+Technical,
+Business,
+Federative"""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event_type_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                       rdfs:range xsd:string ;
-                                                                                       rdfs:comment """Type of event:
-• Product retrieving (from data source)
-• Product storing (into OVH containers)
-• Product ingestion (into Solr catalogue and Cassandra DB)
-• Product deletion (from the full system)
-• Product requesting (by the users, in Cloud Archive context)
-• Product restoring (from the Cloud Archive)
-• Product view processing
-• Product download (by the users)"""@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ContractOfferRef
+:ContractOfferRef rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Resource ;
+                  rdfs:range xsd:string ;
+                  <http://purl.org/dc/elements/1.1/contributor> "Reference to a Contract Offer defining the authorized use of the Resource."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_Product> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                 rdfs:range xsd:string ;
-                                                                                 rdfs:comment "Geographical area related to the product"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_action
+:Contract_action rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Contract ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Descriptive information on the action"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_sentinel> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                                  rdfs:range xsd:string ;
-                                                                                  rdfs:comment "Gepgraphical area related to the product"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_date
+:Contract_date rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Contract ;
+               rdfs:range xsd:dateTimeStamp ;
+               rdfs:comment "Absolute datetime of signing the Contract"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#footprint_wkt> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                             rdfs:range xsd:string ;
-                                                                             rdfs:comment "Geographical area related to the product"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_end
+:Contract_end rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Contract ;
+              rdfs:range xsd:dateTimeStamp ;
+              rdfs:comment "Absolute datetime the Contract is requested, offered or expected to end. If omitted, the contract has to be explicitly terminated by any of the parties."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Dias> rdf:type owl:DatatypeProperty ;
-                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> ;
-                                                                       rdfs:range xsd:nonNegativeInteger ;
-                                                                       rdfs:comment "DIAS download identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_start
+:Contract_start rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Contract ;
+                rdfs:range xsd:dateTimeStamp .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Event> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                        rdfs:range xsd:nonNegativeInteger ;
-                                                                        rdfs:comment "Product event identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_target
+:Contract_target rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Contract ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Descriptive information on resource subject of the Rule"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Product> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                          rdfs:range xsd:nonNegativeInteger ;
-                                                                          rdfs:comment "Product identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Cost_Centre
+:Cost_Centre rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Data_Service ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Business unit that is only responsible for the costs that incurs"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_Service> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> ;
-                                                                          rdfs:range xsd:nonNegativeInteger ;
-                                                                          rdfs:comment "Service component identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Cost_model
+:Cost_model rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Transaction_Data ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Description of the cost model approach applied to the available interface"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_User> rdf:type owl:DatatypeProperty ;
-                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> ;
-                                                                       rdfs:range xsd:nonNegativeInteger ;
-                                                                       rdfs:comment "User identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Country
+:Country rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Nationality of the person"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_dashboard> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> ;
-                                                                            rdfs:range xsd:nonNegativeInteger ;
-                                                                            rdfs:comment "DIAS download identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataAppVersion
+:DataAppVersion rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Data_App ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "Version of the installed application"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_product_event> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                rdfs:range xsd:long ;
-                                                                                rdfs:comment "Product event identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID
+:DataApp_Connector_ID rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Data_App ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Identifier of the Connector where the Data App is deployed"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_productsNumber> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> ;
-                                                                                 rdfs:range xsd:nonNegativeInteger ;
-                                                                                 rdfs:comment "DIAS download identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Functionality
+:Data_App_Functionality rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Data_App ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Description of the capability of a Data App to handle a type of data in a particular way"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_storage> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> ;
-                                                                          rdfs:range xsd:nonNegativeInteger ;
-                                                                          rdfs:comment "DIAS download identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL
+:Data_Service_URL rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Data_Service ;
+                  rdfs:range xsd:anyURI ;
+                  rdfs:comment "URL of the Data Service webpage that replaces the Internet Protocol (IP) address."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedCores> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> ;
-                                                                            rdfs:range xsd:nonNegativeInteger ;
-                                                                            rdfs:comment "DIAS download identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Deployment_option
+:Deployment_option rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Data_App ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment """On-premises installation: A Service Provider deploys the Data App inside of an on-premises CDS Connector on behalf of the Data Provider. This is assumed to be the default case.
 
+On-premises injection: A Service Provider deploys the Data App inside of an on-premises CDS Connector on behalf of the Data Consumer (asking for customized data preprocessing, according to contract specifications; e.g., edge computing).  
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedInstances> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> ;
-                                                                                rdfs:range xsd:nonNegativeInteger ;
-                                                                                rdfs:comment "DIAS download identifier"@en .
+Remote integration: A Service Provider integrates a remote Data App service on behalf of the Data Provider. In this scenario, the Data App is hosted by different participants and used remotely."""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#id_usedRam> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> ;
-                                                                          rdfs:range xsd:nonNegativeInteger ;
-                                                                          rdfs:comment "DIAS download identifier"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#EmailAddress
+:EmailAddress rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Person ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Email Address of the Person"@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#instrument> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint_documentation
+:Endpoint_documentation rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Endpoint ;
+                        rdfs:range xsd:anyURI ;
+                        rdfs:comment "IRI reference to a documentation of the endpoint, e.g., reference to an OpenAPI-based documentation."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint_information
+:Endpoint_information rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Endpoint ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Human-readable information and description of the endpoint."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Evaluation_facility
+:Evaluation_facility rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Certification ;
+                     rdfs:comment "Evaluation Facility that performed and issued given Certification."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Function
+:Function rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Participant ;
+          rdfs:range xsd:string ;
+          rdfs:comment """Legally owns data and offers this for consumption 
+
+Provides data on the behalf of an owner and may be the Customer of a Service Provider as well.
+
+Directly manages and operates resources aimed at data distribution. 
+
+Single user, organization or industry which consumes data to make own business and maintain a business relationship with the Service Provider. Service Consumers can also be Service Providers if they provide other consumers with a service.
+
+Users belonging to a Federation, that have access to free services thanks to credentials managed by the Federated Identity Providers"""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Homepage
+:Homepage rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Service_Catalogue ;
+          rdfs:range xsd:anyURI ;
+          rdfs:comment "A homepage of the Service Catalogue."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended
+:IF_recommended rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Transaction_Data ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Indication (ID) on the recommended access interface"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier
+:Identifier rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identity
+:Identity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Participant ;
+          rdfs:comment """Every participant is given a unique identity by the Identity Provider. 
+
+By default, and in accordance with linked-data principles, a participant can unambiguously be identified by a dereferencable HTTPS URL, which references to a live metadata document describing the participant. This identity is confirmed by a certificate."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IdentityProvider_curator
+:IdentityProvider_curator rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Identity_Provider ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Participant responsible for technical maintenance of the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IdentityProvider_maintainer
+:IdentityProvider_maintainer rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :Identity_Provider ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "Participant responsible for the correctness of the content offered by the Ecosystem Component"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version
+:Inbound_model_version rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Ecosystem_Component ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Information Model version that the Ecosystem Component is capable of reading/processing."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_topic
+:Inbound_topic rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Endpoint ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Relative path used for inbound communication via this endpoint, i.e. input messages and faults only."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ItemModificationDate
+:ItemModificationDate rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Service_Catalogue ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Most recent date on which the item was changed, updated or modified."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ItemPublicationDate
+:ItemPublicationDate rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Service_Catalogue ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "Date of formal issuance (e.g., publication) of the item."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Keyword
+:Keyword rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Digital_Content ;
+         rdfs:range xsd:string ;
+         rdfs:comment """Controlled keywords that describe the nature, purpose, or use of the content.
+Possible keyword:
+numeric, text, still image, geospatial, audio, video, software, interactive resource, 3D, other.
+Possible examples: numeric, text, still image, geospatial, audio, video, software, interactive resource,  3D, other."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Language
+:Language rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Resource ;
+          rdfs:range xsd:string ;
+          <http://purl.org/dc/elements/1.1/contributor> "Language of the item."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Last_valid_date
+:Last_valid_date rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Certification ;
+                 rdfs:range xsd:dateTimeStamp ;
+                 rdfs:comment "Last date the given Certification is considered valid"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#License
+:License rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Resource ;
+         rdfs:range xsd:anyURI ;
+         <http://purl.org/dc/elements/1.1/contributor> "Reference to a legal document under which the resource is made available"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#LogicalConstraint_identifier
+:LogicalConstraint_identifier rdf:type owl:DatatypeProperty ;
+                              rdfs:domain :Logical_Constraint ;
+                              rdfs:range xsd:string ;
+                              rdfs:comment "Identifier of the Logical Constraint"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Membership_end
+:Membership_end rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Participant_Certification ;
+                rdfs:range xsd:dateTimeStamp ;
+                rdfs:comment "End of the Participant’s CDS Membership."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ModificationDate
+:ModificationDate rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Data_Asset ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Most recent date on which the data asset was changed, updated or modified."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Person ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Name of the Person"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Objective
+:Objective rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Participant ;
+           rdfs:range xsd:string ;
+           rdfs:comment """Data sovereignty,
+Data commissioning or
+Decommissioning,
+Data distribution,
+Data exploitation,
+Data usage policies,
+Collaboration"""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Offer_assigner
+:Offer_assigner rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Contract_offer ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Descriptive information on the assigner Participant. Mandatory"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Operand
+:Operand rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Logical_Constraint ;
+         rdfs:range xsd:string ;
+         rdfs:comment """Operand is an abstract property for a logical relationship.
+Possible values:
+AND: The relation is satisfied when all of the Constraints are satisfied.
+ANDSEQUENCE: The relation is satisfied when each of the Constraints are satisfied in the order specified.
+OR: The relation is satisfied when at least one of the Constraints is satisfied.
+XONE (only one): The relation is satisfied when only one, and not more, of the Constaints is satisfied"""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Outbound_model_version
+:Outbound_model_version rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Ecosystem_Component ;
+                        rdfs:range xsd:string ;
+                        rdfs:comment "Information Model version being produced by the Ecosystem Component"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Outbound_topic
+:Outbound_topic rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Endpoint ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Relative path used for outbound communication via this endpoint, i.e. output messages and faults only."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant_Component_Certification_Level
+:Participant_Component_Certification_Level rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain :Participant_Certification ;
+                                           rdfs:range xsd:string ;
+                                           rdfs:comment "Certification issued for the given Participant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Payment_plan
+:Payment_plan rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Wallet ;
+              rdfs:range xsd:string ;
+              rdfs:comment "Payment plan associated to a Participant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#PostalAddress
+:PostalAddress rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Person ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Physical address of the item"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Pricing_strategy
+:Pricing_strategy rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Resource ;
+                  rdfs:range xsd:string ;
+                  <http://purl.org/dc/elements/1.1/contributor> """The Free strategy does not charge the usage of resources. 
+The Freemium strategy exposes a limited parts (or capabilities) of the resource at no cost, while additional parts are charged Pay-per-Use, or based on a Flat Rate. 
+The Pay-per-Use strategy relies on a particular metrics (volume, access count, download) to define a charged instance of usage.
+The Flat Rate strategy charges usage per quantitative slot (time, volume, credit), optionally associated with a tiered cost model according to the configuration of the retrieved resource."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#PublicationDate
+:PublicationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Data_Asset ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Date of formal issuance (e.g., publication) of the data asset."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Request_assignee
+:Request_assignee rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Contract_request ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Descriptive information on the assignee Participant. Mandatory"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Request_assigner
+:Request_assigner rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Contract_request ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Descriptive information on the assigner Participant. Optional (if know)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource_Content_Provenance
+:Resource_Content_Provenance rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :Resource ;
+                             rdfs:range xsd:string ;
+                             <http://purl.org/dc/elements/1.1/contributor> "Origin of the Content."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource_Partecipant_Provenance
+:Resource_Partecipant_Provenance rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Resource ;
+                                 rdfs:range xsd:string ;
+                                 <http://purl.org/dc/elements/1.1/contributor> "Participants that are responsible of trace the Content Provenance"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rights
+:Rights rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Resource ;
+        rdfs:range xsd:string ;
+        <http://purl.org/dc/elements/1.1/contributor> "A statement that concerns all rights not addressed with license or accessRights, such as copyright statements."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Role
+:Role rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Participant ;
+      rdfs:comment """Service Provider,
+Service Consumer,
+Data Owner,
+Data Provider,
+Federator,
+Federation user"""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule_action
+:Rule_action rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Rule ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Descriptive information on the action"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule_assignee
+:Rule_assignee rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Rule ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Descriptive information on the assignee Participant."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule_assigner
+:Rule_assigner rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Rule ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Descriptive information on the assigner Participant."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule_target
+:Rule_target rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Rule ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Descriptive information on resource subject of the Rule"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ServiceCatalogue_curator
+:ServiceCatalogue_curator rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Service_Catalogue ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "Participant responsible for technical maintenance of the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ServiceCatalogue_maintainer
+:ServiceCatalogue_maintainer rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :Service_Catalogue ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "Participant responsible for the correctness of the content offered by the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Service_Name
+:Service_Name rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Data_Service ;
+              rdfs:range xsd:string ;
+              rdfs:comment """Name of the Service.
+"""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#SiteAddress
+:SiteAddress rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Participant ;
+             rdfs:range xsd:string ;
+             rdfs:comment """Address of an office or other premise at which the organization is located.
+It is particularly important in cases in which specific rules (e.g., national law) apply, affecting, for example, the data usage control policy."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Surname
+:Surname rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Surname of the Person"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Unique_identifier
+:Unique_identifier rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Contract ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Unambiguous identifier to identify the Contract"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Volume_transf
+:Volume_transf rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Transaction_Data ;
+               rdfs:range xsd:float ;
+               rdfs:comment "Indication of the data transfer volumes, as percentage with respect to the total user level data volume"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#WalletIdentifier
+:WalletIdentifier rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Wallet ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Unique identifier of a Participant’s wallet"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Wallet_curator
+:Wallet_curator rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Wallet ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Participant responsible for technical maintenance of the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Wallet_maintainer
+:Wallet_maintainer rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Wallet ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Participant responsible for the correctness of the content offered by the Ecosystem Component."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#action
+:action rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Transaction_Data ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Descriptive information on the performed action"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#actionPerformer
+:actionPerformer rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Action ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Participant performer of the Action"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#actionStatus
+:actionStatus rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Action ;
+              rdfs:range xsd:string ;
+              rdfs:comment """Indicates the current disposition of the Action.
+In-progress, completed, failed, potential."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#authInfo
+:authInfo rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Connector ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Information of the authentication server used by the Connector"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID
+:certificationID rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Certification ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Identifier of the Certification"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#constraint
+:constraint rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Rule ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Descriptive information on the Constraint applied to the Rule."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#corporateEmailAddress
+:corporateEmailAddress rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Participant ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Email Address of the Participant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#corporateHomepage
+:corporateHomepage rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Participant ;
+                   rdfs:range xsd:anyURI ;
+                   rdfs:comment "Homepage of the Participant"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#datatype
+:datatype rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Constraint ;
+          rdfs:comment "The datatype of the value of the rightOperand or rightOperandReference of a Constraint."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Resource ;
+             rdfs:range xsd:string ;
+             rdfs:comment "A free-text account of the item"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#endTime
+:endTime rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Action ;
+         rdfs:range xsd:dateTime ;
+         rdfs:comment "The end time of an action."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#error
+:error rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Action ;
+       rdfs:comment "Descriptive information on the cause of the failure (optional, for failed actions)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#format
+:format rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Resource ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Resource format."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#identifier_Resource
+:identifier_Resource rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Resource ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "A unique identifier of the item."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#indexed_metadatum
+:indexed_metadatum rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Broker ;
+                   rdfs:comment "Metadatum indexed in the Broker"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#infoDataService
+:infoDataService rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Transaction_Data ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Descriptive information on the data service that allowed the action"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#leftOperand
+:leftOperand rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Constraint ;
+             rdfs:range xsd:string ;
+             rdfs:comment """The left operand in a constraint expression. The leftOperand instances must clearly be defined to indicate the semantics of the Constraint, and may declare how the value for comparison has to be retrieved or generated.
+Example: Absolute geo-spatial position, count, current event, delay, elapsed time, endpoint, execution system, path to attribute, payAmount, payment, policy evaluation time, purpose, quantity, recurrence rate, security level, state, user."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#name_Resource
+:name_Resource rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Resource ;
+               rdfs:range xsd:string ;
+               rdfs:comment "A name given to the item."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#operator
+:operator rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Constraint ;
+          rdfs:range xsd:string ;
+          rdfs:comment """The operator instances identify the relational operation between the left and right operands.
+Example: after, before, contains, covered by, covers, defines as, disjoint, during, equals, finished by, finishes, greater than, greater than or equals, has Member, has same duration, has site, has state, inside, inside network, interval equals, is same as, less than or equals, longer, longer or equals, matches, meet, meets, memberOf, met by, not equals, overlap, overlapped by, overlaps, shorter, shorter or equals, started by, starts, string contains, string equals, string is contained in."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#organization
+:organization rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Person ;
+              rdfs:range xsd:string ;
+              rdfs:comment "An organization that this person is affiliated with."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#path
+:path rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Endpoint ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Relative path, topic or queue at which the content is published by the related host."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#phoneNumber
+:phoneNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Person ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Phone number of the Person"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#rightOperand
+:rightOperand rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Constraint ;
+              rdfs:range rdfs:Literal ;
+              rdfs:comment "The rightOperand is the value of the Constraint that is to be compared to the leftOperand."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#rightOperandReference
+:rightOperandReference rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Constraint ;
+                       rdfs:range rdfs:Literal ;
+                       rdfs:comment "A reference to a web resource providing the value for the right operand of a Constraint."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#rule
+:rule rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Contract ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Descriptive information on Rule represented by the Contract Offer (permission, prohibition, obligation)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Action ;
+           rdfs:range xsd:dateTime ;
+           rdfs:comment "The start time of an action."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Constraint ;
+        rdfs:comment "The status provides a value generated from the leftOperand action that must be used in the comparison expression"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#target_EntryPoint
+:target_EntryPoint rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Action ;
+                   rdfs:comment "An entrypoint used to execute the action."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#taxonomy
+:taxonomy rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Data_App ;
+          rdfs:range xsd:string ;
+          rdfs:comment """Data Providing App,
+and/or
+Data Processing App,
+and/or
+Data Consuming App."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#transactionUser
+:transactionUser rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Transaction_Data ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Descriptive information on the Participant responsible of the transaction"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#unit
+:unit rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Constraint ;
+      rdfs:comment "unit indicates the unit value of the rightOperand/Reference."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Managed_Entity ;
+         rdfs:range xsd:string ;
+         rdfs:comment """Version identified of the Managed Entity.
+"""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#walletAmount
+:walletAmount rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Wallet ;
+              rdfs:range xsd:float ;
+              rdfs:comment "Amount of the wallet, in euros"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s> rdf:type owl:DatatypeProperty ;
+                                                                          rdfs:domain :Rule ;
                                                                           rdfs:range xsd:string ;
-                                                                          rdfs:comment "Sensing product instument"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#metadata> rdf:type owl:DatatypeProperty ;
-                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                        rdfs:range xsd:string ;
-                                                                        rdfs:comment "Further product metadata (only if needed)"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mission_Product> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                               rdfs:range xsd:string ;
-                                                                               rdfs:comment "Mission of provenience of the product"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#mode> rdf:type owl:DatatypeProperty ;
-                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                    rdfs:range xsd:string ;
-                                                                    rdfs:comment "Sensing product mode"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Product> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                            rdfs:range xsd:string ;
-                                                                            rdfs:comment "Product name"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#name_Service> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> ;
-                                                                            rdfs:range xsd:string ;
-                                                                            rdfs:comment "Name of the software component"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_id> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                          rdfs:range xsd:integer ;
-                                                                          rdfs:comment "Product ID"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#recovery_action> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ,
-                                                                                           <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                               rdfs:range xsd:string ;
-                                                                               rdfs:comment "Internal integrity check"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#registration_date> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> ;
-                                                                                 rdfs:range xsd:dateTimeStamp ;
-                                                                                 rdfs:comment "User registration date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#reprocessed> rdf:type owl:DatatypeProperty ;
-                                                                           rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                           rdfs:range xsd:boolean ;
-                                                                           rdfs:comment "\"True\" if it is a reprocessed product"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#satellite> rdf:type owl:DatatypeProperty ;
-                                                                         rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                         rdfs:range xsd:string ;
-                                                                         rdfs:comment "Platform name"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_Product> rdf:type owl:DatatypeProperty ;
-                                                                                     rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                     rdfs:range xsd:dateTimeStamp ;
-                                                                                     rdfs:comment "Sensing start time step"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_start_sentinel> rdf:type owl:DatatypeProperty ;
-                                                                                      rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                                      rdfs:range xsd:dateTimeStamp ;
-                                                                                      rdfs:comment "Sensing start time step"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_Product> rdf:type owl:DatatypeProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                    rdfs:range xsd:dateTimeStamp ;
-                                                                                    rdfs:comment "Sensing stop time step"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sensing_stop_sentinel> rdf:type owl:DatatypeProperty ;
-                                                                                     rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                                     rdfs:range xsd:dateTimeStamp ;
-                                                                                     rdfs:comment "Sensing stop time step"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                                 rdfs:range xsd:integer ;
-                                                                                                 rdfs:comment "Service Component ID. In case of retrieving, it is the Service Component."@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_systemEvent> rdf:type owl:DatatypeProperty ;
-                                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                                                rdfs:range xsd:integer ;
-                                                                                                rdfs:comment "Identifier of Service Component affected by the event."@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component_id_userEvent> rdf:type owl:DatatypeProperty ;
-                                                                                              rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> ;
-                                                                                              rdfs:range xsd:long ;
-                                                                                              rdfs:comment "Service Component ID"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                 rdfs:range xsd:long ;
-                                                                                 rdfs:comment "Product size related to the event (bytes)"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#size_sentinel> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                             rdfs:range xsd:long ;
-                                                                             rdfs:comment "Product size in Bytes"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#start_date> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ,
-                                                                                      <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                          rdfs:range xsd:dateTimeStamp ;
-                                                                          rdfs:comment "Event Start Date"@en ,
-                                                                                       "Event start date (not always available)"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#status> rdf:type owl:DatatypeProperty ;
-                                                                      rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                      rdfs:range xsd:string ;
-                                                                      rdfs:comment "Status of completeness of the data flow step"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_Product> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                  rdfs:range xsd:string ;
-                                                                                  rdfs:comment "Product timeliness"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timeliness_sentinel> rdf:type owl:DatatypeProperty ;
-                                                                                   rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                                   rdfs:range xsd:string ;
-                                                                                   rdfs:comment "Product timeliness"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_Dias> rdf:type owl:DatatypeProperty ;
-                                                                              rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> ;
-                                                                              rdfs:range xsd:dateTimeStamp ;
-                                                                              rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_dashboard> rdf:type owl:DatatypeProperty ;
-                                                                                   rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> ;
-                                                                                   rdfs:range xsd:dateTimeStamp ;
-                                                                                   rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_productsNumber> rdf:type owl:DatatypeProperty ;
-                                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> ;
-                                                                                        rdfs:range xsd:dateTimeStamp ;
-                                                                                        rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_storage> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> ;
-                                                                                 rdfs:range xsd:dateTimeStamp ;
-                                                                                 rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedCores> rdf:type owl:DatatypeProperty ;
-                                                                                   rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> ;
-                                                                                   rdfs:range xsd:dateTimeStamp ;
-                                                                                   rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timestamp_usedInstances> rdf:type owl:DatatypeProperty ;
-                                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> ;
-                                                                                       rdfs:range xsd:dateTimeStamp ;
-                                                                                       rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#timstamp_usedRam> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> ;
-                                                                                rdfs:range xsd:dateTimeStamp ;
-                                                                                rdfs:comment "Time when the measurement has been recorded"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Product> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                            rdfs:range xsd:string ;
-                                                                            rdfs:comment "Product type or dataset"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Sentinel> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                             rdfs:range xsd:string ;
-                                                                             rdfs:comment "Product type"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_Service> rdf:type owl:DatatypeProperty ;
-                                                                            rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> ;
-                                                                            rdfs:range xsd:string ;
-                                                                            rdfs:comment "Service component macro-area (e.g., “Download Manager” for ENS Writer and DM_<mission>)"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#type_system> rdf:type owl:DatatypeProperty ;
-                                                                           rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                           rdfs:range xsd:string ;
-                                                                           rdfs:comment """Type of Event:
-• Service downtime
-• TTO
-• Infrastructure maintenance
-• Infrastructure downtime
-Please note that this parameter can include also other event categories."""@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Dias> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> ;
-                                                                               rdfs:range xsd:dateTimeStamp ;
-                                                                               rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Event> rdf:type owl:DatatypeProperty ;
-                                                                                rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                                rdfs:range xsd:dateTimeStamp ;
-                                                                                rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Product> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_Service> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_User> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> ;
-                                                                               rdfs:range xsd:dateTimeStamp ;
-                                                                               rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_dashboard> rdf:type owl:DatatypeProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> ;
-                                                                                    rdfs:range xsd:dateTimeStamp ;
-                                                                                    rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                       rdfs:range xsd:dateTimeStamp ;
-                                                                                       rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_productsNumber> rdf:type owl:DatatypeProperty ;
-                                                                                         rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> ;
-                                                                                         rdfs:range xsd:dateTimeStamp ;
-                                                                                         rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_storage> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_system> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> ;
-                                                                                 rdfs:range xsd:dateTimeStamp ;
-                                                                                 rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedCores> rdf:type owl:DatatypeProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> ;
-                                                                                    rdfs:range xsd:dateTimeStamp ;
-                                                                                    rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedInstances> rdf:type owl:DatatypeProperty ;
-                                                                                        rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> ;
-                                                                                        rdfs:range xsd:dateTimeStamp ;
-                                                                                        rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#updated_at_usedRam> rdf:type owl:DatatypeProperty ;
-                                                                                  rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> ;
-                                                                                  rdfs:range xsd:dateTimeStamp ;
-                                                                                  rdfs:comment "Event record last edit date"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_id> rdf:type owl:DatatypeProperty ;
-                                                                       rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> ;
-                                                                       rdfs:range xsd:long ;
-                                                                       rdfs:comment "User ID"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                     rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                     rdfs:range xsd:string ;
-                                                                                     rdfs:comment "Username of the user who perform a download or a request to the Cloud Archive"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#username_user> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> ;
-                                                                             rdfs:range xsd:string ;
-                                                                             rdfs:comment "Username"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_productEvent> rdf:type owl:DatatypeProperty ;
-                                                                                 rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> ;
-                                                                                 rdfs:range xsd:string ;
-                                                                                 rdfs:comment "String that identifies the product (not always available)"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#uuid_sentinel> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> ;
-                                                                             rdfs:range xsd:string ;
-                                                                             rdfs:comment "Product uuid"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_Dias> rdf:type owl:DatatypeProperty ;
-                                                                          rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> ;
-                                                                          rdfs:range xsd:long ;
-                                                                          rdfs:comment "Total volume of downloads from OVH storage, starting from the last recorded measurement"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_dashboard> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> ;
-                                                                               rdfs:range xsd:long ;
-                                                                               rdfs:comment "Total number of users currently registered in ONDA web portal"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_productsNumber> rdf:type owl:DatatypeProperty ;
-                                                                                    rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> ;
-                                                                                    rdfs:range xsd:long ;
-                                                                                    rdfs:comment "Total number of products currently present in ONDA catalogue"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_storage> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> ;
-                                                                             rdfs:range xsd:long ;
-                                                                             rdfs:comment "Total volume of products currently present in OVH storage"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedCores> rdf:type owl:DatatypeProperty ;
-                                                                               rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> ;
-                                                                               rdfs:range xsd:long ;
-                                                                               rdfs:comment "Total number of cores used in OVH storage system"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedInstances> rdf:type owl:DatatypeProperty ;
-                                                                                   rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> ;
-                                                                                   rdfs:range xsd:long ;
-                                                                                   rdfs:comment "Total number of instances used in OVH storage system"@en .
-
-
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#value_usedRam> rdf:type owl:DatatypeProperty ;
-                                                                             rdfs:domain <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> ;
-                                                                             rdfs:range xsd:long ;
-                                                                             rdfs:comment "Total number of RAM used in OVH storage system"@en .
+                                                                          rdfs:comment "violation (or unmet) relationship between Rules."@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dashboard_active_users> rdf:type owl:Class ;
-                                                                                      rdfs:comment "The dashboard_active_users table in the DWH contains the measurements of the total number of users currently registered in the ONDA web portal."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint
+:Abstract_Constraint rdf:type owl:Class ;
+                     rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
+                     rdfs:comment "The upper class of Constraints and LogicalConstraints is solely intended as a placeholder at the range of CDS Properties."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#dias_download> rdf:type owl:Class ;
-                                                                             rdfs:comment "The DIAS_Download table in the DWH contains the measurements of the total number of bytes downloaded from the OVH storage in a specified range of time."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
+        rdfs:comment "An operation that can be exercised on a Resource."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> rdf:type owl:Class ;
-                                                                     rdfs:comment "The Event table contains the basic information that characterize each event, regardless of the entities involved (Product, User, Service Component)"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Broker
+:Broker rdf:type owl:Class ;
+        rdfs:subClassOf :Connector ;
+        rdfs:comment """Broker holding an index of published data endpoints.
+The brokers provide services for real-time data search and discovery, funded on a common and shared information model of data assets.
+The Metadata Broker Service Provider is an intermediary that stores and manages information about the data and data sources available in the ecosystem. Its primary task is receiving and providing metadata, via a dedicated and standard interface (e.g., REST). It provides the required metadata for the consumer to connect to a service provider of data assets."""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> rdf:type owl:Class ;
-                                                                       rdfs:comment "The Product table in the DWH contains the list of relevant information for each product."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification
+:Certification rdf:type owl:Class ;
+               rdfs:subClassOf :Managed_Entity ,
+                               <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-> ;
+               rdfs:comment "Abstract certification of compliance according to given Certification Scheme."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product_event> rdf:type owl:Class ;
-                                                                             rdfs:subClassOf <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                             rdfs:comment "The Product_event table in the DWH contains the description of all download, publication, deletion and retrieving events. Not all the fields are available for all the events."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Clearing_House
+:Clearing_House rdf:type owl:Class ;
+                rdfs:subClassOf :Ecosystem_Component ;
+                rdfs:comment "The Clearing House provides clearing and settlement services B2B interactions within the Copernicus Data Space."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#products_number> rdf:type owl:Class ;
-                                                                               rdfs:comment "The products_number table in the DWH contains the measurements of the total number of products currently present in the ONDA catalogue."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Component_Certification
+:Component_Certification rdf:type owl:Class ;
+                         rdfs:subClassOf :Certification ;
+                         rdfs:comment "Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#sentinel_product> rdf:type owl:Class ;
-                                                                                rdfs:subClassOf <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#product> ;
-                                                                                rdfs:comment "The Sentinel Product table is a \"child\" of the product table, inheriting its attributes and properties. In contains the specific information proper of each Copernicus Sentinel product"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector
+:Connector rdf:type owl:Class ;
+           rdfs:subClassOf :Ecosystem_Component ;
+           rdfs:comment "The Connector is communication server providing and consuming data by means of Data Apps via a number of resource Endpoints. There are different types of Connectors according to provided capabilities."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#service_component> rdf:type owl:Class ;
-                                                                                 rdfs:comment "The Service_component Table contains information about system components affected by all the tracked events, as well as the software components that perform the events."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Endpoint
+:Connector_Endpoint rdf:type owl:Class ;
+                    rdfs:subClassOf :Endpoint ;
+                    rdfs:comment "Connector-specific endpoint exposing Resources."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#storage_volume> rdf:type owl:Class ;
-                                                                              rdfs:comment "The storage_volume table in the DWH contains the measurements of the total volume (in bytes) of products present in the OVH storage."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraint
+:Constraint rdf:type owl:Class ;
+            rdfs:subClassOf :Abstract_Constraint ;
+            rdfs:comment "The class of Constraints that declare the conditions applicable to a rule."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#system_event> rdf:type owl:Class ;
-                                                                            rdfs:subClassOf <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                            rdfs:comment "The System_event table in the DWH contains the list of parameters that describe a system event (downtimes, TTOs, infrastructure, maintenance, etc)."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract
+:Contract rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
+          rdfs:comment "Abstract set of rules governing the usage of a Resource."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Cores> rdf:type owl:Class ;
-                                                                          rdfs:comment "The used_Cores table in the DWH contains the measurements of the total number of cores used in the OVH storage system."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_agreement
+:Contract_agreement rdf:type owl:Class ;
+                    rdfs:subClassOf :Contract ;
+                    rdfs:comment """Contract governing the actual usage of a Resource that has been agreed by all parties.
+It represents Rules that have been granted from assigner to assignee Participant. Typically used to grant the terms of the Rules between Participants.
+"""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Instances> rdf:type owl:Class ;
-                                                                              rdfs:comment "The used_Instances table in the DWH contains the measurements of the total number of instances used in the OVH storage system."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_offer
+:Contract_offer rdf:type owl:Class ;
+                rdfs:subClassOf :Contract ;
+                rdfs:comment """Contract issued by the Data Provider offering the usage of a Resource at particular conditions.
+
+It represents Rules that are being offered from an assigner Participant. It does not grant any Rules."""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#used_Ram> rdf:type owl:Class ;
-                                                                        rdfs:comment "The used_Ram table in the DWH contains the measurements of the total number of RAM used in the OVH storage system."@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_request
+:Contract_request rdf:type owl:Class ;
+                  rdfs:subClassOf :Contract ;
+                  rdfs:comment """Contract issued by the Data Consumer requesting the usage of a Resource at particular conditions. No privileges are granted to any Party. 
+
+It proposes a Rule over an Resource from an assignee."""@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user> rdf:type owl:Class ;
-                                                                    rdfs:comment "The User table contains the list of parameters corresponding to the users' info"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Endpoint
+:DataApp_Endpoint rdf:type owl:Class ;
+                  rdfs:subClassOf :Endpoint ;
+                  rdfs:comment "Description of endpoints a DataApp offers."@en .
 
 
-###  http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event
-<http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#user_event> rdf:type owl:Class ;
-                                                                          rdfs:subClassOf <http://www.semanticweb.org/utente/ontologies/2021/9/Sysma1.0#event> ;
-                                                                          rdfs:comment "The User Event table is a \"child\" of the Event table, inheriting its attributes and properties. It contains the specific information about all the events that involve the users' activities (download, orders, notifications...)"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App
+:Data_App rdf:type owl:Class ;
+          rdfs:subClassOf :Resource ;
+          rdfs:comment "Application - Concepts particular to Data Apps, beyond the scope of general resources, that are installed within the infrastructure in order to communicate or process data on behalf of participants of the Copernicus Data Space."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Asset
+:Data_App_Asset rdf:type owl:Class ;
+                rdfs:subClassOf :Data_App ;
+                rdfs:comment "A machine-interpretable Data Asset, such as a script file, algorithm, rule set, or another type of code, which execution relies on a particular runtime environment."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Plug-in
+:Data_App_Plug-in rdf:type owl:Class ;
+                  rdfs:subClassOf :Data_App ;
+                  rdfs:comment "An add-on of a Data App, adding new capabilities to it. The extension management process for selection, installation, and maintenance of such plugins has to be implemented by the respective Data App in accordance with the security policies of the Connector."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Asset
+:Data_Asset rdf:type owl:Class ;
+            rdfs:subClassOf :Resource ;
+            rdfs:comment """Textual documents, time series of sensor values, communication messages, archives of image files, or media streams. Data Assets are subject to forwarding, processing, or consumption.
+Content exposed for exchange via Data Endpoints according to a parametrized Data Service interface; Data Assets are expected to be focused, homogeneous, and consistent over time with regard to granularity, coverage, context, data structure, and conceptual classification."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service
+:Data_Service rdf:type owl:Class ;
+              rdfs:comment """A Data Service is an organized system that expose Resources to Participants. It implements a set of operations that allow consumers to access data and applications, and computing and storage resources.
+Data Services are all services users aim to use. The access to these services is protected and the relative usage is managed by the policy framework."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content
+:Digital_Content rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-> ;
+                 rdfs:comment "Any content of a particular type, that exists in the form of original data."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Duty
+:Duty rdf:type owl:Class ;
+      rdfs:subClassOf :Rule ;
+      rdfs:comment "The obligation to exercise an Action."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component
+:Ecosystem_Component rdf:type owl:Class ;
+                     rdfs:subClassOf :Managed_Entity ,
+                                     <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> ;
+                     rdfs:comment "The class of all ecosystem components of the Copernicus Data Space."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint
+:Endpoint rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> ;
+          rdfs:comment "Access point of data exchange, service interaction and service description."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identity_Provider
+:Identity_Provider rdf:type owl:Class ;
+                   rdfs:subClassOf :Ecosystem_Component ;
+                   rdfs:comment "It manages and validates the digital identity of CDS Participants"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Logical_Constraint
+:Logical_Constraint rdf:type owl:Class ;
+                    rdfs:subClassOf :Abstract_Constraint ;
+                    rdfs:comment "The class of Logical Constraints that restrict a Rule. A Logical Constraints is a collection of Constraints."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity
+:Managed_Entity rdf:type owl:Class ;
+                rdfs:comment "The class of mutable individuals."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:subClassOf :Managed_Entity ,
+                             <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> ;
+             rdfs:comment "Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant_Certification
+:Participant_Certification rdf:type owl:Class ;
+                           rdfs:subClassOf :Certification ;
+                           rdfs:comment "Process and result of certifying an interested party in order to become a certified member of the CDS."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Permission
+:Permission rdf:type owl:Class ;
+            rdfs:subClassOf :Rule ;
+            rdfs:comment "The ability to exercise an Action over an Resource. The Permission MAY also have the duty property that expresses an agreed Action that MUST be exercised (as a pre-condition to be granted the Permission)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> ;
+        rdfs:comment "The class of persons (people)."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Prohibition
+:Prohibition rdf:type owl:Class ;
+             rdfs:subClassOf :Rule ;
+             rdfs:comment "The inability to exercise an Action over a Resource."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource
+:Resource rdf:type owl:Class ;
+          rdfs:subClassOf :Digital_Content ;
+          rdfs:comment """Comment: an identifiable, valuable, digital (non-physical) commodity traded and exchanged among participants by means of the infrastructure. 
+Resource is a single digital content or a coherent set of digital contents. 
+The Resource?s content is exposed via defined Interfaces at various protocol Endpoints.
+
+Resources are the subject of a Rule ."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule
+:Rule rdf:type owl:Class ;
+      rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
+      rdfs:comment "Superclass of Permissions, Prohibitions and Duties."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Service_Catalogue
+:Service_Catalogue rdf:type owl:Class ;
+                   rdfs:subClassOf :Ecosystem_Component ;
+                   rdfs:comment """Catalogue of all applications, services, data and software available for re-use by Third-Party users.
+Note: A Web-based data catalogue is typically represented as a single instance of this class."""@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data
+:Transaction_Data rdf:type owl:Class ;
+                  rdfs:subClassOf :Resource ;
+                  rdfs:comment "Information relevant to transaction activities."@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Wallet
+:Wallet rdf:type owl:Class ;
+        rdfs:subClassOf :Ecosystem_Component ;
+        rdfs:comment "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-> rdf:type owl:Class .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
