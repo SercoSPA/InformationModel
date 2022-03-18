@@ -40,7 +40,7 @@
 		<br>
 		<center>
 			<br>
-			<img src="img\Figure3.png" style="padding: 8px; width:600px; height:190px; border: 2px solid #004d99">	
+			<img src="img\Figure3.png" style="padding: 8px; width:700px; height:190px; border: 2px solid #004d99">	
 			<p style="color:#004d99">Figure 3: Data properties relationships.</p>
 			<br>
 		</center>
@@ -65,7 +65,7 @@
 		<p>Facets of CDS Eco-System and their interactions are shown in Figure 4 and described hereafter.</p>
 		<center>
 			<br>
-			<img src="img\Figure4.PNG" style="padding: 8px; width:950px; height:450px; border: 2px solid #004d99">	
+			<img src="img\Figure4.png" style="padding: 8px; width:950px; height:450px; border: 2px solid #004d99">	
 			<p style="color:#004d99">Figure 4: CDS Facets</p>
 			<br>
 		</center>
@@ -88,7 +88,7 @@
 		</p>
 		<center>
 			<br>
-			<img src="img\Figure5.PNG" style="padding: 8px; width:800px; height:450px; border: 2px solid #004d99">	
+			<img src="img\Figure5.png" style="padding: 8px; width:800px; height:450px; border: 2px solid #004d99">	
 			<p style="color:#004d99">Figure 5: Participant Facet Classes</p>
 			<br>
 		</center>
@@ -122,7 +122,7 @@
 		</p>
 		<center>
 			<br>
-			<img src="img\Figure6.PNG" style="padding: 8px; width:800px; height:570px; border: 2px solid #004d99">	
+			<img src="img\Figure6.png" style="padding: 8px; width:800px; height:570px; border: 2px solid #004d99">	
 			<p style="color:#004d99">Figure 6: Resource Facet Classes</p>
 			<br>
 		</center>
@@ -159,7 +159,7 @@
 		</p>
 		<center>
 			<br>
-			<img src="img\Figure7.PNG" style="padding: 8px; width:800px; height:700px; border: 2px solid #004d99">	
+			<img src="img\Figure7.png" style="padding: 8px; width:800px; height:700px; border: 2px solid #004d99">	
 			<p style="color:#004d99">Figure 7: Infrastructure Facet Classes</p>
 			<br>
 		</center>
@@ -202,7 +202,7 @@
 		</p>
 		<center>
 			<br>
-			<img src="img\Figure8.PNG" style="padding: 8px; width:1000px; height:700px; border: 2px solid #004d99">	
+			<img src="img\Figure8.png" style="padding: 8px; width:1000px; height:700px; border: 2px solid #004d99">	
 			<p style="color:#004d99">Figure 8: Regulation Facet Classes</p>
 			<br>
 		</center>

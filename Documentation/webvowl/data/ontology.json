@@ -73,7 +73,7 @@
     "id" : "58",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "40",
+    "id" : "38",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "63",
@@ -247,7 +247,7 @@
     "id" : "22",
     "type" : "owl:Class"
   }, {
-    "id" : "269",
+    "id" : "270",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "290",
@@ -271,10 +271,10 @@
     "id" : "296",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "105",
+    "id" : "103",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "103",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
     "id" : "305",
@@ -397,10 +397,10 @@
     "id" : "337",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "38",
+    "id" : "40",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "171",
+    "id" : "169",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "340",
@@ -418,7 +418,7 @@
     "id" : "273",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "169",
+    "id" : "171",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "302",
@@ -448,7 +448,7 @@
     "id" : "325",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "207",
+    "id" : "206",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "234",
@@ -684,7 +684,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
+    "id" : "38",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1005,16 +1005,16 @@
         "IRI-based" : "next_policy"
       }
     }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-      "labels" : {
-        "IRI-based" : "aggregate_by_provider"
-      }
-    }, {
       "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read",
       "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
       "labels" : {
         "IRI-based" : "read"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider",
+      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
+      "labels" : {
+        "IRI-based" : "aggregate_by_provider"
       }
     }, {
       "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer",
@@ -1282,7 +1282,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "269",
+    "id" : "270",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1338,7 +1338,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "105",
+    "id" : "103",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1352,7 +1352,7 @@
     "comment" : {
       "en" : "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"
     },
-    "id" : "103",
+    "id" : "105",
     "superClasses" : [ "87" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -1565,7 +1565,7 @@
     "label" : {
       "IRI-based" : "Ecosystem_Component"
     },
-    "subClasses" : [ "116", "100", "2", "155", "103" ],
+    "subClasses" : [ "116", "100", "2", "155", "105" ],
     "comment" : {
       "en" : "The class of all ecosystem components of the Copernicus Data Space."
     },
@@ -1667,14 +1667,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
+    "id" : "40",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "171",
+    "id" : "169",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1716,7 +1716,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "169",
+    "id" : "171",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1801,7 +1801,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "207",
+    "id" : "206",
     "label" : {
       "IRI-based" : "string"
     }
@@ -2233,7 +2233,7 @@
     "id" : "205",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "206",
+    "id" : "207",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "208",
@@ -2347,7 +2347,7 @@
     "id" : "268",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "270",
+    "id" : "269",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "272",
@@ -2637,28 +2637,28 @@
     "attributes" : [ "datatype" ],
     "id" : "34"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#description",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "description"
-    },
-    "domain" : "26",
-    "comment" : {
-      "en" : "A free-text account of the item"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "37"
-  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#rule",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "40",
+    "range" : "38",
     "label" : {
       "IRI-based" : "rule"
     },
     "domain" : "18",
     "comment" : {
       "en" : "Descriptive information on Rule represented by the Contract Offer (permission, prohibition, obligation)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#description",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "A free-text account of the item"
     },
     "attributes" : [ "datatype" ],
     "id" : "39"
@@ -2977,28 +2977,28 @@
     "attributes" : [ "datatype" ],
     "id" : "99"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#walletAmount",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "walletAmount"
-    },
-    "domain" : "103",
-    "comment" : {
-      "en" : "Amount of the wallet, in euros"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "102"
-  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint_information",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "105",
+    "range" : "103",
     "label" : {
       "IRI-based" : "Endpoint_information"
     },
     "domain" : "33",
     "comment" : {
       "en" : "Human-readable information and description of the endpoint."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#walletAmount",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "walletAmount"
+    },
+    "domain" : "105",
+    "comment" : {
+      "en" : "Amount of the wallet, in euros"
     },
     "attributes" : [ "datatype" ],
     "id" : "104"
@@ -3244,7 +3244,7 @@
   }, {
     "range" : "41",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#startTime",
@@ -3275,12 +3275,12 @@
   }, {
     "range" : "41",
     "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "28",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "142"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ModificationDate",
@@ -3298,12 +3298,12 @@
   }, {
     "range" : "31",
     "domain" : "90",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "145"
   }, {
     "range" : "31",
     "domain" : "147",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "146"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#exposes",
@@ -3321,17 +3321,17 @@
   }, {
     "range" : "87",
     "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "149"
   }, {
     "range" : "87",
     "domain" : "100",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "150"
   }, {
     "range" : "87",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "151"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rights",
@@ -3354,12 +3354,12 @@
   }, {
     "range" : "87",
     "domain" : "155",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "154"
   }, {
     "range" : "87",
-    "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "105",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "156"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Status",
@@ -3381,7 +3381,7 @@
     "label" : {
       "IRI-based" : "has_wallet"
     },
-    "domain" : "103",
+    "domain" : "105",
     "comment" : {
       "en" : "Participant associated to a wallet which records his/her transaction and his/her wallet amount."
     },
@@ -3440,28 +3440,28 @@
     "attributes" : [ "datatype" ],
     "id" : "166"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#BirthPlace",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "169",
-    "label" : {
-      "IRI-based" : "BirthPlace"
-    },
-    "domain" : "65",
-    "comment" : {
-      "en" : "The place where the person was born"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "168"
-  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#authInfo",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "171",
+    "range" : "169",
     "label" : {
       "IRI-based" : "authInfo"
     },
     "domain" : "116",
     "comment" : {
       "en" : "Information of the authentication server used by the Connector"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#BirthPlace",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "BirthPlace"
+    },
+    "domain" : "65",
+    "comment" : {
+      "en" : "The place where the person was born"
     },
     "attributes" : [ "datatype" ],
     "id" : "170"
@@ -3486,12 +3486,12 @@
   }, {
     "range" : "62",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "176"
   }, {
     "range" : "62",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "177"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Country",
@@ -3509,17 +3509,17 @@
   }, {
     "range" : "18",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "180"
   }, {
     "range" : "18",
     "domain" : "173",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
     "range" : "18",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "182"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraints",
@@ -3537,7 +3537,7 @@
   }, {
     "range" : "86",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Objective",
@@ -3555,12 +3555,12 @@
   }, {
     "range" : "86",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "188"
   }, {
     "range" : "86",
     "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "189"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#LogicalConstraint_identifier",
@@ -3578,7 +3578,7 @@
   }, {
     "range" : "116",
     "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "192"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Surname",
@@ -3609,7 +3609,7 @@
   }, {
     "range" : "33",
     "domain" : "162",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "196"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#implies",
@@ -3627,7 +3627,7 @@
   }, {
     "range" : "33",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "198"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraint_identifier",
@@ -3682,6 +3682,19 @@
     "attributes" : [ "datatype" ],
     "id" : "203"
   }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#action",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
+    "range" : "206",
+    "label" : {
+      "IRI-based" : "action"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Descriptive information on the performed action"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "205"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#taxonomy",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
     "range" : "44",
@@ -3693,20 +3706,7 @@
       "en" : "Data Providing App,\nand/or\nData Processing App,\nand/or\nData Consuming App."
     },
     "attributes" : [ "datatype" ],
-    "id" : "205"
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#action",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "207",
-    "label" : {
-      "IRI-based" : "action"
-    },
-    "domain" : "30",
-    "comment" : {
-      "en" : "Descriptive information on the performed action"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "206"
+    "id" : "207"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#actionStatus",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
@@ -3723,17 +3723,17 @@
   }, {
     "range" : "26",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "210"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "211"
   }, {
     "range" : "9",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "212"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_date",
@@ -3751,7 +3751,7 @@
   }, {
     "range" : "9",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "215"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#leftOperand",
@@ -3795,7 +3795,7 @@
   }, {
     "range" : "26",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "222"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_participant_link",
@@ -3813,7 +3813,7 @@
   }, {
     "range" : "26",
     "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "224"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Pricing_strategy",
@@ -3892,7 +3892,7 @@
     "label" : {
       "IRI-based" : "Wallet_maintainer"
     },
-    "domain" : "103",
+    "domain" : "105",
     "comment" : {
       "en" : "Participant responsible for the correctness of the content offered by the Ecosystem Component."
     },
@@ -4138,19 +4138,6 @@
     "attributes" : [ "datatype" ],
     "id" : "267"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
-    "range" : "269",
-    "label" : {
-      "IRI-based" : "Inbound_model_version"
-    },
-    "domain" : "87",
-    "comment" : {
-      "en" : "Information Model version that the Ecosystem Component is capable of reading/processing."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "268"
-  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#version",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
     "range" : "0",
@@ -4162,7 +4149,20 @@
       "en" : "Version identified of the Managed Entity.\n"
     },
     "attributes" : [ "datatype" ],
-    "id" : "270"
+    "id" : "268"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
+    "range" : "270",
+    "label" : {
+      "IRI-based" : "Inbound_model_version"
+    },
+    "domain" : "87",
+    "comment" : {
+      "en" : "Information Model version that the Ecosystem Component is capable of reading/processing."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "269"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#BirthDate",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
@@ -4222,7 +4222,7 @@
     "label" : {
       "IRI-based" : "records"
     },
-    "domain" : "103",
+    "domain" : "105",
     "comment" : {
       "en" : "the Wallet Service records the transaction, calculating the cost consumed by the Participant on the basis of the action and its pricing strategy"
     },
@@ -4417,7 +4417,7 @@
     "label" : {
       "IRI-based" : "Payment_plan"
     },
-    "domain" : "103",
+    "domain" : "105",
     "comment" : {
       "en" : "Payment plan associated to a Participant"
     },
@@ -4612,7 +4612,7 @@
     "label" : {
       "IRI-based" : "WalletIdentifier"
     },
-    "domain" : "103",
+    "domain" : "105",
     "comment" : {
       "en" : "Unique identifier of a Participant’s wallet"
     },
@@ -4755,7 +4755,7 @@
     "label" : {
       "IRI-based" : "Wallet_curator"
     },
-    "domain" : "103",
+    "domain" : "105",
     "comment" : {
       "en" : "Participant responsible for technical maintenance of the Ecosystem Component."
     },
