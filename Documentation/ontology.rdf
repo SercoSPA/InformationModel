@@ -145,8 +145,8 @@
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"/>
         <rdfs:comment xml:lang="en">The entity responsible for producing the resource.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -443,8 +443,8 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"/>
         <rdfs:comment xml:lang="en">The entity responsible for making the resource available (which may differ from the sovereign).</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -498,8 +498,8 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
 
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"/>
         <rdfs:comment xml:lang="en">The &apos;owner&apos;, i.e. sovereign of the data.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -2002,7 +2002,6 @@ Data Consuming App.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"/>
         <rdfs:comment xml:lang="en">The upper class of Constraints and LogicalConstraints is solely intended as a placeholder at the range of CDS Properties.</rdfs:comment>
     </owl:Class>
     
@@ -2012,7 +2011,6 @@ Data Consuming App.</rdfs:comment>
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"/>
         <rdfs:comment xml:lang="en">An operation that can be exercised on a Resource.</rdfs:comment>
     </owl:Class>
     
@@ -2035,7 +2033,6 @@ The Metadata Broker Service Provider is an intermediary that stores and manages 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-"/>
         <rdfs:comment xml:lang="en">Abstract certification of compliance according to given Certification Scheme.</rdfs:comment>
     </owl:Class>
     
@@ -2095,7 +2092,6 @@ The Metadata Broker Service Provider is an intermediary that stores and manages 
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"/>
         <rdfs:comment xml:lang="en">Abstract set of rules governing the usage of a Resource.</rdfs:comment>
     </owl:Class>
     
@@ -2202,7 +2198,6 @@ Data Services are all services users aim to use. The access to these services is
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-"/>
         <rdfs:comment xml:lang="en">Any content of a particular type, that exists in the form of original data.</rdfs:comment>
     </owl:Class>
     
@@ -2223,7 +2218,6 @@ Data Services are all services users aim to use. The access to these services is
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-"/>
         <rdfs:comment xml:lang="en">The class of all ecosystem components of the Copernicus Data Space.</rdfs:comment>
     </owl:Class>
     
@@ -2233,7 +2227,6 @@ Data Services are all services users aim to use. The access to these services is
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-"/>
         <rdfs:comment xml:lang="en">Access point of data exchange, service interaction and service description.</rdfs:comment>
     </owl:Class>
     
@@ -2273,7 +2266,6 @@ Data Services are all services users aim to use. The access to these services is
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-"/>
         <rdfs:comment xml:lang="en">Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure.</rdfs:comment>
     </owl:Class>
     
@@ -2303,7 +2295,6 @@ Data Services are all services users aim to use. The access to these services is
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-"/>
         <rdfs:comment xml:lang="en">The class of persons (people).</rdfs:comment>
     </owl:Class>
     
@@ -2337,7 +2328,6 @@ Resources are the subject of a Rule .</rdfs:comment>
 
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"/>
         <rdfs:comment xml:lang="en">Superclass of Permissions, Prohibitions and Duties.</rdfs:comment>
     </owl:Class>
     
@@ -2374,38 +2364,159 @@ Note: A Web-based data catalogue is typically represented as a single instance o
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification- -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-"/>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure- -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant- -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations- -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource- -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

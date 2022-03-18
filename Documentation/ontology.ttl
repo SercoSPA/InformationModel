@@ -85,8 +85,8 @@
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator
 :creator rdf:type owl:ObjectProperty ;
-         rdfs:domain :Participant ;
-         rdfs:range :Resource ;
+         rdfs:domain :Resource ;
+         rdfs:range :Participant ;
          rdfs:comment "The entity responsible for producing the resource."@en .
 
 
@@ -275,8 +275,8 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher
 :publisher rdf:type owl:ObjectProperty ;
-           rdfs:domain :Participant ;
-           rdfs:range :Resource ;
+           rdfs:domain :Resource ;
+           rdfs:range :Participant ;
            rdfs:comment "The entity responsible for making the resource available (which may differ from the sovereign)."@en .
 
 
@@ -310,8 +310,8 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign
 :sovereign rdf:type owl:ObjectProperty ;
-           rdfs:domain :Participant ;
-           rdfs:range :Resource ;
+           rdfs:domain :Resource ;
+           rdfs:range :Participant ;
            rdfs:comment "The 'owner', i.e. sovereign of the data."@en .
 
 
@@ -1274,13 +1274,11 @@ Data Consuming App."""@en .
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint
 :Abstract_Constraint rdf:type owl:Class ;
-                     rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
                      rdfs:comment "The upper class of Constraints and LogicalConstraints is solely intended as a placeholder at the range of CDS Properties."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action
 :Action rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
         rdfs:comment "An operation that can be exercised on a Resource."@en .
 
 
@@ -1294,8 +1292,7 @@ The Metadata Broker Service Provider is an intermediary that stores and manages 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification
 :Certification rdf:type owl:Class ;
-               rdfs:subClassOf :Managed_Entity ,
-                               <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-> ;
+               rdfs:subClassOf :Managed_Entity ;
                rdfs:comment "Abstract certification of compliance according to given Certification Scheme."@en .
 
 
@@ -1331,7 +1328,6 @@ The Metadata Broker Service Provider is an intermediary that stores and manages 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract
 :Contract rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
           rdfs:comment "Abstract set of rules governing the usage of a Resource."@en .
 
 
@@ -1398,7 +1394,6 @@ Data Services are all services users aim to use. The access to these services is
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content
 :Digital_Content rdf:type owl:Class ;
-                 rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-> ;
                  rdfs:comment "Any content of a particular type, that exists in the form of original data."@en .
 
 
@@ -1410,14 +1405,12 @@ Data Services are all services users aim to use. The access to these services is
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component
 :Ecosystem_Component rdf:type owl:Class ;
-                     rdfs:subClassOf :Managed_Entity ,
-                                     <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> ;
+                     rdfs:subClassOf :Managed_Entity ;
                      rdfs:comment "The class of all ecosystem components of the Copernicus Data Space."@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint
 :Endpoint rdf:type owl:Class ;
-          rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> ;
           rdfs:comment "Access point of data exchange, service interaction and service description."@en .
 
 
@@ -1440,8 +1433,7 @@ Data Services are all services users aim to use. The access to these services is
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant
 :Participant rdf:type owl:Class ;
-             rdfs:subClassOf :Managed_Entity ,
-                             <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> ;
+             rdfs:subClassOf :Managed_Entity ;
              rdfs:comment "Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure."@en .
 
 
@@ -1459,7 +1451,6 @@ Data Services are all services users aim to use. The access to these services is
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person
 :Person rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> ;
         rdfs:comment "The class of persons (people)."@en .
 
 
@@ -1481,7 +1472,6 @@ Resources are the subject of a Rule ."""@en .
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule
 :Rule rdf:type owl:Class ;
-      rdfs:subClassOf <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> ;
       rdfs:comment "Superclass of Permissions, Prohibitions and Duties."@en .
 
 
@@ -1504,24 +1494,88 @@ Note: A Web-based data catalogue is typically represented as a single instance o
         rdfs:comment "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-> rdf:type owl:Class .
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer
+:aggregate_by_consumer rdf:type owl:NamedIndividual ,
+                                :Action .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> rdf:type owl:Class .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider
+:aggregate_by_provider rdf:type owl:NamedIndividual ,
+                                :Action .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> rdf:type owl:Class .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize
+:anonymize rdf:type owl:NamedIndividual ,
+                    :Action .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> rdf:type owl:Class .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate
+:compensate rdf:type owl:NamedIndividual ,
+                     :Action .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-> rdf:type owl:Class .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete
+:delete rdf:type owl:NamedIndividual ,
+                 :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute
+:distribute rdf:type owl:NamedIndividual ,
+                     :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt
+:ecrypt rdf:type owl:NamedIndividual ,
+                 :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use
+:grant_use rdf:type owl:NamedIndividual ,
+                    :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log
+:log rdf:type owl:NamedIndividual ,
+              :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify
+:modify rdf:type owl:NamedIndividual ,
+                 :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy
+:next_policy rdf:type owl:NamedIndividual ,
+                      :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify
+:notify rdf:type owl:NamedIndividual ,
+                 :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read
+:read rdf:type owl:NamedIndividual ,
+               :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance
+:track_provenance rdf:type owl:NamedIndividual ,
+                           :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use
+:use rdf:type owl:NamedIndividual ,
+              :Action .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write
+:write rdf:type owl:NamedIndividual ,
+                :Action .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

@@ -5,29 +5,11 @@
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The upper class of Constraints and LogicalConstraints is solely intended as a placeholder at the range of CDS Properties."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#AccessRights",
@@ -61,9 +43,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An operation that can be exercised on a Resource."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Agreement_assignee",
@@ -185,8 +164,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity"
-  }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Checksum",
@@ -459,9 +436,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Abstract set of rules governing the usage of a Resource."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ContractOfferRef",
@@ -734,9 +708,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Any content of a particular type, that exists in the form of original data."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Duty",
@@ -757,8 +728,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity"
-  }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#EmailAddress",
@@ -779,9 +748,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Access point of data exchange, service interaction and service description."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint_documentation",
@@ -1170,8 +1136,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity"
-  }, {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant_Certification",
@@ -1225,9 +1189,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The class of persons (people)."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#PostalAddress",
@@ -1369,9 +1330,6 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Superclass of Permissions, Prohibitions and Duties."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule_action",
@@ -1638,6 +1596,15 @@
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#assignee",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1715,6 +1682,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#connector_reference",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1814,10 +1784,10 @@
     "@value" : "The entity responsible for producing the resource."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#curator",
@@ -1842,6 +1812,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraint"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#deployed",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -1868,6 +1841,12 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#endTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -1917,6 +1896,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#has_action",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -2162,6 +2144,9 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#maintainer",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2188,6 +2173,9 @@
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#name_Resource",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2200,6 +2188,12 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#obligation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -2338,11 +2332,14 @@
     "@value" : "The entity responsible for making the resource available (which may differ from the sovereign)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#reads",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -2442,10 +2439,10 @@
     "@value" : "The 'owner', i.e. sovereign of the data."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource"
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#startTime",
@@ -2520,6 +2517,9 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
+}, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#transactionUser",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2542,6 +2542,9 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Constraint"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#version",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -2568,4 +2571,7 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action" ]
 } ]

@@ -76,8 +76,8 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#creator> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity responsible for producing the resource."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#curator
@@ -238,8 +238,8 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#publisher> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity responsible for making the resource available (which may differ from the sovereign)."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#reads
@@ -268,8 +268,8 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Resource> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#sovereign> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'owner', i.e. sovereign of the data."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#stores
@@ -1057,12 +1057,10 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Abstract_Constraint> <http://www.w3.org/2000/01/rdf-schema#comment> "The upper class of Constraints and LogicalConstraints is solely intended as a placeholder at the range of CDS Properties."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "An operation that can be exercised on a Resource."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Broker
@@ -1073,7 +1071,6 @@
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract certification of compliance according to given Certification Scheme."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Clearing_House
@@ -1103,7 +1100,6 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract set of rules governing the usage of a Resource."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Contract_agreement
@@ -1152,7 +1148,6 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Digital_Content> <http://www.w3.org/2000/01/rdf-schema#comment> "Any content of a particular type, that exists in the form of original data."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Duty
@@ -1163,12 +1158,10 @@
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of all ecosystem components of the Copernicus Data Space."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Access point of data exchange, service interaction and service description."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identity_Provider
@@ -1188,7 +1181,6 @@
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Managed_Entity> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Participant_Certification
@@ -1203,7 +1195,6 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of persons (people)."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Prohibition
@@ -1218,7 +1209,6 @@
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule> <http://www.w3.org/2000/01/rdf-schema#comment> "Superclass of Permissions, Prohibitions and Duties."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Service_Catalogue
@@ -1236,19 +1226,77 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Wallet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Wallet> <http://www.w3.org/2000/01/rdf-schema#comment> "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Certification-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Infrastructure-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Participant-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Regulations-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#-Resource-> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#aggregate_by_provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#anonymize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#compensate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#delete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#distribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#ecrypt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#grant_use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#modify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#next_policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#notify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#read> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#track_provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#write> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
