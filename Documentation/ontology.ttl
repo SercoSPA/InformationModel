@@ -341,8 +341,8 @@ Example: the assigner Participant offers to <action> the target Resource"""@en .
               rdfs:comment "Descriptive information about who can access the item or an indication of its security status"@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL
-:Access_URL rdf:type owl:DatatypeProperty ;
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url
+:Access_Url rdf:type owl:DatatypeProperty ;
             rdfs:domain :Endpoint ;
             rdfs:range xsd:anyURI ;
             rdfs:comment "Access URL of an endpoint."@en .
@@ -454,8 +454,8 @@ Free / Advanced"""@en .
 Production or test."""@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID
-:Connector_ID rdf:type owl:DatatypeProperty ;
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id
+:Connector_Id rdf:type owl:DatatypeProperty ;
               rdfs:domain :Connector ;
               rdfs:range xsd:string ;
               rdfs:comment "Identifier of the Connector"@en .
@@ -596,8 +596,8 @@ Federative"""@en .
                 rdfs:comment "Version of the installed application"@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID
-:DataApp_Connector_ID rdf:type owl:DatatypeProperty ;
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id
+:DataApp_Connector_Id rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Data_App ;
                       rdfs:range xsd:string ;
                       rdfs:comment "Identifier of the Connector where the Data App is deployed"@en .
@@ -610,8 +610,8 @@ Federative"""@en .
                         rdfs:comment "Description of the capability of a Data App to handle a type of data in a particular way"@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL
-:Data_Service_URL rdf:type owl:DatatypeProperty ;
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url
+:Data_Service_Url rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Data_Service ;
                   rdfs:range xsd:anyURI ;
                   rdfs:comment "URL of the Data Service webpage that replaces the Internet Protocol (IP) address."@en .
@@ -677,13 +677,6 @@ Users belonging to a Federation, that have access to free services thanks to cre
           rdfs:comment "A homepage of the Service Catalogue."@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended
-:IF_recommended rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Transaction_Data ;
-                rdfs:range xsd:string ;
-                rdfs:comment "Indication (ID) on the recommended access interface"@en .
-
-
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier
 :Identifier rdf:type owl:DatatypeProperty ;
             rdfs:domain :Action .
@@ -709,6 +702,13 @@ By default, and in accordance with linked-data principles, a participant can una
                              rdfs:domain :Identity_Provider ;
                              rdfs:range xsd:string ;
                              rdfs:comment "Participant responsible for the correctness of the content offered by the Ecosystem Component"@en .
+
+
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended
+:If_recommended rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Transaction_Data ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Indication (ID) on the recommended access interface"@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version
@@ -1057,11 +1057,11 @@ In-progress, completed, failed, potential."""@en .
           rdfs:comment "Information of the authentication server used by the Connector"@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID
-:certificationID rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Certification ;
-                 rdfs:range xsd:string ;
-                 rdfs:comment "Identifier of the Certification"@en .
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id
+:certification_Id rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Certification ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Identifier of the Certification"@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#constraint
@@ -1261,8 +1261,8 @@ Data Consuming App."""@en .
               rdfs:comment "Amount of the wallet, in euros"@en .
 
 
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s> rdf:type owl:DatatypeProperty ;
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s> rdf:type owl:DatatypeProperty ;
                                                                           rdfs:domain :Rule ;
                                                                           rdfs:range xsd:string ;
                                                                           rdfs:comment "violation (or unmet) relationship between Rules."@en .

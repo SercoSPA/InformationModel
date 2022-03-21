@@ -25,7 +25,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL",
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -294,7 +294,7 @@
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID",
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -594,7 +594,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID",
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -677,7 +677,7 @@
     "@value" : "A Data Service is an organized system that expose Resources to Participants. It implements a set of operations that allow consumers to access data and applications, and computing and storage resources.\nData Services are all services users aim to use. The access to these services is protected and the relative usage is managed by the policy framework."
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL",
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -786,7 +786,7 @@
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s",
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -823,19 +823,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Indication (ID) on the recommended access interface"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier",
@@ -888,6 +875,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Ecosystem_Component"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Indication (ID) on the recommended access interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version",
@@ -1670,7 +1670,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID",
+  "@id" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",

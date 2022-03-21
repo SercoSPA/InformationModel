@@ -299,11 +299,11 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#AccessRights> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#AccessRights> <http://www.w3.org/2000/01/rdf-schema#comment> "Descriptive information about who can access the item or an indication of its security status"@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL> <http://www.w3.org/2000/01/rdf-schema#comment> "Access URL of an endpoint."@en .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url> <http://www.w3.org/2000/01/rdf-schema#comment> "Access URL of an endpoint."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Agreement_assignee
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Agreement_assignee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -393,11 +393,11 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Deploy_Mode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Deploy_Mode> <http://www.w3.org/2000/01/rdf-schema#comment> "Deploy mode of a Connector.\nProduction or test."@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the Connector"@en .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the Connector"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Status
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -511,11 +511,11 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataAppVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataAppVersion> <http://www.w3.org/2000/01/rdf-schema#comment> "Version of the installed application"@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the Connector where the Data App is deployed"@en .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the Connector where the Data App is deployed"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Functionality
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Functionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -523,11 +523,11 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Functionality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App_Functionality> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the capability of a Data App to handle a type of data in a particular way"@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of the Data Service webpage that replaces the Internet Protocol (IP) address."@en .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url> <http://www.w3.org/2000/01/rdf-schema#comment> "URL of the Data Service webpage that replaces the Internet Protocol (IP) address."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Deployment_option
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Deployment_option> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -570,12 +570,6 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Homepage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Homepage> <http://www.w3.org/2000/01/rdf-schema#comment> "A homepage of the Service Catalogue."@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication (ID) on the recommended access interface"@en .
-# 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Action> .
@@ -596,6 +590,12 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IdentityProvider_maintainer> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identity_Provider> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IdentityProvider_maintainer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IdentityProvider_maintainer> <http://www.w3.org/2000/01/rdf-schema#comment> "Participant responsible for the correctness of the content offered by the Ecosystem Component"@en .
+# 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication (ID) on the recommended access interface"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Inbound_model_version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -872,11 +872,11 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#authInfo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#authInfo> <http://www.w3.org/2000/01/rdf-schema#comment> "Information of the authentication server used by the Connector"@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the Certification"@en .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id> <http://www.w3.org/2000/01/rdf-schema#comment> "Identifier of the Certification"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#constraint
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1040,11 +1040,11 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#walletAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#walletAmount> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of the wallet, in euros"@en .
 # 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s> <http://www.w3.org/2000/01/rdf-schema#comment> "violation (or unmet) relationship between Rules."@en .
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s> <http://www.w3.org/2000/01/rdf-schema#comment> "violation (or unmet) relationship between Rules."@en .
 # 
 # 
 # 

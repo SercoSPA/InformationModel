@@ -551,10 +551,10 @@ Example: the assigner Participant offers to &lt;action&gt; the target Resource</
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_URL">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Access_Url">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Endpoint"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">Access URL of an endpoint.</rdfs:comment>
@@ -728,10 +728,10 @@ Production or test.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_ID">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector_Id">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Connector"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Identifier of the Connector</rdfs:comment>
@@ -950,10 +950,10 @@ Federative</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_ID">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#DataApp_Connector_Id">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_App"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Identifier of the Connector where the Data App is deployed</rdfs:comment>
@@ -972,10 +972,10 @@ Federative</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_URL">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service_Url">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Data_Service"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">URL of the Data Service webpage that replaces the Internet Protocol (IP) address.</rdfs:comment>
@@ -1071,17 +1071,6 @@ Users belonging to a Federation, that have access to free services thanks to cre
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended -->
-
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#IF_recommended">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Indication (ID) on the recommended access interface</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identifier -->
 
 
@@ -1121,6 +1110,17 @@ By default, and in accordance with linked-data principles, a participant can una
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Identity_Provider"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Participant responsible for the correctness of the content offered by the Ecosystem Component</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#If_recommended">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Transaction_Data"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Indication (ID) on the recommended access interface</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -1655,10 +1655,10 @@ In-progress, completed, failed, potential.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certificationID">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#certification_Id">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Certification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Identifier of the Certification</rdfs:comment>
@@ -1975,10 +1975,10 @@ Data Consuming App.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s -->
+    <!-- http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(TBD)s">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Failure(Tbd)s">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.owl#Rule"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">violation (or unmet) relationship between Rules.</rdfs:comment>
