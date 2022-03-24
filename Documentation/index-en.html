@@ -1485,7 +1485,7 @@ This ontology has the following classes and properties.</span>
 			<p style="color:#004d99">Figure 1: Semantic entities and relations overview.</p>
 			<br>
 		</center>
-		<p>Object properties relationships detail is given in Figure 2. </p>
+		<p>Object properties relationships detail is given in Figure 2</p>
 		<br>
 		<center>
 			<br>
@@ -1568,7 +1568,7 @@ This ontology has the following classes and properties.</span>
 			by the respective Data App in accordance with the security policies of the Connector. A Data App Asset is a machine-interpretable Data Asset, 
 			such as a script file, algorithm, rule set, or another type of code, which execution relies on a particular runtime environment.
 			<br><br>
-			A Data Service represents an End-Service constituted by Data Apps, implementing relevant functions. A Data Service can integrate one or more of 
+			A <b>Data Service</b> represents an End-Service constituted by Data Apps, implementing relevant functions. A Data Service can integrate one or more of 
 			these applications, depending on its scope, e.g. discovery, download, trace, distribute, produce, process, order, archive, etc. 
 			<br><br>
 			Such operations on Data Asset defines the type of a Data Service. 
@@ -1609,7 +1609,7 @@ This ontology has the following classes and properties.</span>
 			The <b>Connector</b> is the infrastructure core building block and is a communication server providing and consuming data by means of Data Apps via 
 			<b>endpoints</b>. It constitutes the basis for the implementation of other, more specialized components. A Participant providing an end-service will 
 			be supplied with proper number of Connectors and relevant correct properties to deploy their applications, according to 
-			an agreed deployment mode. <b>Data Service</b> is the class relevant to these end-services.
+			an agreed deployment mode. Data Service is the class relevant to these end-services.
 		<br><br>
 			The endpoints exposed by Connectors, offer digital commodities that are optionally advertised by publication at the metadata registries, 
 			the Broker. Furthermore, the responsible Participant operating the Connector (Service Provider) and the deployment type (on-premises vs. cloud) 
@@ -1669,8 +1669,8 @@ This ontology has the following classes and properties.</span>
 		<p>
 			Relationships between Facets identified for a Service are: 
 			<ul>
-				<li>Participant contributes Data App</li>
-				<li>Data App is contributed by Participant</li>
+				<li>Participant contributes Resource</li>
+				<li>Resource is contributed by Participant</li>
 				<br><br>
 				<li>Participant follows Regulation</li>
 				<li>Regulation is followed by Participant</li>
@@ -1678,18 +1678,17 @@ This ontology has the following classes and properties.</span>
 				<li>Participant produces Data Assets</li>
 				<li>Data Assets is produced by Participant</li>
 				<br><br>	
-				<li>Data Assets is produced by Participant</li>
+				<li>Participant provides Ecosystem component</li>
 				<li>Ecosystem component is provided by Participant</li>
 				<br><br>	
-				<li>Application (Data App) processes Data Assets</li>
-				<li>Data Assets is processed by Data App</li>
+				<li>Resource processes Resource </li>
+				<li>Resource is processed by Resource</li>
 				<br><br>	
-				<li>Data App uses Ecosystem Component</li>
-				<li>Ecosystem Component is used by Data App</li>
+				<li>Resource uses Ecosystem Component</li>
+				<li>Ecosystem Component is used by Resource</li>
 			</ul>	
 		<br><br>
-			In Table 1 we provide a mapping among the identified Facets representing a Service/ Eco-System, 
-			and the Classes constituting each of them. 
+			In Table 1 we provide a mapping among the identified Facets representing a Service/ Eco-System, and the Classes constituting each of them.  
 		</p>
 		<center>
 			<br>
