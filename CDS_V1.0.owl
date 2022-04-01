@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/ontologies/2022/2/CDS_V0.6.owl"
+     xml:base="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V0.6.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V0.5.owl#"/>
+     ontologyIRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl">
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V0.6.owl"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -128,6 +128,9 @@
         <ObjectProperty IRI="#action_refinement"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#allowedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#application"/>
     </Declaration>
     <Declaration>
@@ -158,9 +161,6 @@
         <ObjectProperty IRI="#deployed"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#exposes"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#has_action"/>
     </Declaration>
     <Declaration>
@@ -168,6 +168,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_assigner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_component_certification"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#has_connector_default_endpoint"/>
@@ -191,7 +194,7 @@
         <ObjectProperty IRI="#has_target"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#has_user"/>
+        <ObjectProperty IRI="#has_transaction_user"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#implies"/>
@@ -204,6 +207,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#maintainer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#manages_identity"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#memberPerson"/>
@@ -233,7 +239,7 @@
         <ObjectProperty IRI="#publisher"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#reads"/>
+        <ObjectProperty IRI="#reads_payment_plan"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#records"/>
@@ -252,9 +258,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#stores"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#wallet_owner"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#AccessRights"/>
@@ -287,12 +290,6 @@
         <DataProperty IRI="#Clearing_House_Homepage"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Clearing_House_curator"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Clearing_House_maintainer"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Component_Certification_Level"/>
     </Declaration>
     <Declaration>
@@ -311,19 +308,10 @@
         <DataProperty IRI="#Connector_Status"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Connector_curator"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Connector_description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Connector_maintainer"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Constraint_Identifier"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Constraints"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ContactPoint"/>
@@ -371,6 +359,9 @@
         <DataProperty IRI="#Data_Service_Identifier"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Data_Service_Name"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#Data_Service_Type"/>
     </Declaration>
     <Declaration>
@@ -381,6 +372,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#EmailAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Endpoint_Access_Url"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Endpoint_documentation"/>
@@ -396,12 +390,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Identity"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Identity_Provider_curator"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Identity_Provider_maintainer"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Inbound_model_version"/>
@@ -432,6 +420,12 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Membership_end"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Metric_Quantity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Metric_Type"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ModificationDate"/>
@@ -470,9 +464,6 @@
         <DataProperty IRI="#PublicationDate"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Recommended_Access_Interface"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#Resource_Identifier"/>
     </Declaration>
     <Declaration>
@@ -488,37 +479,22 @@
         <DataProperty IRI="#Service_Catalogue_Homepage"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Service_Catalogue_curator"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Service_Catalogue_maintainer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Service_Name"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#SiteAddress"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Surname"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Volume_transf"/>
+        <DataProperty IRI="#TransactionUser"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Transaction_end"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Transaction_start"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Wallet_Homepage"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Wallet_Identifier"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Wallet_curator"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Wallet_maintainer"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#action"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#actionPerformer"/>
@@ -527,19 +503,10 @@
         <DataProperty IRI="#actionStatus"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#assignee"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#assigner"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#authInfo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#certification_type"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#constraint"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#corporateEmailAddress"/>
@@ -590,16 +557,10 @@
         <DataProperty IRI="#rightOperandReference"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#rule"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#startTime"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#status"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#target"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#target_EntryPoint"/>
@@ -608,19 +569,10 @@
         <DataProperty IRI="#taxonomy"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#transactionUser"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#unit"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#version"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#walletAmount"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Failure(Tbd)s"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#aggregate_by_consumer"/>
@@ -854,6 +806,10 @@
         <Class IRI="#Action"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allowedBy"/>
+        <Class IRI="#Transaction_Data"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#application"/>
         <Class IRI="#Data_Service"/>
     </ObjectPropertyDomain>
@@ -894,10 +850,6 @@
         <Class IRI="#Data_App"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#exposes"/>
-        <Class IRI="#Data_Service"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_action"/>
         <Class IRI="#Rule"/>
     </ObjectPropertyDomain>
@@ -908,6 +860,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_assigner"/>
         <Class IRI="#Rule"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has_component_certification"/>
+        <Class IRI="#Ecosystem_Component"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#has_connector_default_endpoint"/>
@@ -938,8 +894,8 @@
         <Class IRI="#Rule"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#has_user"/>
-        <Class IRI="#Resource"/>
+        <ObjectProperty IRI="#has_transaction_user"/>
+        <Class IRI="#Transaction_Data"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#implies"/>
@@ -956,6 +912,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#maintainer"/>
         <Class IRI="#Ecosystem_Component"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#manages_identity"/>
+        <Class IRI="#Identity_Provider"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#memberPerson"/>
@@ -994,8 +954,8 @@
         <Class IRI="#Resource"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#reads"/>
-        <Class IRI="#Clearing_House"/>
+        <ObjectProperty IRI="#reads_payment_plan"/>
+        <Class IRI="#Wallet"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#records"/>
@@ -1021,13 +981,13 @@
         <ObjectProperty IRI="#stores"/>
         <Class IRI="#Clearing_House"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#wallet_owner"/>
-        <Class IRI="#Wallet"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#action_refinement"/>
         <Class IRI="#Abstract_Constraint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allowedBy"/>
+        <Class IRI="#Data_Service"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#application"/>
@@ -1070,10 +1030,6 @@
         <Class IRI="#Connector"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#exposes"/>
-        <Class IRI="#DataApp_Endpoint"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#has_action"/>
         <Class IRI="#Action"/>
     </ObjectPropertyRange>
@@ -1084,6 +1040,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_assigner"/>
         <Class IRI="#Participant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has_component_certification"/>
+        <Class IRI="#Component_Certification"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#has_connector_default_endpoint"/>
@@ -1114,7 +1074,7 @@
         <Class IRI="#Resource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#has_user"/>
+        <ObjectProperty IRI="#has_transaction_user"/>
         <Class IRI="#Participant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1131,6 +1091,10 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#maintainer"/>
+        <Class IRI="#Participant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#manages_identity"/>
         <Class IRI="#Participant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1170,8 +1134,8 @@
         <Class IRI="#Participant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#reads"/>
-        <Class IRI="#Data_Service"/>
+        <ObjectProperty IRI="#reads_payment_plan"/>
+        <Class IRI="#Participant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#records"/>
@@ -1197,10 +1161,6 @@
         <ObjectProperty IRI="#stores"/>
         <Class IRI="#Transaction_Data"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#wallet_owner"/>
-        <Class IRI="#Participant"/>
-    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#AccessRights"/>
         <Class IRI="#Data_Service"/>
@@ -1211,7 +1171,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Access_Url"/>
-        <Class IRI="#Endpoint"/>
+        <Class IRI="#Ecosystem_Component"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Action_Identifier"/>
@@ -1246,14 +1206,6 @@
         <Class IRI="#Clearing_House"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Clearing_House_curator"/>
-        <Class IRI="#Clearing_House"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Clearing_House_maintainer"/>
-        <Class IRI="#Clearing_House"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#Component_Certification_Level"/>
         <Class IRI="#Component_Certification"/>
     </DataPropertyDomain>
@@ -1282,24 +1234,12 @@
         <Class IRI="#Connector"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Connector_curator"/>
-        <Class IRI="#Connector"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#Connector_description"/>
-        <Class IRI="#Connector"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Connector_maintainer"/>
         <Class IRI="#Connector"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Constraint_Identifier"/>
         <Class IRI="#Constraint"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Constraints"/>
-        <Class IRI="#Transaction_Data"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ContactPoint"/>
@@ -1366,6 +1306,10 @@
         <Class IRI="#Data_Service"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Data_Service_Name"/>
+        <Class IRI="#Data_Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#Data_Service_Type"/>
         <Class IRI="#Data_Service"/>
     </DataPropertyDomain>
@@ -1380,6 +1324,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#EmailAddress"/>
         <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Endpoint_Access_Url"/>
+        <Class IRI="#Endpoint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Endpoint_documentation"/>
@@ -1400,14 +1348,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#Identity"/>
         <Class IRI="#Participant"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Identity_Provider_curator"/>
-        <Class IRI="#Identity_Provider"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Identity_Provider_maintainer"/>
-        <Class IRI="#Identity_Provider"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Inbound_model_version"/>
@@ -1454,6 +1394,14 @@
         <Class IRI="#Participant_Certification"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Metric_Quantity"/>
+        <Class IRI="#Transaction_Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Metric_Type"/>
+        <Class IRI="#Transaction_Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#ModificationDate"/>
         <Class IRI="#Data_Asset"/>
     </DataPropertyDomain>
@@ -1491,7 +1439,7 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Payment_plan"/>
-        <Class IRI="#Wallet"/>
+        <Class IRI="#Participant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#PostalAddress"/>
@@ -1504,10 +1452,6 @@
     <DataPropertyDomain>
         <DataProperty IRI="#PublicationDate"/>
         <Class IRI="#Data_Asset"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Recommended_Access_Interface"/>
-        <Class IRI="#Transaction_Data"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Resource_Identifier"/>
@@ -1530,18 +1474,6 @@
         <Class IRI="#Service_Catalogue"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Service_Catalogue_curator"/>
-        <Class IRI="#Service_Catalogue"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Service_Catalogue_maintainer"/>
-        <Class IRI="#Service_Catalogue"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Service_Name"/>
-        <Class IRI="#Data_Service"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#SiteAddress"/>
         <Class IRI="#Participant"/>
     </DataPropertyDomain>
@@ -1550,36 +1482,20 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Volume_transf"/>
+        <DataProperty IRI="#TransactionUser"/>
+        <Class IRI="#Transaction_Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Transaction_end"/>
+        <Class IRI="#Transaction_Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Transaction_start"/>
         <Class IRI="#Transaction_Data"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Wallet_Homepage"/>
         <Class IRI="#Wallet"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Wallet_Identifier"/>
-        <Class IRI="#Wallet"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Wallet_curator"/>
-        <Class IRI="#Wallet"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Wallet_maintainer"/>
-        <Class IRI="#Wallet"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#action"/>
-        <Class IRI="#Contract"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#action"/>
-        <Class IRI="#Rule"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#action"/>
-        <Class IRI="#Transaction_Data"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#actionPerformer"/>
@@ -1590,44 +1506,12 @@
         <Class IRI="#Action"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#assignee"/>
-        <Class IRI="#Contract_agreement"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#assignee"/>
-        <Class IRI="#Contract_request"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#assignee"/>
-        <Class IRI="#Rule"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#assigner"/>
-        <Class IRI="#Contract_agreement"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#assigner"/>
-        <Class IRI="#Contract_offer"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#assigner"/>
-        <Class IRI="#Contract_request"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#assigner"/>
-        <Class IRI="#Rule"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#authInfo"/>
         <Class IRI="#Connector"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#certification_type"/>
         <Class IRI="#Certification"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#constraint"/>
-        <Class IRI="#Rule"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#corporateEmailAddress"/>
@@ -1694,24 +1578,12 @@
         <Class IRI="#Constraint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#rule"/>
-        <Class IRI="#Contract"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#startTime"/>
         <Class IRI="#Action"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#status"/>
         <Class IRI="#Constraint"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#target"/>
-        <Class IRI="#Contract"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#target"/>
-        <Class IRI="#Rule"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#target_EntryPoint"/>
@@ -1722,24 +1594,12 @@
         <Class IRI="#Data_App"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#transactionUser"/>
-        <Class IRI="#Transaction_Data"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#unit"/>
         <Class IRI="#Constraint"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#version"/>
         <Class IRI="#Managed_Entity"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#walletAmount"/>
-        <Class IRI="#Wallet"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Failure(Tbd)s"/>
-        <Class IRI="#Rule"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#AccessRights"/>
@@ -1748,6 +1608,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#Access_Url"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Action_Identifier"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#BirthDate"/>
@@ -1766,16 +1630,12 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Checksum"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Clearing_House_Homepage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Clearing_House_curator"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Clearing_House_maintainer"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Component_Certification_Level"/>
@@ -1802,15 +1662,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Connector_curator"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#Connector_description"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Connector_maintainer"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1878,6 +1730,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Data_Service_Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Data_Service_Type"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1894,6 +1750,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Endpoint_Access_Url"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Endpoint_documentation"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
@@ -1902,15 +1762,11 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Evaluation_facility"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Function"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Identity_Provider_curator"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Identity_Provider_maintainer"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -1952,6 +1808,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#Membership_end"/>
         <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Metric_Quantity"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Metric_Type"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#ModificationDate"/>
@@ -2002,10 +1866,6 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Recommended_Access_Interface"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#Resource_Identifier"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -2018,20 +1878,12 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Role"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#Service_Catalogue_Homepage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Service_Catalogue_curator"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Service_Catalogue_maintainer"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Service_Name"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#SiteAddress"/>
@@ -2042,28 +1894,20 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Volume_transf"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <DataProperty IRI="#TransactionUser"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Transaction_end"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Transaction_start"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Wallet_Homepage"/>
         <Datatype abbreviatedIRI="xsd:anyURI"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Wallet_Identifier"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Wallet_curator"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Wallet_maintainer"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#action"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#actionPerformer"/>
@@ -2074,19 +1918,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#assignee"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#assigner"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#authInfo"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#constraint"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2111,6 +1943,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#format"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#indexed_metadatum"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2146,16 +1982,8 @@
         <Datatype abbreviatedIRI="rdfs:Literal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#rule"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#startTime"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#target"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#target_EntryPoint"/>
@@ -2166,19 +1994,7 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#transactionUser"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#version"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#walletAmount"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Failure(Tbd)s"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <AnnotationAssertion>
@@ -2194,12 +2010,17 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Access_Url</IRI>
-        <Literal xml:lang="en">Access URL of an endpoint.</Literal>
+        <Literal xml:lang="en">The access URL of the Ecosystem Component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Action</IRI>
         <Literal xml:lang="en">An operation that can be exercised on a Resource.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Action_Identifier</IRI>
+        <Literal xml:lang="en">Unique identifier of the Action</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2257,16 +2078,6 @@ Free / Advanced</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Clearing_House_curator</IRI>
-        <Literal xml:lang="en">Participant responsible for technical maintenance of the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Clearing_House_maintainer</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible for the correctness of the content offered by the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Component_Certification</IRI>
         <Literal xml:lang="en">Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure.</Literal>
     </AnnotationAssertion>
@@ -2313,18 +2124,8 @@ Production or test.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Connector_curator</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible for technical maintenance of the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Connector_description</IRI>
         <Literal xml:lang="en">References to Connector which is deployed / maintained in the Configuration model</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Connector_maintainer</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible for the correctness of the content offered by the Ecosystem Component.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2335,11 +2136,6 @@ Production or test.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Constraint_Identifier</IRI>
         <Literal xml:lang="en">Identifier of the Constraints</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Constraints</IRI>
-        <Literal xml:lang="en">Descriptive information on the (potential) constraints associated to the access interface</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2464,8 +2260,7 @@ It proposes a Rule over an Resource from an assignee.</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Data_Asset</IRI>
-        <Literal xml:lang="en">Textual documents, time series of sensor values, communication messages, archives of image files, or media streams. Data Assets are subject to forwarding, processing, or consumption.
-Content exposed for exchange via Data Endpoints according to a parametrized Data Service interface; Data Assets are expected to be focused, homogeneous, and consistent over time with regard to granularity, coverage, context, data structure, and conceptual classification.</Literal>
+        <Literal xml:lang="en">Textual documents, time series of sensor values, communication messages, archives of image files, or media streams. Data Assets are subject to forwarding, processing, or consumption.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2477,6 +2272,12 @@ Data Services are all services users aim to use. The access to these services is
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Data_Service_Identifier</IRI>
         <Literal xml:lang="en">Unique identifier of the Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Data_Service_Name</IRI>
+        <Literal xml:lang="en">Name of the Service.
+</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2525,6 +2326,11 @@ Remote integration: A Service Provider integrates a remote Data App service on b
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Endpoint_Access_Url</IRI>
+        <Literal xml:lang="en">Access URL of an endpoint.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Endpoint_documentation</IRI>
         <Literal xml:lang="en">IRI reference to a documentation of the endpoint, e.g., reference to an OpenAPI-based documentation.</Literal>
     </AnnotationAssertion>
@@ -2562,16 +2368,6 @@ By default, and in accordance with linked-data principles, a participant can una
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Identity_Provider</IRI>
         <Literal xml:lang="en">It manages and validates the digital identity of CDS Participants</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Identity_Provider_curator</IRI>
-        <Literal xml:lang="en">Participant responsible for technical maintenance of the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Identity_Provider_maintainer</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible for the correctness of the content offered by the Ecosystem Component.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2635,6 +2431,16 @@ Possible examples: numeric, text, still image, geospatial, audio, video, softwar
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Membership_end</IRI>
         <Literal xml:lang="en">End of the Participant’s CDS Membership.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metric_Quantity</IRI>
+        <Literal xml:lang="en">Amount of consumed metric</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Metric_Type</IRI>
+        <Literal xml:lang="en">Name of the metric</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2737,11 +2543,6 @@ The Flat Rate strategy charges usage per quantitative slot (time, volume, credit
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Recommended_Access_Interface</IRI>
-        <Literal xml:lang="en">Indication (ID) on the recommended access interface</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Resource</IRI>
         <Literal xml:lang="en">An identifiable, valuable, digital (non-physical) commodity traded and exchanged among participants by means of the infrastructure. 
 Resource is a single digital content or a coherent set of digital contents. 
@@ -2782,29 +2583,12 @@ Federation user</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Service_Catalogue</IRI>
-        <Literal xml:lang="en">Catalogue of all applications, services, data and software available for re-use by Third-Party users.
-Note: A Web-based data catalogue is typically represented as a single instance of this class.</Literal>
+        <Literal xml:lang="en">Catalogue of all applications, services, data and software available for re-use by Third-Party users.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Service_Catalogue_Homepage</IRI>
         <Literal xml:lang="en">A homepage of the Service Catalogue.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Service_Catalogue_curator</IRI>
-        <Literal xml:lang="en">Participant responsible for technical maintenance of the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Service_Catalogue_maintainer</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible for the correctness of the content offered by the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Service_Name</IRI>
-        <Literal xml:lang="en">Name of the Service.
-</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2819,13 +2603,23 @@ It is particularly important in cases in which specific rules (e.g., national la
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransactionUser</IRI>
+        <Literal xml:lang="en">Descriptive information on the Participant responsible of the transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Transaction_Data</IRI>
         <Literal xml:lang="en">Information relevant to transaction activities.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Volume_transf</IRI>
-        <Literal xml:lang="en">Indication of the data transfer volumes, as percentage with respect to the total user level data volume</Literal>
+        <IRI>#Transaction_end</IRI>
+        <Literal xml:lang="en">Absolute datetime the Transaction is completed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transaction_start</IRI>
+        <Literal xml:lang="en">Absolute datetime the Transaction is started.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2836,26 +2630,6 @@ It is particularly important in cases in which specific rules (e.g., national la
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Wallet_Homepage</IRI>
         <Literal xml:lang="en">A homepage of the Wallet service.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Wallet_Identifier</IRI>
-        <Literal xml:lang="en">Unique identifier of a Participant’s wallet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Wallet_curator</IRI>
-        <Literal xml:lang="en">Participant responsible for technical maintenance of the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Wallet_maintainer</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible for the correctness of the content offered by the Ecosystem Component.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#action</IRI>
-        <Literal xml:lang="en">Descriptive information on the action</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2875,23 +2649,18 @@ In-progress, completed, failed, potential.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#allowedBy</IRI>
+        <Literal>Function implemented by the Data Service that allows the transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#application</IRI>
         <Literal xml:lang="en">Function implemented by the Data Service by means of a Data App</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#assignee</IRI>
-        <Literal xml:lang="en">Descriptive information on the assignee Participant.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#assigneeOf</IRI>
         <Literal xml:lang="en">Identifies the Contract for which the identified Particpant undertakes the assignee functional role.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#assigner</IRI>
-        <Literal xml:lang="en">Descriptive information on the assigner Participant.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2917,11 +2686,6 @@ In-progress, completed, failed, potential.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#consequence</IRI>
         <Literal xml:lang="en">Relates a Duty to another Duty, the latter being a consequence of not fulfilling the former.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#constraint</IRI>
-        <Literal xml:lang="en">Descriptive information on the Constraint applied to the Rule.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2980,11 +2744,6 @@ In-progress, completed, failed, potential.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#exposes</IRI>
-        <Literal xml:lang="en">Data App Endpoints are exposed by a Data Service to reach the relevant Data Apps.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#format</IRI>
         <Literal xml:lang="en">Resource format.</Literal>
     </AnnotationAssertion>
@@ -3002,6 +2761,11 @@ In-progress, completed, failed, potential.</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#has_assigner</IRI>
         <Literal xml:lang="en">indicates the Party that is issuing the Rule. For example, the Party granting a Permission or requiring an agreed Duty to be fulfilled.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#has_component_certification</IRI>
+        <Literal xml:lang="en">Certification issued for the given Ecosystem Component.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3042,8 +2806,8 @@ Example: the assigner Participant offers to &lt;action&gt; the target Resource</
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#has_user</IRI>
-        <Literal xml:lang="en">The participant intending to use the dataThe participant intending to use the data</Literal>
+        <IRI>#has_transaction_user</IRI>
+        <Literal xml:lang="en">Participant responsible of the transaction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3074,12 +2838,17 @@ Example: the assigner Participant offers to &lt;action&gt; the target Resource</
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#leftOperand</IRI>
         <Literal xml:lang="en">The left operand in a constraint expression. The leftOperand instances must clearly be defined to indicate the semantics of the Constraint, and may declare how the value for comparison has to be retrieved or generated.
-Example: Absolute geo-spatial position, count, current event, delay, elapsed time, endpoint, execution system, path to attribute, payAmount, payment, policy evaluation time, purpose, quantity, recurrence rate, security level, state, user.</Literal>
+Possible values: Absolute geo-spatial position, count, current event, delay, elapsed time, endpoint, execution system, path to attribute, payAmount, payment, policy evaluation time, purpose, quantity, recurrence rate, security level, state, user.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#maintainer</IRI>
         <Literal xml:lang="en">Participant responsible for technical maintenance of the Ecosystem Component.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#manages_identity</IRI>
+        <Literal xml:lang="en">All the digital identities of the Participants managed by Identity Provider</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3100,7 +2869,7 @@ Example: Absolute geo-spatial position, count, current event, delay, elapsed tim
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#operator</IRI>
         <Literal xml:lang="en">The operator instances identify the relational operation between the left and right operands.
-Example: after, before, contains, covered by, covers, defines as, disjoint, during, equals, finished by, finishes, greater than, greater than or equals, has Member, has same duration, has site, has state, inside, inside network, interval equals, is same as, less than or equals, longer, longer or equals, matches, meet, meets, memberOf, met by, not equals, overlap, overlapped by, overlaps, shorter, shorter or equals, started by, starts, string contains, string equals, string is contained in.</Literal>
+Possible values: after, before, contains, covered by, covers, defines as, disjoint, during, equals, finished by, finishes, greater than, greater than or equals, has Member, has same duration, has site, has state, inside, inside network, interval equals, is same as, less than or equals, longer, longer or equals, matches, meet, meets, memberOf, met by, not equals, overlap, overlapped by, overlaps, shorter, shorter or equals, started by, starts, string contains, string equals, string is contained in.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3149,13 +2918,13 @@ Example: after, before, contains, covered by, covers, defines as, disjoint, duri
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#reads</IRI>
-        <Literal xml:lang="en">Data Service producing a transaction (involving action, service, participant, price) from which Clearing House reads transaction information.</Literal>
+        <IRI>#reads_payment_plan</IRI>
+        <Literal xml:lang="en">Wallet Service reads the payment plan information relevant to a Participant performing the transaction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#records</IRI>
-        <Literal xml:lang="en">the Wallet Service records the transaction, calculating the cost consumed by the Participant on the basis of the action and its pricing strategy</Literal>
+        <Literal xml:lang="en">the Wallet Service records the transaction; the cost consumed by the Participant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3176,11 +2945,6 @@ Example: after, before, contains, covered by, covers, defines as, disjoint, duri
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#rightOperandReference</IRI>
         <Literal xml:lang="en">A reference to a web resource providing the value for the right operand of a Constraint.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#rule</IRI>
-        <Literal xml:lang="en">Descriptive information on Rule represented by the Contract Offer (permission, prohibition, obligation)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3209,11 +2973,6 @@ Example: after, before, contains, covered by, covers, defines as, disjoint, duri
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#target</IRI>
-        <Literal xml:lang="en">Descriptive information on resource subject of the Rule</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#target_EntryPoint</IRI>
         <Literal xml:lang="en">An entrypoint used to execute the action.</Literal>
     </AnnotationAssertion>
@@ -3228,11 +2987,6 @@ Data Consuming App.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#transactionUser</IRI>
-        <Literal xml:lang="en">Descriptive information on the Participant responsible of the transaction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#unit</IRI>
         <Literal xml:lang="en">unit indicates the unit value of the rightOperand/Reference.</Literal>
     </AnnotationAssertion>
@@ -3241,21 +2995,6 @@ Data Consuming App.</Literal>
         <IRI>#version</IRI>
         <Literal xml:lang="en">Version identified of the Managed Entity.
 </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#walletAmount</IRI>
-        <Literal xml:lang="en">Amount of the wallet, in euros</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#wallet_owner</IRI>
-        <Literal xml:lang="en">Participant associated to a wallet which records his/her transaction and his/her wallet amount.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Failure(Tbd)s</IRI>
-        <Literal xml:lang="en">violation (or unmet) relationship between Rules.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
