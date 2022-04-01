@@ -2,7 +2,7 @@
 This project is aimed at generating an Information Model for the Copernicus Data Space (CDSIM) managed by Serco.<br>
 
 ## Contents
-* **Documentation** folder contains all the related contents to the documentation package, published on [CDSIM webpage](https://imms.copernicus-dataspace.eu/InformationModel/Documentation/index-en.html)
+* **Documentation** folder contains all the related contents to the documentation package, published on [CDSIM webpage](https://imms.copernicus-dataspace.eu)
 * `.owl` file that is the Ontology file generated with Protégé that will be used from Widoco tool to generate the Documentation (see the manual for more information)
 * `config.properties` which collects the properties that will be used from Widoco tool to generate the Documentation (see the manual for more information)
 
