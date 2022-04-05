@@ -10,8 +10,14 @@
     "id" : "0",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "12",
     "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
   }, {
     "id" : "47",
     "type" : "rdfs:Literal"
@@ -22,7 +28,7 @@
     "id" : "49",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "50",
+    "id" : "52",
     "type" : "rdfs:Literal"
   }, {
     "id" : "53",
@@ -34,124 +40,121 @@
     "id" : "56",
     "type" : "owl:Class"
   }, {
-    "id" : "58",
+    "id" : "57",
     "type" : "owl:Class"
   }, {
-    "id" : "59",
-    "type" : "owl:Class"
+    "id" : "65",
+    "type" : "rdfs:Datatype"
   }, {
-    "id" : "67",
+    "id" : "66",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "68",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "70",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "71",
+    "id" : "69",
     "type" : "rdfs:Literal"
   }, {
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "19",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "55",
-    "type" : "owl:Class"
-  }, {
-    "id" : "65",
-    "type" : "owl:Class"
-  }, {
-    "id" : "119",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
+    "id" : "44",
     "type" : "owl:Class"
   }, {
     "id" : "63",
     "type" : "owl:Class"
   }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
     "id" : "103",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
+    "id" : "25",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "29",
     "type" : "owl:Class"
   }, {
-    "id" : "155",
+    "id" : "162",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
+    "id" : "83",
     "type" : "owl:Class"
   }, {
-    "id" : "194",
+    "id" : "195",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "31",
+    "id" : "85",
     "type" : "owl:Class"
-  }, {
-    "id" : "202",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "203",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "42",
+    "id" : "204",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "129",
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
     "type" : "owl:Class"
   }, {
     "id" : "114",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "205",
+    "id" : "206",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "193",
+    "id" : "192",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "208",
+    "id" : "209",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "162",
+    "id" : "165",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "59",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
+    "id" : "22",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "123",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "158",
+    "id" : "159",
     "type" : "owl:Class"
   }, {
-    "id" : "21",
+    "id" : "24",
     "type" : "owl:Class"
   }, {
     "id" : "106",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "159",
+    "id" : "160",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "93",
@@ -163,7 +166,7 @@
     "id" : "221",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "26",
+    "id" : "27",
     "type" : "owl:Class"
   }, {
     "id" : "224",
@@ -172,31 +175,31 @@
     "id" : "227",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "52",
+    "id" : "51",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "179",
+    "id" : "180",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "183",
+    "id" : "184",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "189",
+    "id" : "190",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "30",
+    "id" : "81",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "84",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "230",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "73",
+    "id" : "71",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "127",
+    "id" : "130",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "242",
@@ -205,40 +208,40 @@
     "id" : "125",
     "type" : "owl:Class"
   }, {
-    "id" : "174",
+    "id" : "156",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "112",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "153",
+    "id" : "154",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "245",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "5",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
     "id" : "249",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "76",
+    "id" : "74",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "191",
+    "id" : "194",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "156",
+    "id" : "157",
     "type" : "owl:Class"
   }, {
     "id" : "223",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "150",
+    "id" : "151",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "108",
@@ -247,7 +250,7 @@
     "id" : "97",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "196",
+    "id" : "197",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "248",
@@ -256,10 +259,10 @@
     "id" : "239",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "78",
+    "id" : "76",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "177",
+    "id" : "178",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "258",
@@ -274,13 +277,13 @@
     "id" : "260",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "199",
+    "id" : "200",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "18",
+    "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "170",
+    "id" : "172",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "262",
@@ -289,7 +292,7 @@
     "id" : "90",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "42",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "215",
@@ -304,25 +307,25 @@
     "id" : "273",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "66",
+    "id" : "64",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "2",
     "type" : "owl:Class"
   }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "80",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "82",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "172",
+    "id" : "175",
     "type" : "owl:Class"
   }, {
     "id" : "264",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "146",
+    "id" : "147",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "91",
@@ -337,28 +340,28 @@
     "id" : "302",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "207",
+    "id" : "208",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "135",
-    "type" : "rdfs:Literal"
   }, {
     "id" : "235",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "213",
+    "id" : "87",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "298",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "285",
+    "id" : "135",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "87",
+    "id" : "202",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "285",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "110",
@@ -370,7 +373,7 @@
     "id" : "281",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "12",
+    "id" : "10",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "101",
@@ -382,67 +385,67 @@
     "id" : "271",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "130",
+    "id" : "128",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "266",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "141",
+    "id" : "142",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "292",
+    "id" : "31",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "33",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "201",
+    "id" : "36",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "304",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "133",
+    "id" : "292",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "255",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "38",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "311",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
     "id" : "268",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "144",
+    "id" : "312",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "275",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "232",
+    "id" : "317",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "226",
     "type" : "rdfs:Datatype"
   }, {
+    "id" : "320",
+    "type" : "rdfs:Datatype"
+  }, {
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "316",
+    "id" : "104",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "104",
+    "id" : "232",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
@@ -468,8 +471,20 @@
     "comment" : {
       "en" : "Contract issued by the Data Consumer requesting the usage of a Resource at particular conditions. No privileges are granted to any Party. \n\nIt proposes a Rule over an Resource from an assignee."
     },
-    "id" : "8",
-    "superClasses" : [ "9" ]
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "44", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
     "id" : "47",
@@ -493,42 +508,44 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "50",
+    "id" : "52",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "instances" : 0,
-    "union" : [ "1", "5" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "1", "6" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "53"
   }, {
     "instances" : 0,
-    "union" : [ "55", "1" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "44", "1" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "54"
   }, {
     "instances" : 0,
-    "union" : [ "1", "5" ],
-    "attributes" : [ "union", "anonymous" ],
+    "union" : [ "1", "6" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "56"
   }, {
     "instances" : 0,
-    "union" : [ "55", "1" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "58"
-  }, {
-    "instances" : 0,
-    "union" : [ "55", "1" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "59"
+    "union" : [ "44", "1" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "57"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "67",
+    "id" : "65",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -539,14 +556,7 @@
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "70",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "71",
+    "id" : "69",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -570,12 +580,12 @@
     "label" : {
       "IRI-based" : "Connector"
     },
-    "subClasses" : [ "5" ],
+    "subClasses" : [ "6" ],
     "comment" : {
       "en" : "The Connector is communication server providing and consuming data by means of Data Apps via a number of resource Endpoints. There are different types of Connectors according to provided capabilities."
     },
-    "id" : "6",
-    "superClasses" : [ "30" ]
+    "id" : "7",
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Contract_offer",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -586,8 +596,8 @@
     "comment" : {
       "en" : "Contract issued by the Data Provider offering the usage of a Resource at particular conditions.\n\nIt represents Rules that are being offered from an assigner Participant. It does not grant any Rules."
     },
-    "id" : "16",
-    "superClasses" : [ "9" ]
+    "id" : "20",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Participant",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -598,8 +608,8 @@
     "comment" : {
       "en" : "Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure."
     },
-    "id" : "19",
-    "superClasses" : [ "31" ]
+    "id" : "18",
+    "superClasses" : [ "85" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Contract",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -607,11 +617,11 @@
     "label" : {
       "IRI-based" : "Contract"
     },
-    "subClasses" : [ "8", "14", "16" ],
+    "subClasses" : [ "12", "15", "20" ],
     "comment" : {
       "en" : "Abstract set of rules governing the usage of a Resource."
     },
-    "id" : "9"
+    "id" : "13"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Data_Service",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -622,7 +632,7 @@
     "comment" : {
       "en" : "A Data Service is an organized system that expose Resources to Participants. It implements a set of operations that allow consumers to access data and applications, and computing and storage resources.\nData Services are all services users aim to use. The access to these services is protected and the relative usage is managed by the policy framework."
     },
-    "id" : "55"
+    "id" : "44"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Participant_Certification",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -633,8 +643,8 @@
     "comment" : {
       "en" : "Process and result of certifying an interested party in order to become a certified member of the CDS."
     },
-    "id" : "65",
-    "superClasses" : [ "35" ]
+    "id" : "63",
+    "superClasses" : [ "33" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Identity_Provider",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -646,7 +656,7 @@
       "en" : "It manages and validates the digital identity of CDS Participants"
     },
     "id" : "119",
-    "superClasses" : [ "30" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Contract_agreement",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -657,8 +667,8 @@
     "comment" : {
       "en" : "Contract governing the actual usage of a Resource that has been agreed by all parties.\nIt represents Rules that have been granted from assigner to assignee Participant. Typically used to grant the terms of the Rules between Participants.\n"
     },
-    "id" : "14",
-    "superClasses" : [ "9" ]
+    "id" : "15",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Connector_Endpoint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -669,7 +679,7 @@
     "comment" : {
       "en" : "Connector-specific endpoint exposing Resources."
     },
-    "id" : "63",
+    "id" : "61",
     "superClasses" : [ "90" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action",
@@ -678,103 +688,6 @@
     "label" : {
       "IRI-based" : "Action"
     },
-    "individuals" : [ {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "use"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "distribute"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "ecrypt"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "track_provenance"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "log"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "anonymize"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "compensate"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "write"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "modify"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "read"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "aggregate_by_consumer"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "aggregate_by_provider"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "notify"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "next_policy"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "delete"
-      }
-    }, {
-      "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use",
-      "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-      "labels" : {
-        "IRI-based" : "grant_use"
-      }
-    } ],
     "comment" : {
       "en" : "An operation that can be exercised on a Resource."
     },
@@ -786,11 +699,11 @@
     "label" : {
       "IRI-based" : "Abstract_Constraint"
     },
-    "subClasses" : [ "21", "26" ],
+    "subClasses" : [ "24", "27" ],
     "comment" : {
       "en" : "The upper class of Constraints and LogicalConstraints is solely intended as a placeholder at the range of CDS Properties."
     },
-    "id" : "22"
+    "id" : "25"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Digital_Content",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -802,7 +715,7 @@
     "comment" : {
       "en" : "Any content of a particular type, that exists in the form of original data."
     },
-    "id" : "28"
+    "id" : "29"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Prohibition",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -813,8 +726,8 @@
     "comment" : {
       "en" : "The inability to exercise an Action over a Resource."
     },
-    "id" : "155",
-    "superClasses" : [ "156" ]
+    "id" : "162",
+    "superClasses" : [ "157" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Data_Asset",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -825,7 +738,7 @@
     "comment" : {
       "en" : "Textual documents, time series of sensor values, communication messages, archives of image files, or media streams. Data Assets are subject to forwarding, processing, or consumption."
     },
-    "id" : "11",
+    "id" : "9",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_Data",
@@ -837,12 +750,12 @@
     "comment" : {
       "en" : "Information relevant to transaction activities."
     },
-    "id" : "84",
+    "id" : "83",
     "superClasses" : [ "1" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "194",
+    "id" : "195",
     "label" : {
       "IRI-based" : "string"
     }
@@ -853,29 +766,29 @@
     "label" : {
       "IRI-based" : "Managed_Entity"
     },
-    "subClasses" : [ "30", "35", "19", "1" ],
+    "subClasses" : [ "81", "33", "18", "1" ],
     "comment" : {
       "en" : "The class of mutable individuals."
     },
-    "id" : "31"
+    "id" : "85"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "202",
+    "id" : "203",
     "label" : {
       "IRI-based" : "integer"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "203",
+    "id" : "204",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
+    "id" : "40",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
@@ -889,8 +802,8 @@
     "comment" : {
       "en" : "Process and result of certifying a software component/service in order to become a certified part of the CDS infrastructure."
     },
-    "id" : "129",
-    "superClasses" : [ "35" ]
+    "id" : "127",
+    "superClasses" : [ "33" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -901,21 +814,21 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "205",
+    "id" : "206",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "193",
+    "id" : "192",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "208",
+    "id" : "209",
     "label" : {
       "IRI-based" : "string"
     }
@@ -929,19 +842,19 @@
     "comment" : {
       "en" : "Description of endpoints a DataApp offers."
     },
-    "id" : "162",
+    "id" : "165",
     "superClasses" : [ "90" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "61",
+    "id" : "59",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
+    "id" : "22",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
@@ -962,8 +875,8 @@
     "comment" : {
       "en" : "Catalogue of all applications, services, data and software available for re-use by Third-Party users."
     },
-    "id" : "158",
-    "superClasses" : [ "30" ]
+    "id" : "159",
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Logical_Constraint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -974,8 +887,8 @@
     "comment" : {
       "en" : "The class of Logical Constraints that restrict a Rule. A Logical Constraints is a collection of Constraints."
     },
-    "id" : "21",
-    "superClasses" : [ "22" ]
+    "id" : "24",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -986,7 +899,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "159",
+    "id" : "160",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1021,8 +934,8 @@
     "comment" : {
       "en" : "The class of Constraints that declare the conditions applicable to a rule."
     },
-    "id" : "26",
-    "superClasses" : [ "22" ]
+    "id" : "27",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1040,28 +953,28 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
+    "id" : "51",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "179",
+    "id" : "180",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "183",
+    "id" : "184",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "189",
+    "id" : "190",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1072,16 +985,16 @@
     "label" : {
       "IRI-based" : "Ecosystem_Component"
     },
-    "subClasses" : [ "18", "158", "6", "119", "125" ],
+    "subClasses" : [ "17", "159", "7", "119", "125" ],
     "comment" : {
       "en" : "The class of all ecosystem components of the Copernicus Data Space."
     },
-    "id" : "30",
-    "superClasses" : [ "31" ]
+    "id" : "81",
+    "superClasses" : [ "85" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "85",
+    "id" : "84",
     "label" : {
       "IRI-based" : "float"
     }
@@ -1095,14 +1008,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "73",
+    "id" : "71",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "127",
+    "id" : "130",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1124,7 +1037,7 @@
       "en" : "The Clearing House provides clearing and settlement services B2B interactions within the Copernicus Data Space."
     },
     "id" : "125",
-    "superClasses" : [ "30" ]
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Duty",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -1135,12 +1048,12 @@
     "comment" : {
       "en" : "The obligation to exercise an Action."
     },
-    "id" : "174",
-    "superClasses" : [ "156" ]
+    "id" : "156",
+    "superClasses" : [ "157" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "36",
+    "id" : "34",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
@@ -1154,7 +1067,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "153",
+    "id" : "154",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1175,8 +1088,8 @@
     "comment" : {
       "en" : "Broker holding an index of published data endpoints.\nThe brokers provide services for real-time data search and discovery, funded on a common and shared information model of data assets.\nThe Metadata Broker Service Provider is an intermediary that stores and manages information about the data and data sources available in the ecosystem. Its primary task is receiving and providing metadata, via a dedicated and standard interface (e.g., REST). It provides the required metadata for the consumer to connect to a service provider of data assets."
     },
-    "id" : "5",
-    "superClasses" : [ "6" ]
+    "id" : "6",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1187,14 +1100,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "74",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "191",
+    "id" : "194",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -1205,11 +1118,11 @@
     "label" : {
       "IRI-based" : "Rule"
     },
-    "subClasses" : [ "172", "174", "155" ],
+    "subClasses" : [ "175", "156", "162" ],
     "comment" : {
       "en" : "Superclass of Permissions, Prohibitions and Duties."
     },
-    "id" : "156"
+    "id" : "157"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1220,7 +1133,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "150",
+    "id" : "151",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1241,7 +1154,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "196",
+    "id" : "197",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -1262,14 +1175,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "78",
+    "id" : "76",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "177",
+    "id" : "178",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1288,11 +1201,11 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "259",
     "label" : {
-      "IRI-based" : "dateTimeStamp"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1304,7 +1217,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "199",
+    "id" : "200",
     "label" : {
       "IRI-based" : "anyURI"
     }
@@ -1318,12 +1231,12 @@
     "comment" : {
       "en" : "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"
     },
-    "id" : "18",
-    "superClasses" : [ "30" ]
+    "id" : "17",
+    "superClasses" : [ "81" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "170",
+    "id" : "172",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1341,7 +1254,7 @@
     "label" : {
       "IRI-based" : "Endpoint"
     },
-    "subClasses" : [ "63", "162" ],
+    "subClasses" : [ "61", "165" ],
     "comment" : {
       "en" : "Access point of data exchange, service interaction and service description."
     },
@@ -1349,7 +1262,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "44",
+    "id" : "42",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1384,7 +1297,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "66",
+    "id" : "64",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1403,14 +1316,14 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "80",
+    "id" : "78",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "82",
+    "id" : "80",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1424,8 +1337,8 @@
     "comment" : {
       "en" : "The ability to exercise an Action over an Resource. The Permission MAY also have the duty property that expresses an agreed Action that MUST be exercised (as a pre-condition to be granted the Permission)"
     },
-    "id" : "172",
-    "superClasses" : [ "156" ]
+    "id" : "175",
+    "superClasses" : [ "157" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1436,7 +1349,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "146",
+    "id" : "147",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1471,17 +1384,9 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "207",
+    "id" : "208",
     "label" : {
       "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
-    "id" : "135",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -1492,11 +1397,11 @@
       "undefined" : "Literal"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "213",
+    "id" : "87",
     "label" : {
-      "IRI-based" : "anyURI"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -1506,16 +1411,16 @@
       "IRI-based" : "dateTime"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "285",
+    "id" : "135",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
+    "id" : "202",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1523,6 +1428,13 @@
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "118",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "285",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1550,7 +1462,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#integer",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "12",
+    "id" : "10",
     "label" : {
       "IRI-based" : "integer"
     }
@@ -1578,7 +1490,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "130",
+    "id" : "128",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1592,28 +1504,21 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "141",
+    "id" : "142",
     "label" : {
       "IRI-based" : "anyURI"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "292",
+    "id" : "31",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "201",
+    "id" : "36",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1625,11 +1530,11 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "133",
+    "id" : "292",
     "label" : {
-      "IRI-based" : "dateTime"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -1638,44 +1543,6 @@
     "label" : {
       "IRI-based" : "string"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "311",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Certification",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Certification"
-    },
-    "subClasses" : [ "65", "129" ],
-    "comment" : {
-      "en" : "Abstract certification of compliance according to given Certification Scheme."
-    },
-    "id" : "35",
-    "superClasses" : [ "31" ]
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Person",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Person"
-    },
-    "comment" : {
-      "en" : "The class of persons (people)."
-    },
-    "id" : "40"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1686,7 +1553,45 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "144",
+    "id" : "312",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Certification",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Certification"
+    },
+    "subClasses" : [ "63", "127" ],
+    "comment" : {
+      "en" : "Abstract certification of compliance according to given Certification Scheme."
+    },
+    "id" : "33",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Person",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "comment" : {
+      "en" : "The class of persons (people)."
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1698,16 +1603,23 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "232",
+    "id" : "317",
     "label" : {
-      "IRI-based" : "anyURI"
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "226",
+    "label" : {
+      "IRI-based" : "dateTimeStamp"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "320",
     "label" : {
       "IRI-based" : "dateTimeStamp"
     }
@@ -1718,19 +1630,12 @@
     "label" : {
       "IRI-based" : "Resource"
     },
-    "subClasses" : [ "0", "11", "84" ],
+    "subClasses" : [ "0", "9", "83" ],
     "comment" : {
       "en" : "An identifiable, valuable, digital (non-physical) commodity traded and exchanged among participants by means of the infrastructure. \nResource is a single digital content or a coherent set of digital contents. \nThe Resource?s content is exposed via defined Interfaces at various protocol Endpoints.\n\nResources are the subject of a Rule ."
     },
     "id" : "1",
-    "superClasses" : [ "28", "31" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "316",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "superClasses" : [ "29", "85" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1738,88 +1643,95 @@
     "label" : {
       "IRI-based" : "string"
     }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "232",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
   } ],
   "property" : [ {
     "id" : "4",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "7",
+    "id" : "5",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "10",
+    "id" : "8",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "13",
+    "id" : "11",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "15",
+    "id" : "14",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "17",
+    "id" : "16",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
+    "id" : "19",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "23",
+    "id" : "21",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "25",
+    "id" : "23",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "27",
+    "id" : "26",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "29",
+    "id" : "28",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "34",
+    "id" : "35",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "37",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "39",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "41",
+    "id" : "39",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
+    "id" : "41",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "45",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "46",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "51",
+    "id" : "50",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "57",
+    "id" : "55",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "60",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "62",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "64",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "69",
+    "id" : "67",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "72",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "74",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "75",
     "type" : "owl:datatypeProperty"
@@ -1830,10 +1742,7 @@
     "id" : "79",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "81",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "83",
+    "id" : "82",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "86",
@@ -1902,7 +1811,7 @@
     "id" : "126",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "128",
+    "id" : "129",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "131",
@@ -1927,40 +1836,40 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "140",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "142",
-    "type" : "owl:objectProperty"
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "143",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "145",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "147",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "148",
     "type" : "owl:objectProperty"
   }, {
     "id" : "149",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "151",
+    "id" : "150",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "152",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "154",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "157",
+    "id" : "153",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "160",
+    "id" : "155",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "161",
     "type" : "rdfs:SubClassOf"
@@ -1969,9 +1878,6 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "164",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "165",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "166",
@@ -1984,81 +1890,87 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "169",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "171",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "173",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "175",
-    "type" : "owl:datatypeProperty"
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "176",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "178",
+    "id" : "177",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "180",
-    "type" : "owl:objectProperty"
+    "id" : "179",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "181",
     "type" : "owl:objectProperty"
   }, {
     "id" : "182",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "184",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "185",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "186",
+    "id" : "183",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "185",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "187",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "189",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "190",
+    "id" : "191",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "192",
+    "id" : "193",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "195",
+    "id" : "196",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "197",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "198",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "200",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "204",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "206",
+    "id" : "199",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "209",
+    "id" : "201",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "205",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "207",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "210",
     "type" : "owl:objectProperty"
   }, {
     "id" : "211",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "212",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "213",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "214",
@@ -2241,7 +2153,7 @@
     "id" : "310",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "312",
+    "id" : "311",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "313",
@@ -2253,136 +2165,139 @@
     "id" : "315",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "317",
+    "id" : "316",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "318",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "319",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "320",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "321",
     "type" : "owl:objectProperty"
   }, {
     "id" : "322",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "323",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "324",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "325",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
-    "range" : "6",
-    "domain" : "5",
+    "range" : "0",
+    "domain" : "3",
     "attributes" : [ "object", "anonymous" ],
     "id" : "4"
   }, {
-    "range" : "9",
-    "domain" : "8",
+    "range" : "7",
+    "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "7"
+    "id" : "5"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Byte_size",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "12",
+    "range" : "10",
     "label" : {
       "IRI-based" : "Byte_size"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "en" : "Size of the data asset"
     },
     "attributes" : [ "datatype" ],
-    "id" : "10"
+    "id" : "8"
   }, {
-    "range" : "9",
-    "domain" : "14",
+    "range" : "13",
+    "domain" : "12",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "13"
+    "id" : "11"
   }, {
-    "range" : "9",
-    "domain" : "16",
+    "range" : "13",
+    "domain" : "15",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "15"
+    "id" : "14"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#reads_payment_plan",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "reads_payment_plan"
     },
-    "domain" : "18",
+    "domain" : "17",
     "comment" : {
       "en" : "Wallet Service reads the payment plan information relevant to a Participant performing the transaction"
     },
     "attributes" : [ "object" ],
-    "id" : "17"
+    "id" : "16"
   }, {
-    "range" : "22",
-    "domain" : "21",
+    "range" : "13",
+    "domain" : "20",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "20"
+    "id" : "19"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Contract_date",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "24",
+    "range" : "22",
     "label" : {
       "IRI-based" : "Contract_date"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Absolute datetime of signing the Contract"
     },
     "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
-    "range" : "22",
-    "domain" : "26",
+    "range" : "25",
+    "domain" : "27",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "25"
+    "id" : "26"
   }, {
-    "range" : "28",
+    "range" : "29",
     "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "27"
-  }, {
-    "range" : "31",
-    "domain" : "30",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "29"
+    "id" : "28"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#indexed_metadatum",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "33",
+    "range" : "31",
     "label" : {
       "IRI-based" : "indexed_metadatum"
     },
-    "domain" : "5",
+    "domain" : "6",
     "comment" : {
       "en" : "Metadatum indexed in the Broker"
     },
     "attributes" : [ "datatype" ],
-    "id" : "32"
+    "id" : "30"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Last_valid_date",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "36",
+    "range" : "34",
     "label" : {
       "IRI-based" : "Last_valid_date"
     },
-    "domain" : "35",
+    "domain" : "33",
     "comment" : {
       "en" : "Last date the given Certification is considered valid"
     },
     "attributes" : [ "datatype" ],
-    "id" : "34"
+    "id" : "32"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#format",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "38",
+    "range" : "36",
     "label" : {
       "IRI-based" : "format"
     },
@@ -2391,95 +2306,90 @@
       "en" : "Resource format."
     },
     "attributes" : [ "datatype" ],
-    "id" : "37"
+    "id" : "35"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#memberPerson",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "40",
+    "range" : "38",
     "label" : {
       "IRI-based" : "memberPerson"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "A person member of Participant"
     },
     "attributes" : [ "object" ],
-    "id" : "39"
+    "id" : "37"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Contract_start",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "42",
+    "range" : "40",
     "label" : {
       "IRI-based" : "Contract_start"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Absolute datetime the Contract is requested, offered or expected to start, depending on the type of Contract."
     },
     "attributes" : [ "datatype" ],
-    "id" : "41"
+    "id" : "39"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#PublicationDate",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "44",
+    "range" : "42",
     "label" : {
       "IRI-based" : "PublicationDate"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "en" : "Date of formal issuance (e.g., publication) of the data asset."
     },
     "attributes" : [ "datatype" ],
-    "id" : "43"
+    "id" : "41"
   }, {
     "range" : "0",
     "domain" : "2",
     "attributes" : [ "object", "anonymous" ],
     "id" : "45"
   }, {
-    "range" : "0",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "46"
-  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Configuration_model_log_level",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "52",
+    "range" : "51",
     "label" : {
       "IRI-based" : "Configuration_model_log_level"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "Debug, minimal logging, no logging"
     },
     "attributes" : [ "datatype" ],
-    "id" : "51"
+    "id" : "50"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#assignerOf",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "9",
+    "range" : "13",
     "label" : {
       "IRI-based" : "assignerOf"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Identifies the Contract for which the identified Participant undertakes the assigner functional role."
     },
     "attributes" : [ "object" ],
-    "id" : "57"
+    "id" : "55"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Context",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "61",
+    "range" : "59",
     "label" : {
       "IRI-based" : "Context"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Legal,\nCommercial,\nTechnical,\nBusiness,\nFederative"
     },
     "attributes" : [ "datatype" ],
-    "id" : "60"
+    "id" : "58"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_resource_endpoint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -2487,42 +2397,42 @@
     "label" : {
       "IRI-based" : "has_resource_endpoint"
     },
-    "domain" : "63",
+    "domain" : "61",
     "comment" : {
       "en" : "Reference to the Endpoints serving the resource's content"
     },
     "attributes" : [ "object" ],
-    "id" : "62"
+    "id" : "60"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Participant_Certification_Level",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "66",
+    "range" : "64",
     "label" : {
       "IRI-based" : "Participant_Certification_Level"
     },
-    "domain" : "65",
+    "domain" : "63",
     "comment" : {
       "en" : "Level of a Participant Certification"
     },
     "attributes" : [ "datatype" ],
-    "id" : "64"
+    "id" : "62"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#participant_refinement",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "22",
+    "range" : "25",
     "label" : {
       "IRI-based" : "participant_refinement"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Conditions which needs to be satisfied that a single Participant can be seen as a member of the subject Participant. For instance, all Participants with their headquarter in Europe might be a potential consumer of GDPR-releated data."
     },
     "attributes" : [ "object" ],
-    "id" : "69"
+    "id" : "67"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Language",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "73",
+    "range" : "71",
     "annotations" : {
       "contributor" : [ {
         "identifier" : "contributor",
@@ -2536,85 +2446,85 @@
     },
     "domain" : "1",
     "attributes" : [ "datatype" ],
-    "id" : "72"
+    "id" : "70"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#consumer",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "consumer"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Consumer of a Resource or Service that is the subject matter of the Contract. This party may differ from the Assignee specified by the Contract rules."
     },
     "attributes" : [ "object" ],
-    "id" : "74"
+    "id" : "72"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Function",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "76",
+    "range" : "74",
     "label" : {
       "IRI-based" : "Function"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Legally owns data and offers this for consumption \n\nProvides data on the behalf of an owner and may be the Customer of a Service Provider as well.\n\nDirectly manages and operates resources aimed at data distribution. \n\nSingle user, organization or industry which consumes data to make own business and maintain a business relationship with the Service Provider. Service Consumers can also be Service Providers if they provide other consumers with a service.\n\nUsers belonging to a Federation, that have access to free services thanks to credentials managed by the Federated Identity Providers"
     },
     "attributes" : [ "datatype" ],
-    "id" : "75"
+    "id" : "73"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Data_Service_Url",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "78",
+    "range" : "76",
     "label" : {
       "IRI-based" : "Data_Service_Url"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "URL of the Data Service webpage that replaces the Internet Protocol (IP) address."
     },
     "attributes" : [ "datatype" ],
-    "id" : "77"
+    "id" : "75"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#PostalAddress",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "80",
+    "range" : "78",
     "label" : {
       "IRI-based" : "PostalAddress"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "Physical address of the item"
     },
     "attributes" : [ "datatype" ],
-    "id" : "79"
+    "id" : "77"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Payment_plan",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "82",
+    "range" : "80",
     "label" : {
       "IRI-based" : "Payment_plan"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Payment plan associated to a Participant"
     },
     "attributes" : [ "datatype" ],
-    "id" : "81"
+    "id" : "79"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Metric_Quantity",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "85",
+    "range" : "84",
     "label" : {
       "IRI-based" : "Metric_Quantity"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Amount of consumed metric"
     },
     "attributes" : [ "datatype" ],
-    "id" : "83"
+    "id" : "82"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#phoneNumber",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -2622,7 +2532,7 @@
     "label" : {
       "IRI-based" : "phoneNumber"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "Phone number of the Person"
     },
@@ -2631,7 +2541,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#publisher",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "publisher"
     },
@@ -2661,7 +2571,7 @@
     "label" : {
       "IRI-based" : "Content_standard"
     },
-    "domain" : "28",
+    "domain" : "29",
     "comment" : {
       "en" : "IRI containing document, which defines the standard for the given Digital Content. The content is assumed to conform to that Standard."
     },
@@ -2674,7 +2584,7 @@
     "label" : {
       "IRI-based" : "BirthDate"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "Date of birth"
     },
@@ -2713,7 +2623,7 @@
     "label" : {
       "IRI-based" : "Certification_Identifier"
     },
-    "domain" : "35",
+    "domain" : "33",
     "comment" : {
       "en" : "Identifier of the Certification"
     },
@@ -2791,7 +2701,7 @@
     "label" : {
       "IRI-based" : "Contract_end"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Absolute datetime the Contract is requested, offered or expected to end. If omitted, the contract has to be explicitly terminated by any of the parties."
     },
@@ -2800,11 +2710,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Identity",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "71",
+    "range" : "46",
     "label" : {
       "IRI-based" : "Identity"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Every participant is given a unique identity by the Identity Provider. \n\nBy default, and in accordance with linked-data principles, a participant can unambiguously be identified by a dereferencable HTTPS URL, which references to a live metadata document describing the participant. This identity is confirmed by a certificate."
     },
@@ -2813,7 +2723,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#refinement",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "22",
+    "range" : "25",
     "label" : {
       "IRI-based" : "refinement"
     },
@@ -2852,11 +2762,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#allowedBy",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "55",
+    "range" : "44",
     "label" : {
       "IRI-based" : "allowedBy"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "undefined" : "Function implemented by the Data Service that allows the transaction."
     },
@@ -2869,7 +2779,7 @@
     "label" : {
       "IRI-based" : "Contract_Identifier"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Unambiguous identifier to identify the Contract"
     },
@@ -2878,7 +2788,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#stores",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "84",
+    "range" : "83",
     "label" : {
       "IRI-based" : "stores"
     },
@@ -2889,39 +2799,39 @@
     "attributes" : [ "object" ],
     "id" : "124"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Keyword",
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "127",
+    "range" : "128",
     "label" : {
-      "IRI-based" : "Keyword"
+      "IRI-based" : "Component_Certification_Level"
     },
-    "domain" : "28",
+    "domain" : "127",
     "comment" : {
-      "en" : "Controlled keywords that describe the nature, purpose, or use of the content.\nPossible keyword:\nnumeric, text, still image, geospatial, audio, video, software, interactive resource, 3D, other.\nPossible examples: numeric, text, still image, geospatial, audio, video, software, interactive resource,  3D, other."
+      "en" : "Level of a Component Certification"
     },
     "attributes" : [ "datatype" ],
     "id" : "126"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level",
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Keyword",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
     "range" : "130",
     "label" : {
-      "IRI-based" : "Component_Certification_Level"
+      "IRI-based" : "Keyword"
     },
-    "domain" : "129",
+    "domain" : "29",
     "comment" : {
-      "en" : "Certification issued for the given Ecosystem Component"
+      "en" : "Controlled keywords that describe the nature, purpose, or use of the content.\nPossible keyword:\nnumeric, text, still image, geospatial, audio, video, software, interactive resource, 3D, other.\nPossible examples: numeric, text, still image, geospatial, audio, video, software, interactive resource,  3D, other."
     },
     "attributes" : [ "datatype" ],
-    "id" : "128"
+    "id" : "129"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_connector_default_endpoint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "63",
+    "range" : "61",
     "label" : {
       "IRI-based" : "has_connector_default_endpoint"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "Indicates the default endpoint that should be used for basic infrastructure interactions, e.g., providing the self description."
     },
@@ -2947,123 +2857,128 @@
     "label" : {
       "IRI-based" : "rightOperandReference"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "A reference to a web resource providing the value for the right operand of a Constraint."
     },
     "attributes" : [ "datatype" ],
     "id" : "134"
   }, {
-    "range" : "35",
-    "domain" : "129",
+    "range" : "33",
+    "domain" : "63",
     "attributes" : [ "object", "anonymous" ],
     "id" : "136"
   }, {
-    "range" : "1",
-    "domain" : "0",
+    "range" : "33",
+    "domain" : "127",
     "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "range" : "1",
-    "domain" : "11",
+    "domain" : "0",
     "attributes" : [ "object", "anonymous" ],
     "id" : "138"
   }, {
     "range" : "1",
-    "domain" : "84",
+    "domain" : "9",
     "attributes" : [ "object", "anonymous" ],
     "id" : "139"
   }, {
+    "range" : "1",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Access_Url",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "141",
+    "range" : "142",
     "label" : {
       "IRI-based" : "Access_Url"
     },
-    "domain" : "30",
+    "domain" : "81",
     "comment" : {
       "en" : "The access URL of the Ecosystem Component"
     },
     "attributes" : [ "datatype" ],
-    "id" : "140"
+    "id" : "141"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_participant_certification",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "65",
+    "range" : "63",
     "label" : {
       "IRI-based" : "has_participant_certification"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Certification issued for the given Participant."
     },
     "attributes" : [ "object" ],
-    "id" : "142"
+    "id" : "143"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#corporateEmailAddress",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "144",
+    "range" : "145",
     "label" : {
       "IRI-based" : "corporateEmailAddress"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Email Address of the Participant"
     },
     "attributes" : [ "datatype" ],
-    "id" : "143"
+    "id" : "144"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Operand",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "146",
+    "range" : "147",
     "label" : {
       "IRI-based" : "Operand"
     },
-    "domain" : "21",
+    "domain" : "24",
     "comment" : {
       "en" : "Operand is an abstract property for a logical relationship.\nPossible values:\nAND: The relation is satisfied when all of the Constraints are satisfied.\nANDSEQUENCE: The relation is satisfied when each of the Constraints are satisfied in the order specified.\nOR: The relation is satisfied when at least one of the Constraints is satisfied.\nXONE (only one): The relation is satisfied when only one, and not more, of the Constaints is satisfied"
     },
     "attributes" : [ "datatype" ],
-    "id" : "145"
+    "id" : "146"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "84",
+    "range" : "83",
     "label" : {
       "IRI-based" : "records"
     },
-    "domain" : "18",
+    "domain" : "17",
     "comment" : {
-      "en" : "the Wallet Service records the transaction; the cost consumed by the Participant"
-    },
-    "attributes" : [ "object" ],
-    "id" : "147"
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#index",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "11",
-    "label" : {
-      "IRI-based" : "index"
-    },
-    "domain" : "5",
-    "comment" : {
-      "en" : "Metadata indexing from data sources"
+      "en" : "the Wallet Service records the transaction, and calculates the cost consumed by the Participant"
     },
     "attributes" : [ "object" ],
     "id" : "148"
   }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#index",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "index"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Metadata indexing from data sources"
+    },
+    "attributes" : [ "object" ],
+    "id" : "149"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#EmailAddress",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "150",
+    "range" : "151",
     "label" : {
       "IRI-based" : "EmailAddress"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "Email Address of the Person"
     },
     "attributes" : [ "datatype" ],
-    "id" : "149"
+    "id" : "150"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#datatype",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -3071,255 +2986,255 @@
     "label" : {
       "IRI-based" : "datatype"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "The datatype of the value of the rightOperand or rightOperandReference of a Constraint."
     },
     "attributes" : [ "datatype" ],
-    "id" : "151"
+    "id" : "152"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Inbound_model_version",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "153",
+    "range" : "154",
     "label" : {
       "IRI-based" : "Inbound_model_version"
     },
-    "domain" : "30",
+    "domain" : "81",
     "comment" : {
       "en" : "Information Model version that the Ecosystem Component is capable of reading/processing."
     },
     "attributes" : [ "datatype" ],
-    "id" : "152"
+    "id" : "153"
   }, {
-    "range" : "156",
-    "domain" : "155",
+    "range" : "157",
+    "domain" : "156",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "154"
+    "id" : "155"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ContactPoint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "159",
+    "range" : "160",
     "label" : {
       "IRI-based" : "ContactPoint"
     },
-    "domain" : "158",
+    "domain" : "159",
     "comment" : {
       "en" : "Relevant contact information for the cataloged item"
     },
     "attributes" : [ "datatype" ],
-    "id" : "157"
+    "id" : "158"
   }, {
-    "range" : "90",
-    "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "160"
-  }, {
-    "range" : "90",
+    "range" : "157",
     "domain" : "162",
     "attributes" : [ "object", "anonymous" ],
     "id" : "161"
   }, {
-    "range" : "35",
-    "domain" : "65",
+    "range" : "90",
+    "domain" : "61",
     "attributes" : [ "object", "anonymous" ],
     "id" : "163"
   }, {
-    "range" : "30",
-    "domain" : "18",
+    "range" : "90",
+    "domain" : "165",
     "attributes" : [ "object", "anonymous" ],
     "id" : "164"
   }, {
-    "range" : "30",
-    "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "165"
-  }, {
-    "range" : "30",
-    "domain" : "6",
+    "range" : "85",
+    "domain" : "1",
     "attributes" : [ "object", "anonymous" ],
     "id" : "166"
   }, {
-    "range" : "30",
-    "domain" : "119",
+    "range" : "81",
+    "domain" : "17",
     "attributes" : [ "object", "anonymous" ],
     "id" : "167"
   }, {
-    "range" : "30",
-    "domain" : "125",
+    "range" : "81",
+    "domain" : "159",
     "attributes" : [ "object", "anonymous" ],
     "id" : "168"
   }, {
+    "range" : "81",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "81",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Role",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "170",
+    "range" : "172",
     "label" : {
       "IRI-based" : "Role"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Service Provider,\nService Consumer,\nData Owner,\nData Provider,\nFederator,\nFederation user"
     },
     "attributes" : [ "datatype" ],
-    "id" : "169"
-  }, {
-    "range" : "156",
-    "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "171"
   }, {
-    "range" : "156",
-    "domain" : "174",
+    "range" : "81",
+    "domain" : "125",
     "attributes" : [ "object", "anonymous" ],
     "id" : "173"
   }, {
+    "range" : "157",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#status",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "50",
+    "range" : "52",
     "label" : {
       "IRI-based" : "status"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "The status provides a value generated from the leftOperand action that must be used in the comparison expression"
     },
     "attributes" : [ "datatype" ],
-    "id" : "175"
+    "id" : "176"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Data_Service_Type",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "177",
+    "range" : "178",
     "label" : {
       "IRI-based" : "Data_Service_Type"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Type of operation which characterised the scope and kind of Service. \nPossible values: discovery, download, trace, distribute, produce, process, order, archive, transform, view, other."
     },
     "attributes" : [ "datatype" ],
-    "id" : "176"
+    "id" : "177"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Connector_Deploy_Mode",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "179",
+    "range" : "180",
     "label" : {
       "IRI-based" : "Connector_Deploy_Mode"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "Deploy mode of a Connector.\nProduction or test."
     },
     "attributes" : [ "datatype" ],
-    "id" : "178"
+    "id" : "179"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#service_link",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "55",
+    "range" : "44",
     "label" : {
       "IRI-based" : "service_link"
     },
-    "domain" : "158",
+    "domain" : "159",
     "comment" : {
       "en" : "A service that is listed in the Catalogue"
     },
     "attributes" : [ "object" ],
-    "id" : "180"
+    "id" : "181"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#curator",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "curator"
     },
-    "domain" : "30",
+    "domain" : "81",
     "comment" : {
       "en" : "Participant responsible for the correctness of the content offered by the Ecosystem Component."
     },
     "attributes" : [ "object" ],
-    "id" : "181"
+    "id" : "182"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ConformsTo",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "183",
+    "range" : "184",
     "label" : {
       "IRI-based" : "ConformsTo"
     },
-    "domain" : "59",
+    "domain" : "43",
     "comment" : {
       "en" : "An established standard to which the described item conforms."
     },
     "attributes" : [ "datatype" ],
-    "id" : "182"
+    "id" : "183"
   }, {
-    "range" : "31",
-    "domain" : "35",
+    "range" : "85",
+    "domain" : "81",
     "attributes" : [ "object", "anonymous" ],
-    "id" : "184"
+    "id" : "185"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_constraint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "22",
+    "range" : "25",
     "label" : {
       "IRI-based" : "has_constraint"
     },
-    "domain" : "156",
+    "domain" : "157",
     "comment" : {
       "en" : "Constraints applied to a Rule"
     },
     "attributes" : [ "object" ],
-    "id" : "185"
-  }, {
-    "range" : "31",
-    "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
     "id" : "186"
   }, {
-    "range" : "31",
-    "domain" : "1",
+    "range" : "85",
+    "domain" : "33",
     "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
+    "range" : "85",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Logical_Constraint_Identifier",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "189",
+    "range" : "190",
     "label" : {
       "IRI-based" : "Logical_Constraint_Identifier"
     },
-    "domain" : "21",
+    "domain" : "24",
     "comment" : {
       "en" : "Identifier of the Logical Constraint"
     },
     "attributes" : [ "datatype" ],
-    "id" : "188"
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Evaluation_facility",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "191",
-    "label" : {
-      "IRI-based" : "Evaluation_facility"
-    },
-    "domain" : "35",
-    "comment" : {
-      "en" : "Evaluation Facility that performed and issued given Certification."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "190"
+    "id" : "189"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Cost_Centre",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "193",
+    "range" : "192",
     "label" : {
       "IRI-based" : "Cost_Centre"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Business unit that is only responsible for the costs that incurs"
     },
     "attributes" : [ "datatype" ],
-    "id" : "192"
+    "id" : "191"
+  }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Evaluation_facility",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
+    "range" : "194",
+    "label" : {
+      "IRI-based" : "Evaluation_facility"
+    },
+    "domain" : "33",
+    "comment" : {
+      "en" : "Evaluation Facility that performed and issued given Certification."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "193"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Endpoint_Access_Url",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "196",
+    "range" : "197",
     "label" : {
       "IRI-based" : "Endpoint_Access_Url"
     },
@@ -3328,11 +3243,11 @@
       "en" : "Access URL of an endpoint."
     },
     "attributes" : [ "datatype" ],
-    "id" : "195"
+    "id" : "196"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#sovereign",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "sovereign"
     },
@@ -3341,102 +3256,102 @@
       "en" : "The 'owner', i.e. sovereign of the data."
     },
     "attributes" : [ "object" ],
-    "id" : "197"
+    "id" : "198"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Service_Catalogue_Homepage",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "199",
+    "range" : "200",
     "label" : {
       "IRI-based" : "Service_Catalogue_Homepage"
     },
-    "domain" : "158",
+    "domain" : "159",
     "comment" : {
       "en" : "A homepage of the Service Catalogue."
     },
     "attributes" : [ "datatype" ],
-    "id" : "198"
+    "id" : "199"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#operator",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "201",
+    "range" : "202",
     "label" : {
       "IRI-based" : "operator"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "The operator instances identify the relational operation between the left and right operands.\nPossible values: after, before, contains, covered by, covers, defines as, disjoint, during, equals, finished by, finishes, greater than, greater than or equals, has Member, has same duration, has site, has state, inside, inside network, interval equals, is same as, less than or equals, longer, longer or equals, matches, meet, meets, memberOf, met by, not equals, overlap, overlapped by, overlaps, shorter, shorter or equals, started by, starts, string contains, string equals, string is contained in."
     },
     "attributes" : [ "datatype" ],
-    "id" : "200"
+    "id" : "201"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#participant_link",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "participant_link"
     },
-    "domain" : "158",
+    "domain" : "159",
     "comment" : {
       "en" : "A Participant that is listed in the Catalogue"
     },
     "attributes" : [ "object" ],
-    "id" : "204"
+    "id" : "205"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Name",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "207",
+    "range" : "208",
     "label" : {
       "IRI-based" : "Name"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "Name of the Person"
     },
     "attributes" : [ "datatype" ],
-    "id" : "206"
+    "id" : "207"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_assignee",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "has_assignee"
     },
-    "domain" : "156",
+    "domain" : "157",
     "comment" : {
       "en" : "indicates the Party that is the recipient the of Rule. For example, the Party being granted a Permission or required to fulfil an agreed Duty."
     },
     "attributes" : [ "object" ],
-    "id" : "209"
+    "id" : "210"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#permission",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "172",
+    "range" : "175",
     "label" : {
       "IRI-based" : "permission"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Relates an individual Permission to a Contract"
     },
     "attributes" : [ "object" ],
-    "id" : "210"
+    "id" : "211"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Cost_model",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "205",
+    "range" : "206",
     "label" : {
       "IRI-based" : "Cost_model"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Description of the cost model approach applied to the available interface"
     },
     "attributes" : [ "datatype" ],
-    "id" : "211"
+    "id" : "212"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#target_EntryPoint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "213",
+    "range" : "66",
     "label" : {
       "IRI-based" : "target_EntryPoint"
     },
@@ -3445,7 +3360,7 @@
       "en" : "An entrypoint used to execute the action."
     },
     "attributes" : [ "datatype" ],
-    "id" : "212"
+    "id" : "213"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Pricing_strategy",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -3471,7 +3386,7 @@
     "label" : {
       "IRI-based" : "SiteAddress"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Address of an office or other premise at which the organization is located.\nIt is particularly important in cases in which specific rules (e.g., national law) apply, affecting, for example, the data usage control policy."
     },
@@ -3480,7 +3395,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_dataapp_default_endpoint",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "162",
+    "range" : "165",
     "label" : {
       "IRI-based" : "has_dataapp_default_endpoint"
     },
@@ -3493,11 +3408,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#maintainer",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "maintainer"
     },
-    "domain" : "30",
+    "domain" : "81",
     "comment" : {
       "en" : "Participant responsible for technical maintenance of the Ecosystem Component."
     },
@@ -3523,7 +3438,7 @@
     "label" : {
       "IRI-based" : "Transaction_start"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Absolute datetime the Transaction is started."
     },
@@ -3536,7 +3451,7 @@
     "label" : {
       "IRI-based" : "application"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Function implemented by the Data Service by means of a Data App"
     },
@@ -3545,7 +3460,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#action_refinement",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "22",
+    "range" : "25",
     "label" : {
       "IRI-based" : "action_refinement"
     },
@@ -3562,7 +3477,7 @@
     "label" : {
       "IRI-based" : "Wallet_Homepage"
     },
-    "domain" : "18",
+    "domain" : "17",
     "comment" : {
       "en" : "A homepage of the Wallet service."
     },
@@ -3575,7 +3490,7 @@
     "label" : {
       "IRI-based" : "Constraint_Identifier"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "Identifier of the Constraints"
     },
@@ -3588,7 +3503,7 @@
     "label" : {
       "IRI-based" : "rightOperand"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "The rightOperand is the value of the Constraint that is to be compared to the leftOperand."
     },
@@ -3597,11 +3512,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#connector_reference",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "6",
+    "range" : "7",
     "label" : {
       "IRI-based" : "connector_reference"
     },
-    "domain" : "5",
+    "domain" : "6",
     "comment" : {
       "en" : "Reference to Connectors, which are listed in the Broker."
     },
@@ -3610,11 +3525,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#prohibition",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "155",
+    "range" : "162",
     "label" : {
       "IRI-based" : "prohibition"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Relates an individual Prohibition to a Contract."
     },
@@ -3627,7 +3542,7 @@
     "label" : {
       "IRI-based" : "Data_Service_Identifier"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Unique identifier of the Service"
     },
@@ -3636,7 +3551,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ContractOfferRef",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "208",
+    "range" : "209",
     "annotations" : {
       "contributor" : [ {
         "identifier" : "contributor",
@@ -3654,11 +3569,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_assigner",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "has_assigner"
     },
-    "domain" : "156",
+    "domain" : "157",
     "comment" : {
       "en" : "indicates the Party that is issuing the Rule. For example, the Party granting a Permission or requiring an agreed Duty to be fulfilled."
     },
@@ -3671,7 +3586,7 @@
     "label" : {
       "IRI-based" : "Membership_end"
     },
-    "domain" : "65",
+    "domain" : "63",
     "comment" : {
       "en" : "End of the Participant’s CDS Membership."
     },
@@ -3684,7 +3599,7 @@
     "label" : {
       "IRI-based" : "ItemPublicationDate"
     },
-    "domain" : "158",
+    "domain" : "159",
     "comment" : {
       "en" : "Date of formal issuance (e.g., publication) of the item."
     },
@@ -3693,11 +3608,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#provider",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "provider"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Provider of a Resource or Service that is the subject matter of the contract. This party may differ from the Assigner specified by the Contract rules."
     },
@@ -3710,7 +3625,7 @@
     "label" : {
       "IRI-based" : "Data_Service_Name"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Name of the Service.\n"
     },
@@ -3719,11 +3634,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#certification_type",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "70",
+    "range" : "69",
     "label" : {
       "IRI-based" : "certification_type"
     },
-    "domain" : "35",
+    "domain" : "33",
     "comment" : {
       "en" : "Type of the certification issued (e.g. X509)"
     },
@@ -3732,11 +3647,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#obligation",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "174",
+    "range" : "156",
     "label" : {
       "IRI-based" : "obligation"
     },
-    "domain" : "9",
+    "domain" : "13",
     "comment" : {
       "en" : "Relates an individual Duty to a Contract"
     },
@@ -3745,11 +3660,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#assigneeOf",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "9",
+    "range" : "13",
     "label" : {
       "IRI-based" : "assigneeOf"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Identifies the Contract for which the identified Particpant undertakes the assignee functional role."
     },
@@ -3758,11 +3673,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#remedy",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "174",
+    "range" : "156",
     "label" : {
       "IRI-based" : "remedy"
     },
-    "domain" : "155",
+    "domain" : "162",
     "comment" : {
       "en" : "Relates an individual remedy Duty to a Prohibition"
     },
@@ -3788,7 +3703,7 @@
     "label" : {
       "IRI-based" : "Metric_Type"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Name of the metric"
     },
@@ -3814,7 +3729,7 @@
     "label" : {
       "IRI-based" : "Outbound_model_version"
     },
-    "domain" : "30",
+    "domain" : "81",
     "comment" : {
       "en" : "Information Model version being produced by the Ecosystem Component"
     },
@@ -3840,7 +3755,7 @@
     "label" : {
       "IRI-based" : "corporateHomepage"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Homepage of the Participant"
     },
@@ -3849,7 +3764,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#manages_identity",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "manages_identity"
     },
@@ -3892,7 +3807,7 @@
     "label" : {
       "IRI-based" : "authInfo"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "Information of the authentication server used by the Connector"
     },
@@ -3905,7 +3820,7 @@
     "label" : {
       "IRI-based" : "License"
     },
-    "domain" : "58",
+    "domain" : "57",
     "comment" : {
       "en" : "Reference to a legal document under which the resource is made available"
     },
@@ -3914,11 +3829,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_component_certification",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "129",
+    "range" : "127",
     "label" : {
       "IRI-based" : "has_component_certification"
     },
-    "domain" : "30",
+    "domain" : "81",
     "comment" : {
       "en" : "Certification issued for the given Ecosystem Component."
     },
@@ -3931,7 +3846,7 @@
     "label" : {
       "IRI-based" : "ItemModificationDate"
     },
-    "domain" : "158",
+    "domain" : "159",
     "comment" : {
       "en" : "Most recent date on which the item was changed, updated or modified."
     },
@@ -3944,7 +3859,7 @@
     "label" : {
       "IRI-based" : "BirthPlace"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "The place where the person was born"
     },
@@ -3957,7 +3872,7 @@
     "label" : {
       "IRI-based" : "Connector_Identifier"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "Identifier of the Connector"
     },
@@ -3983,7 +3898,7 @@
     "label" : {
       "IRI-based" : "organization"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "An organization that this person is affiliated with."
     },
@@ -3996,7 +3911,7 @@
     "label" : {
       "IRI-based" : "Checksum"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "en" : "Checksum of the data asset"
     },
@@ -4005,11 +3920,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#consequence",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "174",
+    "range" : "156",
     "label" : {
       "IRI-based" : "consequence"
     },
-    "domain" : "174",
+    "domain" : "156",
     "comment" : {
       "en" : "Relates a Duty to another Duty, the latter being a consequence of not fulfilling the former."
     },
@@ -4018,7 +3933,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#DataAppVersion",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "202",
+    "range" : "203",
     "label" : {
       "IRI-based" : "DataAppVersion"
     },
@@ -4035,7 +3950,7 @@
     "label" : {
       "IRI-based" : "has_action"
     },
-    "domain" : "156",
+    "domain" : "157",
     "comment" : {
       "en" : "The operation relating to the Asset for which the Rule is being subjected."
     },
@@ -4048,7 +3963,7 @@
     "label" : {
       "IRI-based" : "infoDataService"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Descriptive information on the data service that allowed the action"
     },
@@ -4061,7 +3976,7 @@
     "label" : {
       "IRI-based" : "ModificationDate"
     },
-    "domain" : "11",
+    "domain" : "9",
     "comment" : {
       "en" : "Most recent date on which the data asset was changed, updated or modified."
     },
@@ -4074,7 +3989,7 @@
     "label" : {
       "IRI-based" : "Surname"
     },
-    "domain" : "40",
+    "domain" : "38",
     "comment" : {
       "en" : "Surname of the Person"
     },
@@ -4109,7 +4024,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#creator",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "creator"
     },
@@ -4126,7 +4041,7 @@
     "label" : {
       "IRI-based" : "Category"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Category is a tag reporting if the Service is free of charge or not, as defined in the SOW [AD-1].\nIt can be:\nFree / Advanced"
     },
@@ -4135,7 +4050,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#contract_offer",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "16",
+    "range" : "20",
     "label" : {
       "IRI-based" : "contract_offer"
     },
@@ -4152,7 +4067,7 @@
     "label" : {
       "IRI-based" : "leftOperand"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "The left operand in a constraint expression. The leftOperand instances must clearly be defined to indicate the semantics of the Constraint, and may declare how the value for comparison has to be retrieved or generated.\nPossible values: Absolute geo-spatial position, count, current event, delay, elapsed time, endpoint, execution system, path to attribute, payAmount, payment, policy evaluation time, purpose, quantity, recurrence rate, security level, state, user."
     },
@@ -4165,7 +4080,7 @@
     "label" : {
       "IRI-based" : "unit"
     },
-    "domain" : "26",
+    "domain" : "27",
     "comment" : {
       "en" : "unit indicates the unit value of the rightOperand/Reference."
     },
@@ -4178,7 +4093,7 @@
     "label" : {
       "IRI-based" : "Connector_description"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "References to Connector which is deployed / maintained in the Configuration model"
     },
@@ -4187,11 +4102,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#TransactionUser",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "260",
+    "range" : "259",
     "label" : {
       "IRI-based" : "TransactionUser"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Descriptive information on the Participant responsible of the transaction"
     },
@@ -4200,11 +4115,11 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_transaction_user",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "19",
+    "range" : "18",
     "label" : {
       "IRI-based" : "has_transaction_user"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Participant responsible of the transaction"
     },
@@ -4213,7 +4128,7 @@
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Data_App_Functionality",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "194",
+    "range" : "195",
     "label" : {
       "IRI-based" : "Data_App_Functionality"
     },
@@ -4224,9 +4139,22 @@
     "attributes" : [ "datatype" ],
     "id" : "309"
   }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#version",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "version"
+    },
+    "domain" : "85",
+    "comment" : {
+      "en" : "Version identified of the Managed Entity.\n"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "310"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#error",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "311",
+    "range" : "312",
     "label" : {
       "IRI-based" : "error"
     },
@@ -4235,24 +4163,11 @@
       "en" : "Descriptive information on the cause of the failure (optional, for failed actions)"
     },
     "attributes" : [ "datatype" ],
-    "id" : "310"
-  }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#version",
-    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "67",
-    "label" : {
-      "IRI-based" : "version"
-    },
-    "domain" : "31",
-    "comment" : {
-      "en" : "Version identified of the Managed Entity.\n"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "312"
+    "id" : "311"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#deployed",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "6",
+    "range" : "7",
     "label" : {
       "IRI-based" : "deployed"
     },
@@ -4263,22 +4178,35 @@
     "attributes" : [ "object" ],
     "id" : "313"
   }, {
-    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Country",
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "203",
+    "range" : "260",
     "label" : {
-      "IRI-based" : "Country"
+      "IRI-based" : "Transaction"
     },
-    "domain" : "40",
+    "domain" : "83",
     "comment" : {
-      "en" : "Nationality of the person"
+      "en" : "Descriptive information on the transaction"
     },
     "attributes" : [ "datatype" ],
     "id" : "314"
   }, {
+    "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Country",
+    "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
+    "range" : "204",
+    "label" : {
+      "IRI-based" : "Country"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Nationality of the person"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "315"
+  }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#actionStatus",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "316",
+    "range" : "317",
     "label" : {
       "IRI-based" : "actionStatus"
     },
@@ -4287,7 +4215,7 @@
       "en" : "Indicates the current disposition of the Action.\nIn-progress, completed, failed, potential."
     },
     "attributes" : [ "datatype" ],
-    "id" : "315"
+    "id" : "316"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Objective",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -4295,38 +4223,38 @@
     "label" : {
       "IRI-based" : "Objective"
     },
-    "domain" : "19",
+    "domain" : "18",
     "comment" : {
       "en" : "Data sovereignty,\nData commissioning or\nDecommissioning,\nData distribution,\nData exploitation,\nData usage policies,\nCollaboration"
     },
     "attributes" : [ "datatype" ],
-    "id" : "317"
+    "id" : "318"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "259",
+    "range" : "320",
     "label" : {
       "IRI-based" : "Transaction_end"
     },
-    "domain" : "84",
+    "domain" : "83",
     "comment" : {
       "en" : "Absolute datetime the Transaction is completed."
     },
     "attributes" : [ "datatype" ],
-    "id" : "318"
+    "id" : "319"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#operation_type",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "11",
+    "range" : "9",
     "label" : {
       "IRI-based" : "operation_type"
     },
-    "domain" : "55",
+    "domain" : "44",
     "comment" : {
       "en" : "Processing, distribution, and operations of a Data Asset performed by a Data Service"
     },
     "attributes" : [ "object" ],
-    "id" : "319"
+    "id" : "321"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -4334,29 +4262,29 @@
     "label" : {
       "IRI-based" : "has_target"
     },
-    "domain" : "156",
+    "domain" : "157",
     "comment" : {
-      "en" : "The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.\nExample: the assigner Participant offers to <action> the target Resource"
+      "en" : "The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.\nExample: the  <i>assigner</i> Participant <i>offers</i> to <i>action</i> the <i>target</i> Resource"
     },
     "attributes" : [ "object" ],
-    "id" : "320"
+    "id" : "322"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_duty",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "174",
+    "range" : "156",
     "label" : {
       "IRI-based" : "has_duty"
     },
-    "domain" : "172",
+    "domain" : "175",
     "comment" : {
       "en" : "Relates an individual Duty to a Permission.\nNote: A Duty is a pre-condition which must be fulfilled in order to receive the Permission."
     },
     "attributes" : [ "object" ],
-    "id" : "321"
+    "id" : "323"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#taxonomy",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
-    "range" : "68",
+    "range" : "65",
     "label" : {
       "IRI-based" : "taxonomy"
     },
@@ -4365,7 +4293,7 @@
       "en" : "Data Providing App,\nand/or\nData Processing App,\nand/or\nData Consuming App."
     },
     "attributes" : [ "datatype" ],
-    "id" : "322"
+    "id" : "324"
   }, {
     "iri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Connector_Status",
     "baseIri" : "http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl",
@@ -4373,11 +4301,11 @@
     "label" : {
       "IRI-based" : "Connector_Status"
     },
-    "domain" : "6",
+    "domain" : "7",
     "comment" : {
       "en" : "Offline, online, badly configured"
     },
     "attributes" : [ "datatype" ],
-    "id" : "323"
+    "id" : "325"
   } ]
 }

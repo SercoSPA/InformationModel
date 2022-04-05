@@ -180,7 +180,7 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
             rdfs:domain :Rule ;
             rdfs:range :Resource ;
             rdfs:comment """The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.
-Example: the assigner Participant offers to <action> the target Resource"""@en .
+Example: the  <i>assigner</i> Participant <i>offers</i> to <i>action</i> the <i>target</i> Resource"""@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_transaction_user
@@ -299,7 +299,7 @@ Example: the assigner Participant offers to <action> the target Resource"""@en .
 :records rdf:type owl:ObjectProperty ;
          rdfs:domain :Wallet ;
          rdfs:range :Transaction_Data ;
-         rdfs:comment "the Wallet Service records the transaction; the cost consumed by the Participant"@en .
+         rdfs:comment "the Wallet Service records the transaction, and calculates the cost consumed by the Participant"@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#refinement
@@ -417,7 +417,7 @@ Free / Advanced"""@en .
 :Component_Certification_Level rdf:type owl:DatatypeProperty ;
                                rdfs:domain :Component_Certification ;
                                rdfs:range xsd:string ;
-                               rdfs:comment "Certification issued for the given Ecosystem Component"@en .
+                               rdfs:comment "Level of a Component Certification"@en .
 
 
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Configuration_model_log_level
@@ -915,6 +915,13 @@ It is particularly important in cases in which specific rules (e.g., national la
          rdfs:comment "Surname of the Person"@en .
 
 
+###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction
+:Transaction rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Transaction_Data ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Descriptive information on the transaction"@en .
+
+
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#TransactionUser
 :TransactionUser rdf:type owl:DatatypeProperty ;
                  rdfs:domain :Transaction_Data ;
@@ -1080,7 +1087,7 @@ Possible values: after, before, contains, covered by, covers, defines as, disjoi
 ###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference
 :rightOperandReference rdf:type owl:DatatypeProperty ;
                        rdfs:domain :Constraint ;
-                       rdfs:range rdfs:Literal ;
+                       rdfs:range xsd:anyURI ;
                        rdfs:comment "A reference to a web resource providing the value for the right operand of a Constraint."@en .
 
 
@@ -1352,90 +1359,6 @@ Resources are the subject of a Rule ."""@en .
 :Wallet rdf:type owl:Class ;
         rdfs:subClassOf :Ecosystem_Component ;
         rdfs:comment "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"@en .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer
-:aggregate_by_consumer rdf:type owl:NamedIndividual ,
-                                :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider
-:aggregate_by_provider rdf:type owl:NamedIndividual ,
-                                :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize
-:anonymize rdf:type owl:NamedIndividual ,
-                    :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate
-:compensate rdf:type owl:NamedIndividual ,
-                     :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete
-:delete rdf:type owl:NamedIndividual ,
-                 :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute
-:distribute rdf:type owl:NamedIndividual ,
-                     :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt
-:ecrypt rdf:type owl:NamedIndividual ,
-                 :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use
-:grant_use rdf:type owl:NamedIndividual ,
-                    :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log
-:log rdf:type owl:NamedIndividual ,
-              :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify
-:modify rdf:type owl:NamedIndividual ,
-                 :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy
-:next_policy rdf:type owl:NamedIndividual ,
-                      :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify
-:notify rdf:type owl:NamedIndividual ,
-                 :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read
-:read rdf:type owl:NamedIndividual ,
-               :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance
-:track_provenance rdf:type owl:NamedIndividual ,
-                           :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use
-:use rdf:type owl:NamedIndividual ,
-              :Action .
-
-
-###  http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write
-:write rdf:type owl:NamedIndividual ,
-                :Action .
 
 
 ###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

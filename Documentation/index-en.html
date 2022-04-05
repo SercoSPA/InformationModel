@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"","image":"http://vowl.visualdataweb.org/webvowl/#iri=","name":"Copernicus Data Space Information Model", "headline":"Document describing the ontology ", "datePublished":"April 2022", "version":"1.0.0", "license":"https://www.apache.org/licenses/LICENSE-2.0", "author":[{"@type":"Person","name":"Diego Musmarra, Gaia Cipolletta, Volpi Federica"}], "contributor":[{"@type":"Person","name":"Vincenzo Volpe, Andrea Tesseri"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"","image":"http://vowl.visualdataweb.org/webvowl/#iri=","name":"Copernicus Data Space Information Model", "headline":"Document describing the ontology ", "datePublished":"April 2022", "version":"1.0.0", "license":"https://www.apache.org/licenses/LICENSE-2.0", "author":[{"@type":"Person","name":"Diego Musmarra, Gaia Cipolletta, Federica Volpi"}], "contributor":[{"@type":"Person","name":"Vincenzo Volpe, Andrea Tesseri"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -62,12 +62,12 @@ $(function(){
 <dt>Revision:</dt>
 <dd>1.0.0</dd>
 <dt>Authors:</dt>
-<dd>Diego Musmarra, Gaia Cipolletta, Volpi Federica</dd>
+<dd>Diego Musmarra, Gaia Cipolletta, Federica Volpi</dd>
 
 <dt>Contributors:</dt>
 <dd>Vincenzo Volpe, Andrea Tesseri</dd>
 
-<!--<dt>Download serialization:</dt><dd><span><a href="Ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="Ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="Ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="Ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://img.shields.io/badge/License-Apache%20License%20Version%202.0-blue.svg" alt="https://www.apache.org/licenses/LICENSE-2.0" /></a>-->
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.rdf" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank"><img src="https://img.shields.io/badge/License-Apache%20License%20Version%202.0-blue.svg" alt="https://www.apache.org/licenses/LICENSE-2.0" /></a>
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
 
@@ -1186,6 +1186,12 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction"
+         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction">
+         <span>transaction</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end"
          title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end">
          <span>transaction end</span>
@@ -1219,103 +1225,6 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Wallet_Homepage"
          title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Wallet_Homepage">
          <span>wallet homepage</span>
-      </a>
-   </li>
-</ul><h4>Named Individuals</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer">
-         <span>aggregate by consumer</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider">
-         <span>aggregate by provider</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize">
-         <span>anonymize</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate">
-         <span>compensate</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete">
-         <span>delete</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute">
-         <span>distribute</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt">
-         <span>ecrypt</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use">
-         <span>grant use</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log">
-         <span>log</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify">
-         <span>modify</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy">
-         <span>next policy</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify">
-         <span>notify</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read">
-         <span>read</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance">
-         <span>track provenance</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use">
-         <span>use</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write"
-         title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write">
-         <span>write</span>
       </a>
    </li>
 </ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
@@ -1868,42 +1777,6 @@ This section provides details for each class and property defined by Copernicus 
             <sup class="type-op" title="object property">op</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#includedIn"
                title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#includedIn">included in</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer">aggregate by consumer</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider">aggregate by provider</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize">anonymize</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate">compensate</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete">delete</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute">distribute</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt">ecrypt</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use">grant use</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log">log</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify">modify</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy">next policy</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify">notify</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read">read</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance">track provenance</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use">use</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write">write</a>
-            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
    </div>
@@ -3117,6 +2990,8 @@ Resources are the subject of a Rule .</span>
                title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Metric_Quantity">metric quantity</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Metric_Type"
                title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Metric_Type">metric type</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction"
+               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction">transaction</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end"
                title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end">transaction end</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_start"
@@ -4042,7 +3917,7 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
          <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target</p>
       <div class="comment">
          <span class="markdown">The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.
-Example: the assigner Participant offers to &lt;action&gt; the target Resource</span>
+Example: the  &lt;i&gt;assigner&lt;/i&gt; Participant &lt;i&gt;offers&lt;/i&gt; to &lt;i&gt;action&lt;/i&gt; the &lt;i&gt;target&lt;/i&gt; Resource</span>
       </div>
       <div class="description">
          <dl>
@@ -4501,7 +4376,7 @@ Example: the assigner Participant offers to &lt;action&gt; the target Resource</
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records</p>
       <div class="comment">
-         <span class="markdown">the Wallet Service records the transaction; the cost consumed by the Participant</span>
+         <span class="markdown">the Wallet Service records the transaction, and calculates the cost consumed by the Participant</span>
       </div>
       <div class="description">
          <dl>
@@ -5253,6 +5128,12 @@ Example: the assigner Participant offers to &lt;action&gt; the target Resource</
          </a>
       </li>
       <li>
+         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction"
+            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction">
+            <span>transaction</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end"
             title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end">
             <span>transaction end</span>
@@ -5671,7 +5552,7 @@ Free / Advanced</span>
       <p>
          <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level</p>
       <div class="comment">
-         <span class="markdown">Certification issued for the given Ecosystem Component</span>
+         <span class="markdown">Level of a Component Certification</span>
       </div>
       <div class="description">
          <dl>
@@ -7762,9 +7643,9 @@ The Flat Rate strategy charges usage per quantitative slot (time, volume, credit
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="http://www.w3.org/2000/01/rdf-schema#Literal"
+               <a href="http://www.w3.org/2001/XMLSchema#anyURI"
                   target="_blank"
-                  title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</a>
+                  title="http://www.w3.org/2001/XMLSchema#anyURI">any u r i</a>
             </dd>
          </dl>
       </div>
@@ -8016,6 +7897,33 @@ Data Consuming App.</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction">
+      <h3>transaction<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction</p>
+      <div class="comment">
+         <span class="markdown">Descriptive information on the transaction</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_Data"
+                  title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_Data">transaction data</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_end">
       <h3>transaction end<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -8172,362 +8080,6 @@ Data Consuming App.</span>
             </dd>
          </dl>
       </div>
-   </div>
-</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
-   <h3 id="namedindividuals" class="list">Named Individuals</h3>
-   <ul class="hlist">
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer">
-            <span>aggregate by consumer</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider">
-            <span>aggregate by provider</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize">
-            <span>anonymize</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate">
-            <span>compensate</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete">
-            <span>delete</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute">
-            <span>distribute</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt">
-            <span>ecrypt</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use">
-            <span>grant use</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log">
-            <span>log</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify">
-            <span>modify</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy">
-            <span>next policy</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify">
-            <span>notify</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read">
-            <span>read</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance">
-            <span>track provenance</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use">
-            <span>use</span>
-         </a>
-      </li>
-      <li>
-         <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write"
-            title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write">
-            <span>write</span>
-         </a>
-      </li>
-   </ul>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer">
-      <h3>aggregate by consumer<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider">
-      <h3>aggregate by provider<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize">
-      <h3>anonymize<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate">
-      <h3>compensate<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete">
-      <h3>delete<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute">
-      <h3>distribute<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt">
-      <h3>ecrypt<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use">
-      <h3>grant use<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log">
-      <h3>log<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify">
-      <h3>modify<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy">
-      <h3>next policy<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify">
-      <h3>notify<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read">
-      <h3>read<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance">
-      <h3>track provenance<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use">
-      <h3>use<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write">
-      <h3>write<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action"
-               title="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action">action</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
    </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl">
-    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V0.6.owl"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -485,6 +485,9 @@
         <DataProperty IRI="#Surname"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#Transaction"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#TransactionUser"/>
     </Declaration>
     <Declaration>
@@ -573,54 +576,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#version"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#aggregate_by_consumer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#aggregate_by_provider"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#anonymize"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#compensate"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#delete"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#distribute"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ecrypt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#grant_use"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#log"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#modify"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#next_policy"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#notify"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#read"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#track_provenance"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#use"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#write"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:contributor"/>
@@ -737,70 +692,6 @@
         <Class IRI="#Wallet"/>
         <Class IRI="#Ecosystem_Component"/>
     </SubClassOf>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#aggregate_by_consumer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#aggregate_by_provider"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#anonymize"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#compensate"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#delete"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#distribute"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#ecrypt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#grant_use"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#log"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#modify"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#next_policy"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#notify"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#read"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#track_provenance"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#use"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Action"/>
-        <NamedIndividual IRI="#write"/>
-    </ClassAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#action_refinement"/>
         <Class IRI="#Action"/>
@@ -1482,6 +1373,10 @@
         <Class IRI="#Person"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#Transaction"/>
+        <Class IRI="#Transaction_Data"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#TransactionUser"/>
         <Class IRI="#Transaction_Data"/>
     </DataPropertyDomain>
@@ -1894,6 +1789,10 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#Transaction"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#TransactionUser"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
@@ -1979,7 +1878,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#rightOperandReference"/>
-        <Datatype abbreviatedIRI="rdfs:Literal"/>
+        <Datatype abbreviatedIRI="xsd:anyURI"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#startTime"/>
@@ -2084,7 +1983,7 @@ Free / Advanced</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Component_Certification_Level</IRI>
-        <Literal xml:lang="en">Certification issued for the given Ecosystem Component</Literal>
+        <Literal xml:lang="en">Level of a Component Certification</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2603,6 +2502,11 @@ It is particularly important in cases in which specific rules (e.g., national la
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transaction</IRI>
+        <Literal xml:lang="en">Descriptive information on the transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#TransactionUser</IRI>
         <Literal xml:lang="en">Descriptive information on the Participant responsible of the transaction</Literal>
     </AnnotationAssertion>
@@ -2802,7 +2706,7 @@ Note: A Duty is a pre-condition which must be fulfilled in order to receive the 
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#has_target</IRI>
         <Literal xml:lang="en">The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.
-Example: the assigner Participant offers to &lt;action&gt; the target Resource</Literal>
+Example: the  &lt;i&gt;assigner&lt;/i&gt; Participant &lt;i&gt;offers&lt;/i&gt; to &lt;i&gt;action&lt;/i&gt; the &lt;i&gt;target&lt;/i&gt; Resource</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2924,7 +2828,7 @@ Possible values: after, before, contains, covered by, covers, defines as, disjoi
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#records</IRI>
-        <Literal xml:lang="en">the Wallet Service records the transaction; the cost consumed by the Participant</Literal>
+        <Literal xml:lang="en">the Wallet Service records the transaction, and calculates the cost consumed by the Participant</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

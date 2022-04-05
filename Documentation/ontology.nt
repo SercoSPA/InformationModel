@@ -156,7 +156,7 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Rule> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Resource> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.\nExample: the assigner Participant offers to <action> the target Resource"@en .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_target> <http://www.w3.org/2000/01/rdf-schema#comment> "The subject of the policy statement. It indicates that the Resource is the primary subject to which the Rule action directly applies.\nExample: the  <i>assigner</i> Participant <i>offers</i> to <i>action</i> the <i>target</i> Resource"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_transaction_user
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#has_transaction_user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -258,7 +258,7 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Wallet> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_Data> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records> <http://www.w3.org/2000/01/rdf-schema#comment> "the Wallet Service records the transaction; the cost consumed by the Participant"@en .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#records> <http://www.w3.org/2000/01/rdf-schema#comment> "the Wallet Service records the transaction, and calculates the cost consumed by the Participant"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#refinement
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#refinement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -363,7 +363,7 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level> <http://www.w3.org/2000/01/rdf-schema#comment> "Certification issued for the given Ecosystem Component"@en .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Component_Certification_Level> <http://www.w3.org/2000/01/rdf-schema#comment> "Level of a Component Certification"@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Configuration_model_log_level
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Configuration_model_log_level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -752,6 +752,12 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Surname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Surname> <http://www.w3.org/2000/01/rdf-schema#comment> "Surname of the Person"@en .
 # 
+# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_Data> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Descriptive information on the transaction"@en .
+# 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#TransactionUser
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#TransactionUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#TransactionUser> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Transaction_Data> .
@@ -891,7 +897,7 @@
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Constraint> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#rightOperandReference> <http://www.w3.org/2000/01/rdf-schema#comment> "A reference to a web resource providing the value for the right operand of a Constraint."@en .
 # 
 # http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#startTime
@@ -1108,78 +1114,5 @@
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Wallet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Wallet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Ecosystem_Component> .
 <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Wallet> <http://www.w3.org/2000/01/rdf-schema#comment> "Wallet Service is in charge of managing and allowing monetary / financial transaction (e.g.transfer charges)"@en .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_consumer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#aggregate_by_provider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#anonymize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#compensate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#delete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#distribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#ecrypt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#grant_use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#modify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#next_policy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#notify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#read> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#track_provenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
-# 
-# http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#write> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/ontologies/2022/2/CDS_V1.0.0.owl#Action> .
 # 
 # Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
